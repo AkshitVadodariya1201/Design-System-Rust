@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio_Button</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-radio-button/pkg/ad_radio_button.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            gap: 1rem;
+        }
+        div{
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-radio-button name="radio-button"></ad-radio-button>
+    <ad-radio-button checked></ad-radio-button>
+    <ad-radio-button checked disabled></ad-radio-button>
+    <ad-radio-button disabled></ad-radio-button>
+    <ad-radio-button>
+        <div aria-label="radio-button">RadioButton</div>
+    </ad-radio-button>
+</body>
+
+</html>

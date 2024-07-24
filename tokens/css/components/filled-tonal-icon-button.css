@@ -1,0 +1,19 @@
+:where(html),
+.tokens {
+  /* Filled tonal icon button pressed state layer opacity */
+  --ad-comp-filled-tonal-icon-button-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Filled tonal icon button focus state layer opacity */
+  --ad-comp-filled-tonal-icon-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Filled tonal icon button hover state layer opacity */
+  --ad-comp-filled-tonal-icon-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Filled tonal icon button disabled container opacity */
+  --ad-comp-filled-tonal-icon-button-disabled-container-opacity: 0.11999999731779099;
+  /* Filled tonal icon button disabled icon opacity */
+  --ad-comp-filled-tonal-icon-button-disabled-icon-opacity: 0.3799999952316284;
+  /* Filled tonal icon button container shape */
+  --ad-comp-filled-tonal-icon-button-container-shape: var(--ad-sys-shape-corner-full);
+  /* Filled tonal icon button container size */
+  --ad-comp-filled-tonal-icon-button-container-size: 40px;
+  /* Filled tonal icon button icon size */
+  --ad-comp-filled-tonal-icon-button-icon-size: 24px;
+}

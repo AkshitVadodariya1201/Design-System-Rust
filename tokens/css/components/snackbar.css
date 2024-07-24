@@ -1,0 +1,45 @@
+:where(html),
+.tokens {
+  /* Snackbar icon pressed state layer opacity */
+  --ad-comp-snackbar-icon-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Snackbar icon focus state layer opacity */
+  --ad-comp-snackbar-icon-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Snackbar icon hover state layer opacity */
+  --ad-comp-snackbar-icon-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Snackbar icon size */
+  --ad-comp-snackbar-icon-size: 24px;
+  /* Snackbar container with two lines height */
+  --ad-comp-snackbar-with-two-lines-container-height: 68px;
+  /* Snackbar container with single line height */
+  --ad-comp-snackbar-with-single-line-container-height: 48px;
+  /* Snackbar pressed state layer opacity */
+  --ad-comp-snackbar-action-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Snackbar focus state layer opacity */
+  --ad-comp-snackbar-action-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Snackbar hover state layer opacity */
+  --ad-comp-snackbar-action-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Snackbar label text weight */
+  --ad-comp-snackbar-action-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Snackbar label text tracking */
+  --ad-comp-snackbar-action-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Snackbar label text size */
+  --ad-comp-snackbar-action-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Snackbar label text line height */
+  --ad-comp-snackbar-action-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Snackbar label text font */
+  --ad-comp-snackbar-action-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Snackbar supporting text weight */
+  --ad-comp-snackbar-supporting-text-weight: var(--ad-sys-typescale-body-medium-weight);
+  /* Snackbar supporting text tracking */
+  --ad-comp-snackbar-supporting-text-tracking: var(--ad-sys-typescale-body-medium-tracking);
+  /* Snackbar supporting text size */
+  --ad-comp-snackbar-supporting-text-size: var(--ad-sys-typescale-body-medium-size);
+  /* Snackbar supporting text line height */
+  --ad-comp-snackbar-supporting-text-line-height: var(--ad-sys-typescale-body-medium-line-height);
+  /* Snackbar supporting text font */
+  --ad-comp-snackbar-supporting-text-font: var(--ad-sys-typescale-body-medium-font);
+  /* Snackbar container shape */
+  --ad-comp-snackbar-container-shape: var(--ad-sys-shape-corner-extra-small);
+  /* Snackbar container elevation */
+  --ad-comp-snackbar-container-elevation: var(--ad-sys-elevation-level3);
+}

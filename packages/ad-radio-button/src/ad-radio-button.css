@@ -1,0 +1,119 @@
+/* https: //m3.material.io/components/radio-button/specs */
+
+.container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container>input[type="radio"] {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.container>.state-layer {
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 16px;
+    height: 16px;
+    border: 3px solid var(--ad-sys-color-on-surface-variant);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+}
+
+.container>.state-layer::before {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: var(--ad-sys-color-primary);
+}
+
+.container>input[type="radio"]:checked+.state-layer {
+    border-color: var(--ad-sys-color-primary);
+    border-radius: 50%;
+}
+
+.container>input[type="radio"]:checked+.state-layer::before {
+    transform: scale(1);
+    display: block;
+}
+
+.container>input[type="radio"]:enabled {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: 0;
+}
+
+.container>input[type="radio"]:checked:enabled {
+    background-color: var(--ad-sys-color-primary);
+}
+
+.container>input[type="radio"]:not(:disabled):hover {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-radio-button-unselected-hover-state-layer-opacity);
+}
+
+.container>input[type="radio"]:checked:not(:disabled):hover {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-radio-button-selected-hover-state-layer-opacity);
+}
+
+.container>input[type="radio"]:focus {
+    outline: none;
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-radio-button-unselected-focus-state-layer-opacity);
+}
+
+.container>input[type="radio"]:checked:focus {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-radio-button-selected-focus-state-layer-opacity);
+}
+
+.container>input[type="radio"]:not(:disabled):active {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-radio-button-unselected-pressed-state-layer-opacity);
+}
+
+.container>input[type="radio"]:checked:not(:disabled):active {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-radio-button-selected-pressed-state-layer-opacity);
+}
+
+.container>input[type="radio"]:disabled+.state-layer {
+    border-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-radio-button-disabled-unselected-icon-opacity);
+}
+
+.container>input[type="radio"]:checked:disabled+.state-layer {
+    border-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-radio-button-disabled-selected-icon-opacity);
+}
+
+.container>input[type="radio"]:disabled+.state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-radio-button-disabled-selected-icon-opacity);
+}

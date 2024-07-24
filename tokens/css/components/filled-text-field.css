@@ -1,0 +1,71 @@
+:where(html),
+.tokens {
+  /* Filled text field container height */
+  --ad-comp-filled-text-field-container-height: 56px;
+  /* Filled text field label text tracking */
+  --ad-comp-filled-text-field-label-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Filled text field label text weight */
+  --ad-comp-filled-text-field-label-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Filled text field label text size */
+  --ad-comp-filled-text-field-label-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Filled text field label text line height */
+  --ad-comp-filled-text-field-label-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Filled text field label text font */
+  --ad-comp-filled-text-field-label-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Filled text field error hover state layer opacity */
+  --ad-comp-filled-text-field-error-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Filled text field hover state layer opacity */
+  --ad-comp-filled-text-field-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Filled text field hover active indicator height */
+  --ad-comp-filled-text-field-hover-active-indicator-height: 1px;
+  /* Filled text field focus active indicator height */
+  --ad-comp-filled-text-field-focus-active-indicator-height: 2px;
+  /* Filled text field disabled trailing icon opacity */
+  --ad-comp-filled-text-field-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Filled text field disabled leading icon opacity */
+  --ad-comp-filled-text-field-disabled-leading-icon-opacity: 0.3799999952316284;
+  /* Filled text field disabled supporting text opacity */
+  --ad-comp-filled-text-field-disabled-supporting-text-opacity: 0.3799999952316284;
+  /* Filled text field disabled input text opacity */
+  --ad-comp-filled-text-field-disabled-input-text-opacity: 0.3799999952316284;
+  /* Filled text field disabled label text opacity */
+  --ad-comp-filled-text-field-disabled-label-text-opacity: 0.3799999952316284;
+  /* Filled text field disabled active indicator opacity */
+  --ad-comp-filled-text-field-disabled-active-indicator-opacity: 0.3799999952316284;
+  /* Filled text field disabled active indicator height */
+  --ad-comp-filled-text-field-disabled-active-indicator-height: 1px;
+  /* Filled text field disabled container opacity */
+  --ad-comp-filled-text-field-disabled-container-opacity: 0.03999999910593033;
+  /* Filled text field trailing icon size */
+  --ad-comp-filled-text-field-trailing-icon-size: 24px;
+  /* Filled text field leading icon size */
+  --ad-comp-filled-text-field-leading-icon-size: 20px;
+  /* Filled text field supporting text tracking */
+  --ad-comp-filled-text-field-supporting-text-tracking: var(--ad-sys-typescale-body-small-tracking);
+  /* Filled text field supporting text weight */
+  --ad-comp-filled-text-field-supporting-text-weight: var(--ad-sys-typescale-body-small-weight);
+  /* Filled text field supporting text size */
+  --ad-comp-filled-text-field-supporting-text-size: var(--ad-sys-typescale-body-small-size);
+  /* Filled text field supporting text line height */
+  --ad-comp-filled-text-field-supporting-text-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Filled text field supporting text font */
+  --ad-comp-filled-text-field-supporting-text-font: var(--ad-sys-typescale-body-small-font);
+  /* Filled text field label text populated size */
+  --ad-comp-filled-text-field-label-text-populated-size: var(--ad-sys-typescale-body-small-size);
+  /* Filled text field label text populated line height */
+  --ad-comp-filled-text-field-label-text-populated-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Filled text field input text tracking */
+  --ad-comp-filled-text-field-input-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Filled text field input text weight */
+  --ad-comp-filled-text-field-input-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Filled text field input text size */
+  --ad-comp-filled-text-field-input-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Filled text field input text line height */
+  --ad-comp-filled-text-field-input-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Filled text field input text font */
+  --ad-comp-filled-text-field-input-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Filled text field active indicator height */
+  --ad-comp-filled-text-field-active-indicator-height: 1px;
+  /* Filled text field container shape */
+  --ad-comp-filled-text-field-container-shape: var(--ad-sys-shape-corner-extra-small-top);
+}

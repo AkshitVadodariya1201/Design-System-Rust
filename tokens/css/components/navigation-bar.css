@@ -1,0 +1,39 @@
+:where(html),
+.tokens {
+  --ad-comp-navigation-bar-large-badge-shape: 8px 8px 8px 8px;
+  /* Size */
+  --ad-comp-navigation-bar-large-badge-size: 16px;
+  --ad-comp-navigation-bar-badge-shape: 3px 3px 3px 3px;
+  /* Size */
+  --ad-comp-navigation-bar-badge-size: 6px;
+  /* Opacity */
+  --ad-comp-navigation-bar-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Opacity */
+  --ad-comp-navigation-bar-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Opacity */
+  --ad-comp-navigation-bar-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Shape */
+  --ad-comp-navigation-bar-active-indicator-shape: var(--ad-sys-shape-corner-full);
+  /* Width */
+  --ad-comp-navigation-bar-active-indicator-width: 64px;
+  /* Height */
+  --ad-comp-navigation-bar-active-indicator-height: 32px;
+  /* Tracking */
+  --ad-comp-navigation-bar-label-text-tracking: var(--ad-sys-typescale-label-medium-tracking);
+  /* Weight */
+  --ad-comp-navigation-bar-label-text-weight: var(--ad-sys-typescale-label-medium-weight);
+  /* Size */
+  --ad-comp-navigation-bar-label-text-size: var(--ad-sys-typescale-label-medium-size);
+  /* Line height */
+  --ad-comp-navigation-bar-label-text-line-height: var(--ad-sys-typescale-label-medium-line-height);
+  /* Font */
+  --ad-comp-navigation-bar-label-text-font: var(--ad-sys-typescale-label-medium-font);
+  /* Size */
+  --ad-comp-navigation-bar-icon-size: 24px;
+  /* Elevation */
+  --ad-comp-navigation-bar-container-elevation: var(--ad-sys-elevation-level2);
+  /* Height */
+  --ad-comp-navigation-bar-container-height: 80px;
+  /* Shape */
+  --ad-comp-navigation-bar-container-shape: var(--ad-sys-shape-corner-none);
+}

@@ -1,0 +1,51 @@
+:where(html),
+.tokens {
+  /* Banner supporting text tracking */
+  --ad-comp-banner-supporting-text-tracking: var(--ad-sys-typescale-body-medium-tracking);
+  /* Banner supporting text weight */
+  --ad-comp-banner-supporting-text-weight: var(--ad-sys-typescale-body-medium-weight);
+  /* Banner supporting text size */
+  --ad-comp-banner-supporting-text-size: var(--ad-sys-typescale-body-medium-size);
+  /* Banner supporting text line height */
+  --ad-comp-banner-supporting-text-line-height: var(--ad-sys-typescale-body-medium-line-height);
+  /* Banner image shape */
+  --ad-comp-banner-with-image-image-shape: var(--ad-sys-shape-corner-full);
+  /* Banner supporting text font */
+  --ad-comp-banner-supporting-text-font: var(--ad-sys-typescale-body-medium-font);
+  /* Banner image size */
+  --ad-comp-banner-with-image-image-size: 40px;
+  /* Banner action focus state layer opacity */
+  --ad-comp-banner-action-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Banner action hover state layer opacity */
+  --ad-comp-banner-action-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Banner action label text tracking */
+  --ad-comp-banner-action-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Banner action label text weight */
+  --ad-comp-banner-action-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Banner  action label text size */
+  --ad-comp-banner-action-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Banner action label text line height */
+  --ad-comp-banner-action-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Banner action label text font */
+  --ad-comp-banner-action-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Banner divider height */
+  --ad-comp-banner-divider-height: 1px;
+  /* Banner with three lines container height */
+  --ad-comp-banner-desktop-with-three-lines-container-height: 90px;
+  /* Banner desktop with two lines with image container height */
+  --ad-comp-banner-desktop-with-two-lines-with-image-container-height: 72px;
+  /* Banner desktop with single line container height */
+  --ad-comp-banner-desktop-with-single-line-container-height: 52px;
+  /* Banner mobile with two lines with image container height */
+  --ad-comp-banner-mobile-with-two-lines-with-image-container-height: 120px;
+  /* Banner mobile with two lines container height */
+  --ad-comp-banner-mobile-with-two-lines-container-height: 112px;
+  /* Banner mobile with single line container height */
+  --ad-comp-banner-mobile-with-single-line-container-height: 54px;
+  /* Banner container shape */
+  --ad-comp-banner-container-shape: var(--ad-sys-shape-corner-none);
+  /* Banner container elevation */
+  --ad-comp-banner-container-elevation: var(--ad-sys-elevation-level1);
+  /* Banner action pressed state layer opacity */
+  --ad-comp-banner-action-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

@@ -1,0 +1,63 @@
+.container {
+    background-color: var(--ad-sys-color-surface);
+    height: var(--ad-comp-top-app-bar-small-container-height);
+    border-radius: var(--ad-comp-top-app-bar-small-container-shape);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headline {
+    color: var(--ad-sys-color-on-surface);
+    font: var(--ad-comp-top-app-bar-small-headline-font);
+    line-height: var(--ad-comp-top-app-bar-small-headline-line-height);
+    font-size: var(--ad-comp-top-app-bar-small-headline-size);
+    letter-spacing: var(--ad-comp-top-app-bar-small-headline-tracking);
+    font-weight: var(--ad-comp-top-app-bar-small-headline-weight);
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.leading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leading-icon {
+    color: var(--ad-sys-color-on-surface);
+    padding: 0 16px 0 16px;
+    cursor: pointer;
+}
+
+.trailing-icon {
+    color: var(--ad-sys-color-on-surface-variant);
+    padding: 0 16px 0 24px;
+    cursor: pointer;
+    display: flex;
+    gap: 24px;
+}

@@ -1,0 +1,27 @@
+.elevated {
+    background-color: var(--ad-ref-palette-neutral95);
+    border-radius: 12px;
+    /* background-color: var(--ad-sys-color-surface-container-low); */
+}
+
+.elevated:hover .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+.elevated:focus .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-focus-state-layer-opacity);
+}
+
+.elevated:active .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}
+
+.elevated:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background: var(--ad-sys-color-surface-variant);
+    opacity: var(--ad-comp-elevated-card-disabled-container-opacity);
+}

@@ -1,0 +1,180 @@
+/* write css for outlined button */
+/* take value from ../../../packages/ad-button-outlined/readme.md */
+
+/* style the button for outlined */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-outlined-button-container-height);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--ad-sys-color-surface);
+    padding: 0 16px 0 16px;
+    gap: 8px;
+}
+
+/* style button before  */
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style outlined class for outlined button */
+.outlined {
+    border: var(--ad-comp-outlined-button-outline-width) solid var(--ad-sys-color-outline);
+    border-radius: inherit;
+    position: absolute;
+    pointer-events: none;
+    inset: 0;
+}
+
+/* style label-text class for outlined button */
+.label-text {
+    color: var(--ad-sys-color-primary);
+    font: var(--ad-comp-outlined-button-label-text-font);
+    line-height: var(--ad-comp-outlined-button-label-text-line-height);
+    font-size: var(--ad-comp-outlined-button-label-text-size);
+    letter-spacing: var(--ad-comp-outlined-button-label-text-tracking);
+    font-weight: var(--ad-comp-outlined-button-label-text-weight);
+}
+
+/* style leading-icon and trailing-icon both class for outlined button */   
+:is(.leading-icon, .trailing-icon) {
+    display: flex;
+    height: var(--ad-comp-outlined-button-with-icon-icon-size);
+}
+
+/* style slot inside of leading-icon and trailing-icon for outlined button */
+:is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+    font-size: var(--ad-comp-outlined-button-with-icon-icon-size);
+}
+
+
+
+/* style outlined when :enabled  */
+button:enabled .outlined {
+    border-color: var(--ad-sys-color-outline);
+    border-width: var(--ad-comp-outlined-button-outline-width);
+}
+
+/* style label-text when button enabled */
+button:enabled .label-text {
+    color: var(--ad-sys-color-primary);
+    font: var(--ad-sys-typescale-label-large-font);
+    line-height: var(--ad-sys-typescale-label-large-line-height);
+    font-size: var(--ad-sys-typescale-label-large-size);
+    font-weight: var(--ad-sys-typescale-label-large-weight);
+    letter-spacing: var(--ad-sys-typescale-label-large-tracking);
+}
+
+/* style slot inside of  leading-icon and trailing-icon when button enabled */
+button:enabled :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style outlined class when button :hover */
+button:hover .outlined {
+    border-color: var(--ad-sys-color-outline);
+}
+
+/* style button before when :hover  */
+button:hover::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-outlined-button-hover-state-layer-opacity);
+}
+
+/* style label-text when button hover */
+button:hover .label-text {
+    color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of  leading-icon and trailing-icon when button hover */
+button:hover :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style outlined class when button :focus */
+button:focus .outlined {
+    border-color: var(--ad-sys-color-primary);
+}
+
+/* style button before when :focus  */
+button:focus::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-outlined-button-focus-state-layer-opacity);
+}
+
+/* style label-text when button focus */
+button:focus .label-text {
+    color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of  leading-icon and trailing-icon when button focus */
+button:focus :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style outlined class when button :active */
+button:active .outlined {
+    border-color: var(--ad-sys-color-outline);
+}
+
+/* style button before when :active  */
+button:active::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-outlined-button-pressed-state-layer-opacity);
+}
+
+/* style label-text when button active */
+button:active .label-text {
+    color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of  leading-icon and trailing-icon when button active */
+button:active :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button when :disabled */
+button:disabled {
+    background-color: transparent;
+    cursor: default;
+}
+
+/* style button when :disabled */
+button:disabled::before {
+    background-color: transparent;
+}
+
+/* style outlined class when button :disabled */
+button:disabled .outlined {
+    border-color: var(--ad-sys-color-outline);
+    opacity: var(--ad-comp-outlined-button-disabled-outline-opacity);
+}
+
+/* style label-text when button disabled */
+button:disabled .label-text {
+    color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-outlined-button-disabled-label-text-opacity);
+}
+
+/* style slot inside of  leading-icon and trailing-icon when button disabled */
+button:disabled :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-outlined-button-with-icon-disabled-icon-opacity);
+}

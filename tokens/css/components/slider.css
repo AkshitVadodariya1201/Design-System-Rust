@@ -1,0 +1,65 @@
+:where(html),
+.tokens {
+  /* Slider label label text font size */
+  --ad-comp-slider-label-label-text-font-size: var(--ad-sys-typescale-label-medium-size);
+  /* Slider label label text font size */
+  --ad-comp-slider-label-label-text-size: var(--ad-sys-typescale-label-medium-size);
+  /* Slider label label text tracking */
+  --ad-comp-slider-label-label-text-tracking: var(--ad-sys-typescale-label-medium-tracking);
+  /* Slider label label text weight */
+  --ad-comp-slider-label-label-text-weight: var(--ad-sys-typescale-label-medium-weight);
+  /* Slider label label text line height */
+  --ad-comp-slider-label-label-text-line-height: var(--ad-sys-typescale-label-medium-line-height);
+  /* Slider label label text font */
+  --ad-comp-slider-label-label-text-font: var(--ad-sys-typescale-label-medium-font);
+  /* Slider label container elevation */
+  --ad-comp-slider-label-container-elevation: var(--ad-sys-elevation-level0);
+  /* Slider label container height */
+  --ad-comp-slider-label-container-height: 28px;
+  /* Slider track elevation */
+  --ad-comp-slider-track-elevation: var(--ad-sys-elevation-level0);
+  /* Slider inactive track shape */
+  --ad-comp-slider-inactive-track-shape: var(--ad-sys-shape-corner-full);
+  /* Slider active track shape */
+  --ad-comp-slider-active-track-shape: var(--ad-sys-shape-corner-full);
+  /* Slider focus state layer opacity */
+  --ad-comp-slider-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Slider hover state layer opacity */
+  --ad-comp-slider-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Slider with tick marks inactive container opacity */
+  --ad-comp-slider-with-tick-marks-inactive-container-opacity: 0.3799999952316284;
+  /* Slider with tick marks active container opacity */
+  --ad-comp-slider-with-tick-marks-active-container-opacity: 0.3799999952316284;
+  /* Slider with tick marks container shape */
+  --ad-comp-slider-with-tick-marks-container-shape: var(--ad-sys-shape-corner-full);
+  /* Slider with tick marks container size */
+  --ad-comp-slider-with-tick-marks-container-size: 2px;
+  /* Slider with overlap handle outline width */
+  --ad-comp-slider-with-overlap-handle-outline-width: 1px;
+  /* Slider handle elevation */
+  --ad-comp-slider-handle-elevation: var(--ad-sys-elevation-level1);
+  /* Slider handle shape */
+  --ad-comp-slider-handle-shape: var(--ad-sys-shape-corner-full);
+  /* Slider handle width */
+  --ad-comp-slider-handle-width: 20px;
+  /* Slider handle height */
+  --ad-comp-slider-handle-height: 20px;
+  /* Slider state layer size */
+  --ad-comp-slider-state-layer-size: 40px;
+  /* Slider inactive track height */
+  --ad-comp-slider-inactive-track-height: 4px;
+  /* Slider active track height */
+  --ad-comp-slider-active-track-height: 4px;
+  /* Slider disabled inactive track opacity */
+  --ad-comp-slider-disabled-inactive-track-opacity: 0.11999999731779099;
+  /* Slider disabled active track opacity */
+  --ad-comp-slider-disabled-active-track-opacity: 0.3799999952316284;
+  /* Slider pressed state layer opacity */
+  --ad-comp-slider-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Slider with tick marks disabled container opacity */
+  --ad-comp-slider-with-tick-marks-disabled-container-opacity: 0.3799999952316284;
+  /* Slider disabled handle opacity */
+  --ad-comp-slider-disabled-handle-opacity: 0.3799999952316284;
+  /* Slider disabled handle elevation */
+  --ad-comp-slider-disabled-handle-elevation: var(--ad-sys-elevation-level0);
+}

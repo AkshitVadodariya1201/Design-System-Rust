@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>List</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as list_item from "../../../packages/ad-list-item/pkg/ad_list_item.js";
+        import * as list from "../../../packages/ad-list/pkg/ad_list.js";
+        import * as icon from "../../../packages/ad-icon/pkg/ad_icon.js";
+        import * as checkbox from "../../../packages/ad-checkbox/pkg/ad_checkbox.js";
+        import * as divider from "../../../packages/ad-divider/pkg/ad_divider.js";
+
+        async function main() {
+            const init = list_item.default;
+            await init();
+            list_item.run();
+
+            const initList = list.default;
+            await initList();
+            list.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+
+            const initCheckbox = checkbox.default;
+            await initCheckbox();
+            checkbox.run();
+
+            const initDivider = divider.default;
+            await initDivider();
+            divider.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        :root {
+            --ad-color-list-surface: var(--ad-sys-color-surface);
+            --ad-color-divider: var(--ad-sys-color-surface-variant);
+            --ad-divider-margin-top: 16px;
+            --ad-divider-margin-bottom: 16px;
+        }
+
+        .configurations {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>One-line lists</h2>
+    <ad-list>
+        <ad-list-item headline="Headline" one-line disabled></ad-list-item>
+
+        <ad-divider></ad-divider>
+
+        <ad-list-item headline="Headline" one-line>
+            <ad-icon slot="start">person</ad-icon>
+        </ad-list-item>
+
+        <ad-divider inset-start></ad-divider>
+
+        <ad-list-item headline="Headline" one-line>
+            <span slot="start">A</span>
+            <ad-checkbox checked slot="end">
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+
+        <ad-divider inset-start></ad-divider>
+
+        <ad-list-item headline="Headline" one-line avatar>
+            
+            <img slot="start"
+                src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="">
+            <ad-checkbox checked slot="end">
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+
+        <ad-divider inset-start inset-end></ad-divider>
+
+        <ad-list-item class="image" headline="Headline" trailing-supporting-text="100+" one-line>
+            <img slot="start"
+                src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="">
+        </ad-list-item>
+
+        <ad-divider inset></ad-divider>
+
+        <ad-list-item headline="Headline" one-line video>
+            <video slot="start" src="videos/demo-3.mp4" autoplay muted loop controls></video>
+            <ad-checkbox checked slot="end">
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+    </ad-list>
+
+
+
+    <h2>Two-line lists</h2>
+    <ad-list>
+        <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line></ad-list-item>
+
+        <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+            <ad-icon slot="start">person</ad-icon>
+        </ad-list-item>
+
+        <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line disabled>
+            <span slot="start">A</span>
+            <ad-checkbox checked slot="end" disabled>
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+
+        <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line avatar>
+            <img slot="start" src="https://img.freepik.com/free-photo/bird-with-blue-head-red-head-sits-pink-flower_1340-22892.jpg"
+                alt="person">
+            <ad-checkbox checked slot="end" disabled>
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+
+
+        <ad-list-item headline="Headline" supporting-text="Supporting line text" trailing-supporting-text="100+"
+            two-line>
+            <img slot="start"
+                src="https://img.freepik.com/free-photo/bird-with-blue-head-red-head-sits-pink-flower_1340-22892.jpg"
+                alt="person">
+        </ad-list-item>
+
+        <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line video>
+            <iframe slot="start" src="https://www.youtube.com/embed/UvdKI9SlKyk" title="YouTube video player" autoplay
+                muted frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <ad-checkbox checked slot="end">
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+    </ad-list>
+
+
+
+    <h2>Three-line lists</h2>
+    <ad-list>
+        <ad-list-item headline="Headline"
+            supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+            three-line></ad-list-item>
+
+        <ad-list-item headline="Headline"
+            supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+            three-line>
+            <ad-icon slot="start">person</ad-icon>
+        </ad-list-item>
+
+        <ad-list-item headline="Headline"
+            supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+            three-line>
+            <span slot="start">A</span>
+            <ad-checkbox checked slot="end">
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+
+        
+        <ad-list-item headline="Headline"
+            supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+            three-line avatar>
+            <img slot="start" src="https://t4.ftcdn.net/jpg/01/77/47/67/360_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg"
+                alt="person">
+            <ad-checkbox checked slot="end">
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+
+
+        <ad-list-item headline="Headline"
+            supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+            trailing-supporting-text="100+" three-line>
+            <img slot="start"
+                src="https://t4.ftcdn.net/jpg/01/77/47/67/360_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg"
+                alt="person">
+        </ad-list-item>
+
+        <ad-list-item headline="Headline"
+            supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+            three-line video>
+            <video slot="start" src="videos/demo-4.mp4" autoplay muted loop controls></video>
+            <ad-checkbox checked slot="end">
+                <ad-icon slot="icon">done</ad-icon>
+            </ad-checkbox>
+        </ad-list-item>
+    </ad-list>
+
+
+
+    <h1>Configurations</h1>
+
+    <h3>With avatar</h3>
+    <div class="configurations">
+        <ad-list>
+            <ad-list-item headline="Headline" avatar one-line>
+                <span slot="start">A</span>
+            </ad-list-item>
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+                <span slot="start">A</span>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line avatar>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                    alt="">
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line>
+                <span slot="start">A</span>
+            </ad-list-item>
+        </ad-list>
+        <ad-list>
+            <ad-list-item headline="Headline" avatar one-line>
+                <span slot="start">A</span>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+                <span slot="start">A</span>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line avatar>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                    alt="">
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line>
+                <span slot="start">A</span>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+    </div>
+
+
+    <h3>With image or thumbnail</h3>
+    <div class="configurations">
+        <ad-list>
+            <ad-list-item headline="Headline" one-line>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                    alt="">
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1572402230267-f3e267c1e5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJpcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+                    alt="person">
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1518992028580-6d57bd80f2dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJpcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+                    alt="person">
+            </ad-list-item>
+        </ad-list>
+
+        <ad-list>
+            <ad-list-item headline="Headline" one-line>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                    alt="">
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1572402230267-f3e267c1e5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJpcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+                    alt="person">
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line>
+                <img slot="start"
+                    src="https://images.unsplash.com/photo-1518992028580-6d57bd80f2dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJpcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60"
+                    alt="person">
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+    </div>
+
+
+
+
+    <h3>With video</h3>
+    <div class="configurations">
+        <ad-list>
+            <ad-list-item headline="Headline" one-line video>
+                <iframe slot="start" src="https://www.youtube.com/embed/UvdKI9SlKyk" title="YouTube video player"
+                    autoplay muted frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line video>
+                <video slot="start" src="videos/demo-1.mp4" autoplay muted loop controls></video>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line video>
+                <video slot="start" src="videos/demo-2.mp4" autoplay muted loop controls></video>
+            </ad-list-item>
+        </ad-list>
+
+        <ad-list>
+            <ad-list-item headline="Headline" one-line video>
+                <iframe slot="start" src="https://www.youtube.com/embed/UvdKI9SlKyk" title="YouTube video player"
+                    autoplay muted frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line video>
+                <video slot="start" src="videos/demo-1.mp4" autoplay muted loop controls></video>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line video>
+                <video slot="start" src="videos/demo-2.mp4" autoplay muted loop controls></video>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+    </div>
+
+
+
+    <h3>With icon</h3>
+    <div class="configurations">
+        <ad-list>
+            <ad-list-item headline="Headline" one-line>
+                <ad-icon slot="start">person</ad-icon>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+                <ad-icon slot="start">person</ad-icon>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line>
+                <ad-icon slot="start">person</ad-icon>
+            </ad-list-item>
+        </ad-list>
+
+        <ad-list>
+            <ad-list-item headline="Headline" one-line>
+                <ad-icon slot="start">person</ad-icon>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+                <ad-icon slot="start">person</ad-icon>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line>
+                <ad-icon slot="start">person</ad-icon>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+    </div>
+
+
+
+    <h3>With checkbox</h3>
+    <div class="configurations">
+        <ad-list>
+            <ad-list-item headline="Headline" one-line>
+                <ad-checkbox checked slot="start">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" two-line>
+                <ad-checkbox checked slot="start">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                three-line>
+                <ad-checkbox checked slot="start">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+
+
+        <ad-list>
+            <ad-list-item headline="Headline" trailing-supporting-text="100+" one-line>
+                <ad-checkbox checked slot="start">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline" supporting-text="Supporting line text" trailing-supporting-text="100+"
+                two-line>
+                <ad-checkbox checked slot="start">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+
+            <ad-list-item headline="Headline"
+                supporting-text="Supporting line text Supporting text that is long enough to fill up multiple lines"
+                trailing-supporting-text="100+" three-line>
+                <ad-checkbox checked slot="start">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+    </div>
+</body>
+
+</html>

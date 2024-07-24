@@ -1,0 +1,62 @@
+.container {
+    background-color: var(--ad-sys-color-surface);
+    border-radius: 0px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .headline {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.headline {
+    color: var(--ad-sys-color-on-surface);
+    font: var(--ad-sys-typescale-title-large-font);
+    line-height: var(--ad-sys-typescale-title-large-line-height);
+    font-size: var(--ad-sys-typescale-title-large-size);
+    letter-spacing: var(--ad-sys-typescale-title-large-tracking);
+    font-weight: var(--ad-sys-typescale-title-large-weight);
+    text-overflow: ellipsis;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.leading-icon {
+    color: var(--ad-sys-color-on-surface);
+    padding: 0 24px 0 16px;
+    cursor: pointer;
+}
+
+.trailing-icon {
+    color: var(--ad-sys-color-on-surface-variant);
+    padding: 0 16px 0 24px;
+    cursor: pointer;
+}

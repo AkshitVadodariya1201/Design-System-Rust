@@ -1,0 +1,69 @@
+:where(html),
+.tokens {
+  /* Navigation rail large badge label tracking */
+  --ad-comp-navigation-rail-large-badge-label-tracking: var(--ad-sys-typescale-label-small-tracking);
+  /* Navigation rail large badge label weight */
+  --ad-comp-navigation-rail-large-badge-label-weight: var(--ad-sys-typescale-label-small-weight);
+  /* Navigation rail large badge label size */
+  --ad-comp-navigation-rail-large-badge-label-size: var(--ad-sys-typescale-label-small-size);
+  /* Navigation rail large badge label line height */
+  --ad-comp-navigation-rail-large-badge-label-line-height: var(--ad-sys-typescale-label-small-line-height);
+  /* Navigation rail large badge label font */
+  --ad-comp-navigation-rail-large-badge-label-font: var(--ad-sys-typescale-label-small-font);
+  --ad-comp-navigation-rail-large-badge-shape: 8px 8px 8px 8px;
+  /* Navigation rail large badge size */
+  --ad-comp-navigation-rail-large-badge-size: 16px;
+  --ad-comp-navigation-rail-badge-shape: 3px 3px 3px 3px;
+  /* Navigation rail badge size */
+  --ad-comp-navigation-rail-badge-size: 6px;
+  /* Navigation rail large badge label font family */
+  --ad-comp-navigation-rail-large-badge-label-font-family: var(--ad-sys-typescale-label-small-font);
+  /* Navigation rail label letter spacing */
+  --ad-comp-navigation-rail-label-text-letter-spacing: var(--ad-sys-typescale-label-medium-tracking);
+  /* Navigation rail label font size */
+  --ad-comp-navigation-rail-label-text-font-size: var(--ad-sys-typescale-label-medium-size);
+  /* Navigation rail label font family */
+  --ad-comp-navigation-rail-label-text-font-family: var(--ad-sys-typescale-label-medium-font);
+  /* Navigation rail menu focus state layer opacity */
+  --ad-comp-navigation-rail-menu-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Navigation rail active focus state layer color */
+  --ad-comp-navigation-rail-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Navigation rail menu hover state layer opacity */
+  --ad-comp-navigation-rail-menu-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Navigation rail hover state layer opacity */
+  --ad-comp-navigation-rail-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Navigation rail menu icon size */
+  --ad-comp-navigation-rail-menu-icon-size: 24px;
+  /* Navigation rail active indicator width */
+  --ad-comp-navigation-rail-active-indicator-width: 56px;
+  /* Navigation rail no label active indicator shape */
+  --ad-comp-navigation-rail-no-label-active-indicator-shape: var(--ad-sys-shape-corner-full);
+  /* Navigation rail active indicator shape */
+  --ad-comp-navigation-rail-active-indicator-shape: var(--ad-sys-shape-corner-full);
+  /* Navigation rail no label active indicator height */
+  --ad-comp-navigation-rail-no-label-active-indicator-height: 56px;
+  /* Navigation rail active indicator height */
+  --ad-comp-navigation-rail-active-indicator-height: 32px;
+  /* Navigation rail label tracking */
+  --ad-comp-navigation-rail-label-text-tracking: var(--ad-sys-typescale-label-medium-tracking);
+  /* Navigation rail label weight */
+  --ad-comp-navigation-rail-label-text-weight: var(--ad-sys-typescale-label-medium-weight);
+  /* Navigation rail label size */
+  --ad-comp-navigation-rail-label-text-size: var(--ad-sys-typescale-label-medium-size);
+  /* Navigation rail label line height */
+  --ad-comp-navigation-rail-label-text-line-height: var(--ad-sys-typescale-label-medium-line-height);
+  /* Navigation rail label font */
+  --ad-comp-navigation-rail-label-text-font: var(--ad-sys-typescale-label-medium-font);
+  /* Navigation rail icon size */
+  --ad-comp-navigation-rail-icon-size: 24px;
+  /* Navigation rail container elevation */
+  --ad-comp-navigation-rail-container-elevation: var(--ad-sys-elevation-level0);
+  /* Navigation rail container width */
+  --ad-comp-navigation-rail-container-width: 80px;
+  /* Navigation rail container shape */
+  --ad-comp-navigation-rail-container-shape: var(--ad-sys-shape-corner-none);
+  /* Navigation rail menu pressed state layer opacity */
+  --ad-comp-navigation-rail-menu-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Navigation rail pressed state layer opacity */
+  --ad-comp-navigation-rail-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

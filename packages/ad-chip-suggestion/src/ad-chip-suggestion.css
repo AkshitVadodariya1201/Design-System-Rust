@@ -1,0 +1,205 @@
+/* write css for suggestion chip */
+/* take value from ../../../packages/ad-chip-suggestion/readme.md */
+
+/* style container class for suggestion chip */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-suggestion-chip-container-height);
+    border-radius: var(--ad-comp-suggestion-chip-container-shape);
+    position: relative;
+    cursor: pointer;
+}
+
+/* style container before for suggestion chip */
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style outline class for suggestion chip */
+.outline {
+    border: var(--ad-comp-suggestion-chip-flat-outline-width) solid var(--ad-sys-color-outline);
+    border-radius: inherit;
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+/* style elevated class for suggestion chip */
+.elevated {
+    box-shadow: var(--ad-comp-suggestion-chip-elevated-container-elevation);
+    background-color: var(--ad-ref-palette-neutral95);
+}
+
+/* style outline class when elevated */
+.elevated .outline {
+    border: none;
+}
+
+/* style button defoult  property none */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* style primary class , flex , center, padding 0 16px 0 8px */
+.primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px 0 8px;
+    gap: 8px;
+}
+
+/* style leading-icon class for suggestion chip */
+.leading-icon {
+    height: var(--ad-comp-suggestion-chip-with-leading-icon-leading-icon-size);
+}
+
+/* style slot (inside of first-child) inside of leading icon */
+.leading-icon ::slotted(:first-child) {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-size: var(--ad-comp-suggestion-chip-with-leading-icon-leading-icon-size);
+}
+
+/* style label-text class for suggestion chip and take color on surface variant */
+.label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font: var(--ad-comp-suggestion-chip-label-text-font);
+    line-height: var(--ad-comp-suggestion-chip-label-text-line-height);
+    font-size: var(--ad-comp-suggestion-chip-label-text-size);
+    font-weight: var(--ad-comp-suggestion-chip-label-text-weight);
+    letter-spacing: var(--ad-comp-suggestion-chip-label-text-tracking);
+}
+
+
+
+/* style outline class when container enabled and border color */
+.enabled .outline {
+    border-color: var(--ad-sys-color-outline);
+}
+
+/* style elevated clas when container enabled both */
+.container.enabled.elevated {
+    box-shadow: var(--ad-comp-suggestion-chip-elevated-container-elevation);
+    background-color: var(--ad-ref-palette-neutral95);
+}
+
+/* style label-text when container enabled */
+.enabled .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font: var(--ad-comp-suggestion-chip-label-text-font);
+    line-height: var(--ad-comp-suggestion-chip-label-text-line-height);
+    font-size: var(--ad-comp-suggestion-chip-label-text-size);
+    font-weight: var(--ad-comp-suggestion-chip-label-text-weight);
+    letter-spacing: var(--ad-comp-suggestion-chip-label-text-tracking);
+}
+
+
+
+/* style disabled class */
+.disabled {
+    pointer-events: none;
+}
+
+/* style outline class when container disabled */
+.container.disabled .outline {
+    border-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-suggestion-chip-flat-disabled-outline-opacity);
+}
+
+/* style elevated before when container disabled */
+.container.disabled.elevated::before {
+    box-shadow: var(--ad-comp-suggestion-chip-elevated-disabled-container-elevation);
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-suggestion-chip-elevated-disabled-container-opacity);
+}
+
+/* style label-text class when contianer disabled */
+.container.disabled .label-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-suggestion-chip-disabled-label-text-opacity);
+}
+
+
+
+/* add hover effect on container before and take color on-surface-variant */
+.container:hover::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-suggestion-chip-hover-state-layer-opacity);
+}
+
+/* add hover effect on container when elevated */
+.container.elevated:hover {
+    box-shadow: var(--ad-comp-suggestion-chip-elevated-hover-container-elevation);
+}
+
+/* add hover effect on label text when container hover */
+.container:hover .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* add focus effect on outline class when container focus and take border-color on-surface-container */
+.container:focus .outline {
+    border-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add focus effect on container when elevated */
+.container.elevated:focus {
+    box-shadow: var(--ad-comp-suggestion-chip-elevated-focus-container-elevation);
+}
+
+/* add focus effect on container before and take color on-surface-variant */
+.container:focus::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-suggestion-chip-focus-state-layer-opacity);
+}
+
+/* add focus effect on label text when container focus */
+.container:focus .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* add pressed effect on container when elevated */
+.container.elevated:active {
+    box-shadow: var(--ad-comp-suggestion-chip-elevated-pressed-container-elevation);
+}
+
+/* add pressed effect on container before and take color on-surface-variant */
+.container:active::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-suggestion-chip-pressed-state-layer-opacity);
+}
+
+/* add pressed effect on label text when container pressed */
+.container:active .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* add dragged effect on container  */
+.container:dragged {
+    box-shadow: var(--ad-comp-suggestion-chip-dragged-container-elevation);
+}
+
+/* add dragged effect on container before and take color on-surface-variant */
+.container:dragged::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-suggestion-chip-dragged-state-layer-opacity);
+}
+
+/* add dragged effect on label text when container dragged */
+.container:dragged .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}

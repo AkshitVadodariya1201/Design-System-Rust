@@ -1,0 +1,79 @@
+:where(html),
+.tokens {
+  /* Filter chip with trailing icon (disabled) trailing icon opacity */
+  --ad-comp-filter-chip-with-trailing-icon-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Filter chip with leading icon (disabled) leading icon opacity */
+  --ad-comp-filter-chip-with-leading-icon-disabled-leading-icon-opacity: 0.3799999952316284;
+  /* Filter chip with icon disabled icon opacity */
+  --ad-comp-filter-chip-with-icon-disabled-icon-opacity: 0.3799999952316284;
+  /* Filter chip (Elevated style) pressed container elevation */
+  --ad-comp-filter-chip-elevated-pressed-container-elevation: var(--ad-sys-elevation-level1);
+  /* Filter chip (Elevated style) container elevation */
+  --ad-comp-filter-chip-elevated-container-elevation: var(--ad-sys-elevation-level1);
+  /* Filter chip (Elevated style) disabled container elevation */
+  --ad-comp-filter-chip-elevated-disabled-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filter chip (Elevated style) disabled container opacity */
+  --ad-comp-filter-chip-elevated-disabled-container-opacity: 0.11999999731779099;
+  /* Filter chip (Elevated style) hover container elevation */
+  --ad-comp-filter-chip-elevated-hover-container-elevation: var(--ad-sys-elevation-level2);
+  /* Filter chip (selected) hover container elevation */
+  --ad-comp-filter-chip-flat-selected-hover-container-elevation: var(--ad-sys-elevation-level1);
+  /* Filter chip (unselected) hover container elevation */
+  --ad-comp-filter-chip-flat-unselected-hover-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filter chip (selected) pressed container elevation */
+  --ad-comp-filter-chip-flat-selected-pressed-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filter chip (unselected) pressed container elevation */
+  --ad-comp-filter-chip-flat-unselected-pressed-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filter chip (unselected) pressed state layer opacity */
+  --ad-comp-filter-chip-unselected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Filter chip (selected) pressed state layer opacity */
+  --ad-comp-filter-chip-selected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Filter chip container shape */
+  --ad-comp-filter-chip-container-shape: var(--ad-sys-shape-corner-small);
+  /* Filter chip container height */
+  --ad-comp-filter-chip-container-height: 32px;
+  /* Filter chip container elevation */
+  --ad-comp-filter-chip-flat-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filter chip (unselected) outline width */
+  --ad-comp-filter-chip-flat-unselected-outline-width: 1px;
+  /* Filter chip (selected) outline width */
+  --ad-comp-filter-chip-flat-selected-outline-width: 0px;
+  /* Filter chip label text font */
+  --ad-comp-filter-chip-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Filter chip label text line height */
+  --ad-comp-filter-chip-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Filter chip label text size */
+  --ad-comp-filter-chip-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Filter chip label text weight */
+  --ad-comp-filter-chip-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Filter chip label text tracking */
+  --ad-comp-filter-chip-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Filter chip with icon icon size */
+  --ad-comp-filter-chip-with-icon-icon-size: 18px;
+  /* Filter chip disabled (unselected) outline opacity */
+  --ad-comp-filter-chip-flat-disabled-unselected-outline-opacity: 0.11999999731779099;
+  /* Filter chip disabled (selected) container opacity */
+  --ad-comp-filter-chip-flat-disabled-selected-container-opacity: 0.11999999731779099;
+  /* Filter chip disabled label text opacity */
+  --ad-comp-filter-chip-disabled-label-text-opacity: 0.3799999952316284;
+  /* Filter chip (Elevated style) focus container elevation */
+  --ad-comp-filter-chip-elevated-focus-container-elevation: var(--ad-sys-elevation-level1);
+  /* Filter chip (selected) focus container elevation */
+  --ad-comp-filter-chip-flat-selected-focus-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filter chip (unselected) focus container elevation */
+  --ad-comp-filter-chip-flat-unselected-focus-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filter chip (unselected) focus state layer opacity */
+  --ad-comp-filter-chip-unselected-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Filter chip (selected) focus state layer opacity */
+  --ad-comp-filter-chip-selected-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Filter chip (unselected) hover state layer opacity */
+  --ad-comp-filter-chip-unselected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Filter chip (selected) hover state layer opacity */
+  --ad-comp-filter-chip-selected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Filter chip dragged container elevation */
+  --ad-comp-filter-chip-dragged-container-elevation: var(--ad-sys-elevation-level4);
+  /* Filter chip (unselected) dragged state layer opacity */
+  --ad-comp-filter-chip-unselected-dragged-state-layer-opacity: var(--ad-sys-state-dragged-state-layer-opacity);
+  /* Filter chip (selected) dragged state layer opacity */
+  --ad-comp-filter-chip-selected-dragged-state-layer-opacity: var(--ad-sys-state-dragged-state-layer-opacity);
+}

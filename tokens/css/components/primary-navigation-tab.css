@@ -1,0 +1,40 @@
+:where(html),
+.tokens {
+  /* Primary navigation tab inactive focus state layer opacity */
+  --ad-comp-primary-navigation-tab-inactive-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Primary navigation tab active focus state layer opacity */
+  --ad-comp-primary-navigation-tab-active-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Primary navigation tab inactive hover state layer opacity */
+  --ad-comp-primary-navigation-tab-inactive-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Primary navigation tab active hover state layer opacity */
+  --ad-comp-primary-navigation-tab-active-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Primary navigation tab divider height */
+  --ad-comp-primary-navigation-tab-divider-height: 1px;
+  --ad-comp-primary-navigation-tab-active-indicator-shape: 3px 3px 0px 0px;
+  /* Primary navigation tab active indicator height */
+  --ad-comp-primary-navigation-tab-active-indicator-height: 3px;
+  /* Primary navigation tab with label text tracking */
+  --ad-comp-primary-navigation-tab-with-label-text-label-text-tracking: var(--ad-sys-typescale-title-small-tracking);
+  /* Primary navigation tab with label text weight */
+  --ad-comp-primary-navigation-tab-with-label-text-label-text-weight: var(--ad-sys-typescale-title-small-weight);
+  /* Primary navigation tab with label text size */
+  --ad-comp-primary-navigation-tab-with-label-text-label-text-size: var(--ad-sys-typescale-title-small-size);
+  /* Primary navigation tab with label text line height */
+  --ad-comp-primary-navigation-tab-with-label-text-label-text-line-height: var(--ad-sys-typescale-title-small-line-height);
+  /* Primary navigation tab with label text font */
+  --ad-comp-primary-navigation-tab-with-label-text-label-text-font: var(--ad-sys-typescale-title-small-font);
+  /* Primary navigation tab with icon size */
+  --ad-comp-primary-navigation-tab-with-icon-icon-size: 24px;
+  /* Primary navigation tab container elevation */
+  --ad-comp-primary-navigation-tab-container-elevation: var(--ad-sys-elevation-level0);
+  /* Primary navigation tab with icon and label text container height */
+  --ad-comp-primary-navigation-tab-with-icon-and-label-text-container-height: 64px;
+  /* Primary navigation tab container height */
+  --ad-comp-primary-navigation-tab-container-height: 48px;
+  /* Primary navigation tab container shape */
+  --ad-comp-primary-navigation-tab-container-shape: var(--ad-sys-shape-corner-none);
+  /* Primary navigation tab inactive pressed state layer opacity */
+  --ad-comp-primary-navigation-tab-inactive-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Primary navigation tab active pressed state layer opacity */
+  --ad-comp-primary-navigation-tab-active-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

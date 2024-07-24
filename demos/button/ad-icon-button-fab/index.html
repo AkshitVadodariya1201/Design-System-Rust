@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAB-Icon-Button</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script type="module">
+        import * as btn from '../../../packages/ad-icon-button-fab/pkg/ad_icon_button_fab.js';
+        import * as icon from '../../../packages/ad-icon/pkg/ad_icon.js';
+    
+        async function main() {
+            const init = btn.default;
+            await init();
+            btn.run();
+    
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run()
+        }
+        main();
+    </script>
+    
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        div {
+            display: flex;
+            gap: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <ad-icon-button-fab>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+        <ad-icon-button-fab small>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+        <ad-icon-button-fab large>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+    </div>
+
+    <p>Additional color mappings</p>
+
+    <div>
+        <ad-icon-button-fab surface>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+        <ad-icon-button-fab secondary>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+        <ad-icon-button-fab tertiary>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+    </div>
+
+    <div>
+        <ad-icon-button-fab surface>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+        <ad-icon-button-fab secondary small>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+        <ad-icon-button-fab tertiary large>
+            <ad-icon>edit</ad-icon>
+        </ad-icon-button-fab>
+    </div>
+
+</body>
+
+</html>

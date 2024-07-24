@@ -1,0 +1,172 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filter Chip</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-chip-filter/pkg/ad_chip_filter.js";
+        import * as icon from "../../../packages/adapt-icon/pkg/adapt_icon.js";
+        import * as chipset from "../../../packages/ad-chip-set/pkg/ad_chip_set.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+
+            const initChipset = chipset.default;
+            await initChipset();
+            chipset.run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        :root {
+            --max-width: 512px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ad-chip-set>
+        <ad-chip-filter title="Filter chip"></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip">
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" disabled></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" disabled>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" disabled removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+    </ad-chip-set>
+
+    <ad-chip-set>
+        <ad-chip-filter title="Filter chip" selected></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected disabled></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected disabled>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected disabled removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+    </ad-chip-set>
+    <h1>Scrollable</h1>
+    <ad-chip-set scrollable>
+        <ad-chip-filter title="Filter chip"></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip">
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" disabled></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" disabled>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" disabled removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+    </ad-chip-set>
+
+    <ad-chip-set scrollable>
+        <ad-chip-filter title="Filter chip" selected></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected disabled></ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected disabled>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+
+        <ad-chip-filter title="Filter chip" selected disabled removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+    </ad-chip-set>
+    <!-- <div>
+        <ad-chip-filter title="Filter chip" elevated></ad-chip-filter>
+        
+        <ad-chip-filter title="Filter chip" elevated>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+        
+        <ad-chip-filter title="Filter chip" elevated removable>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+        
+        <ad-chip-filter title="Filter chip" elevated disabled></ad-chip-filter>
+        
+        <ad-chip-filter title="Filter chip" elevated disabled>
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+        </ad-chip-filter>
+        
+        <ad-chip-filter title="Filter chip" elevated disabled >
+            <adapt-icon slot="leading-icon">done</adapt-icon>
+            <adapt-icon slot="trailing-icon">close</adapt-icon>
+        </ad-chip-filter>
+    </div> -->
+</body>
+
+</html>

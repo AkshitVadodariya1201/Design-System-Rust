@@ -1,0 +1,71 @@
+<!Doctype html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Button</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+      import * as button from "../../../packages/adapt-button/pkg/adapt_button.js";
+      import * as icon from "../../../packages/adapt-icon/pkg/adapt_icon.js";
+
+      async function main() {
+        const init = button.default;
+        await init();
+        button.run();
+      }
+      main();
+      async function mainIcon() {
+        const init = icon.default;
+        await init();
+        icon.run();
+      }
+      mainIcon();
+    </script>
+    <style>
+      /* This will only affect the paragraph outside the Web Components. */
+      h1 {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Standard</h1>
+    <adapt-button title="Standard"></adapt-button>
+    <adapt-button icon="search"></adapt-button>
+
+    <h1>Outlined</h1>
+    <adapt-button type="outline" title="Outlined"></adapt-button>
+    <adapt-button icon="search" type="outline" title="Outlined"></adapt-button>
+
+    <h1>Raised</h1>
+    <adapt-button buttonfilled type="raised" title="Raised"></adapt-button>
+    <adapt-button icon="search" buttonfilled type="raised" title="Raised"></adapt-button>
+
+    <h1>Unelevated</h1>
+    <adapt-button type="unelevated" title="Unelevated"></adapt-button>
+    <adapt-button icon="search" type="unelevated" title="Unelevated"></adapt-button>
+
+    <h1>Dense</h1>
+    <adapt-button buttonfilled type="dense" title="Dense"></adapt-button>
+    <adapt-button icon="search" buttonfilled type="dense" title="Dense"></adapt-button>
+
+    <h1>Trailing Icon</h1>
+    <adapt-button icon="search" trailingicon title="Trailing Icon"></adapt-button>
+    <adapt-button icon="search" trailingicon type="outline" title="Trailing Icon"></adapt-button>
+    <adapt-button icon="search" trailingicon buttonfilled type="raised" title="Trailing Icon"></adapt-button>
+    <adapt-button icon="search" trailingicon type="unelevated" title="Trailing Icon"></adapt-button>
+
+    <h1>Disabled</h1>
+    <adapt-button icon="search" disabled title="Disabled"></adapt-button>
+    <adapt-button icon="search" disabled type="outline" title="Disabled"></adapt-button>
+    <adapt-button icon="search" disabled grayfilled title="Disabled"></adapt-button>
+    <adapt-button icon="search" disabled grayfilled title="Disabled"></adapt-button>
+
+    <h1>Full Width</h1>
+    <adapt-button type="outline" fullwidth title="Full Width"></adapt-button>
+  </body>
+
+  </html>

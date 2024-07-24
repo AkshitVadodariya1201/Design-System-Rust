@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ad-icon</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import init, { run } from "../../../packages/ad-icon/pkg/ad_icon.js";
+        async function main() {
+            await init();
+            run();
+        }
+        main();
+    </script>
+    <style>
+        :root {
+            --icon-size: 64px;
+        }
+
+        body {
+            display: flex;
+            gap: 1rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <ad-icon>shopping_cart</ad-icon>
+    </div>
+    <div>
+        <ad-icon>arrow_back</ad-icon>
+    </div>
+    <div>
+        <ad-icon>accessible_forward</ad-icon>
+    </div>
+    <div>
+        <ad-icon>face</ad-icon>
+    </div>
+    <div>
+        <ad-icon>home</ad-icon>
+    </div>
+</body>
+
+</html>

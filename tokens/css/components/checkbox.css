@@ -1,0 +1,70 @@
+:where(html),
+.tokens {
+  /* Checkbox disabled unselected icon opacity */
+  --ad-comp-checkbox-disabled-unselected-icon-opacity: 0.3799999952316284;
+  /* Checkbox disabled selected icon opacity */
+  --ad-comp-checkbox-disabled-selected-icon-opacity: 0.3799999952316284;
+  /* Checkbox selected error pressed outline width */
+  --ad-comp-checkbox-selected-error-pressed-outline-width: 0px;
+  /* Checkbox unselected error pressed outline width */
+  --ad-comp-checkbox-unselected-error-pressed-outline-width: 2px;
+  /* Checkbox error pressed state layer opacity */
+  --ad-comp-checkbox-error-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Checkbox selected pressed outline width */
+  --ad-comp-checkbox-selected-pressed-outline-width: 0px;
+  /* Checkbox selected pressed state layer opacity */
+  --ad-comp-checkbox-selected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Checkbox unselected pressed outline width */
+  --ad-comp-checkbox-unselected-pressed-outline-width: 2px;
+  /* Checkbox unselected pressed state layer opacity */
+  --ad-comp-checkbox-unselected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Checkbox selected error focus outline width */
+  --ad-comp-checkbox-selected-error-focus-outline-width: 0px;
+  /* Checkbox unselected error focusd outline width */
+  --ad-comp-checkbox-unselected-error-focus-outline-width: 2px;
+  /* Checkbox selected focus outline width */
+  --ad-comp-checkbox-selected-focus-outline-width: 0px;
+  /* Checkbox unselected focus outline width */
+  --ad-comp-checkbox-unselected-focus-outline-width: 2px;
+  /* Checkbox selected error hover outline width */
+  --ad-comp-checkbox-selected-error-hover-outline-width: 0px;
+  /* Checkbox unselected error hover outline width */
+  --ad-comp-checkbox-unselected-error-hover-outline-width: 2px;
+  /* Checkbox error hover state layer opacity */
+  --ad-comp-checkbox-error-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Checkbox selected hover outline width */
+  --ad-comp-checkbox-selected-hover-outline-width: 0px;
+  /* Checkbox unselected hover outline width */
+  --ad-comp-checkbox-unselected-hover-outline-width: 2px;
+  /* Checkbox selected disabled container outline width */
+  --ad-comp-checkbox-selected-disabled-container-outline-width: 0px;
+  /* Checkbox selected disabled container opacity */
+  --ad-comp-checkbox-selected-disabled-container-opacity: 0.3799999952316284;
+  /* Checkbox unselected disabled container opacity */
+  --ad-comp-checkbox-unselected-disabled-container-opacity: 0.3799999952316284;
+  /* Checkbox unselected disabled outline width */
+  --ad-comp-checkbox-unselected-disabled-outline-width: 2px;
+  /* Checkbox state layer shape */
+  --ad-comp-checkbox-state-layer-shape: var(--ad-sys-shape-corner-full);
+  /* Checkbox icon size */
+  --ad-comp-checkbox-icon-size: 18px;
+  /* Checkbox selected outline width */
+  --ad-comp-checkbox-selected-outline-width: 0px;
+  /* Checkbox unselected outline width */
+  --ad-comp-checkbox-unselected-outline-width: 2px;
+  --ad-comp-checkbox-container-shape: 2px 2px 2px 2px;
+  /* Checkbox container height */
+  --ad-comp-checkbox-container-height: 18px;
+  /* Checkbox container width */
+  --ad-comp-checkbox-container-width: 18px;
+  /* Checkbox unselected focus state layer opacity */
+  --ad-comp-checkbox-unselected-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Checkbox selected focus state layer opacity */
+  --ad-comp-checkbox-selected-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Checkbox unselected hover state layer opacity */
+  --ad-comp-checkbox-unselected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Checkbox selected hover state layer opacity */
+  --ad-comp-checkbox-selected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Checkbox state layer size */
+  --ad-comp-checkbox-state-layer-size: 40px;
+}

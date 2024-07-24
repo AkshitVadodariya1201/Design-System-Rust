@@ -1,0 +1,35 @@
+:where(html),
+.tokens {
+  /* Header container height */
+  --ad-comp-date-input-modal-header-container-height: 120px;
+  /* Header container width */
+  --ad-comp-date-input-modal-header-container-width: 328px;
+  /* Container height */
+  --ad-comp-date-input-modal-container-height: 512px;
+  /* Container width */
+  --ad-comp-date-input-modal-container-width: 328px;
+  /* Header headline tracking */
+  --ad-comp-date-input-modal-header-headline-tracking: var(--ad-sys-typescale-headline-large-tracking);
+  /* Header headline weight */
+  --ad-comp-date-input-modal-header-headline-weight: var(--ad-sys-typescale-headline-large-weight);
+  /* Header headline size */
+  --ad-comp-date-input-modal-header-headline-size: var(--ad-sys-typescale-headline-large-size);
+  /* Header headline line height */
+  --ad-comp-date-input-modal-header-headline-line-height: var(--ad-sys-typescale-headline-large-line-height);
+  /* Header headline font */
+  --ad-comp-date-input-modal-header-headline-font: var(--ad-sys-typescale-headline-large-font);
+  /* Header supporting text tracking */
+  --ad-comp-date-input-modal-header-supporting-text-tracking: var(--ad-sys-typescale-label-medium-tracking);
+  /* Header supporting text weight */
+  --ad-comp-date-input-modal-header-supporting-text-weight: var(--ad-sys-typescale-label-medium-weight);
+  /* Header supporting text size */
+  --ad-comp-date-input-modal-header-supporting-text-size: var(--ad-sys-typescale-label-medium-size);
+  /* Header supporting text line height */
+  --ad-comp-date-input-modal-header-supporting-text-line-height: var(--ad-sys-typescale-label-medium-line-height);
+  /* Header supporting text font */
+  --ad-comp-date-input-modal-header-supporting-text-font: var(--ad-sys-typescale-label-medium-font);
+  /* Container shape */
+  --ad-comp-date-input-modal-container-shape: var(--ad-sys-shape-corner-extra-large);
+  /* Container elevation */
+  --ad-comp-date-input-modal-container-elevation: var(--ad-sys-elevation-level3);
+}

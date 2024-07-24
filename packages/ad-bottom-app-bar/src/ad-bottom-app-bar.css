@@ -1,0 +1,9 @@
+.container {
+    background-color: var(--ad-ref-palette-neutral10);
+    border-radius: var(--ad-comp-bottom-app-bar-container-shape);
+    height: var(--ad-comp-bottom-app-bar-container-height);
+    padding: 12px 16px 12px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

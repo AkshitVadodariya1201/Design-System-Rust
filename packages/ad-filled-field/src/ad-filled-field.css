@@ -1,0 +1,35 @@
+/* write css for filled text field */
+/* take value from packages/ad-filled-field/readme.md */
+
+/* style field class for filled text field */
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+/* style container-overflow */
+.container-overflow {
+    overflow: hidden;
+    border-radius: 4px;
+
+    display: flex;
+   
+    gap: 8px;
+    
+}
+
+/* style cotainer class */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* style supporting-text */
+.supporting-text {
+   display: flex;
+    align-items: center;
+    gap: 8px;
+}

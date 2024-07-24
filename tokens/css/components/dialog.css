@@ -1,0 +1,57 @@
+:where(html),
+.tokens {
+  /* Dialog divider color */
+  --ad-comp-dialog-with-divider-divider-height: 1px;
+  /* Dialog subhead tracking */
+  --ad-comp-dialog-subhead-tracking: var(--ad-sys-typescale-headline-small-tracking);
+  /* Dialog subhead weight */
+  --ad-comp-dialog-subhead-weight: var(--ad-sys-typescale-headline-small-weight);
+  /* Dialog subhead size */
+  --ad-comp-dialog-subhead-size: var(--ad-sys-typescale-headline-small-size);
+  /* Dialog subhead line height */
+  --ad-comp-dialog-subhead-line-height: var(--ad-sys-typescale-headline-small-line-height);
+  /* Dialog subhead font */
+  --ad-comp-dialog-subhead-font: var(--ad-sys-typescale-headline-small-font);
+  /* Dialog headline tracking */
+  --ad-comp-dialog-headline-tracking: var(--ad-sys-typescale-headline-small-tracking);
+  /* Dialog headline weight */
+  --ad-comp-dialog-headline-weight: var(--ad-sys-typescale-headline-small-weight);
+  /* Dialog headline size */
+  --ad-comp-dialog-headline-size: var(--ad-sys-typescale-headline-small-size);
+  /* Dialog headline line height */
+  --ad-comp-dialog-headline-line-height: var(--ad-sys-typescale-headline-small-line-height);
+  /* Dialog headline font */
+  --ad-comp-dialog-headline-font: var(--ad-sys-typescale-headline-small-font);
+  /* Dialog action focus stte layer opacity */
+  --ad-comp-dialog-action-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Dialog action hover state layer opacity */
+  --ad-comp-dialog-action-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Dialog action label text tracking */
+  --ad-comp-dialog-action-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Dialog action label text weight */
+  --ad-comp-dialog-action-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Dialog action label text size */
+  --ad-comp-dialog-action-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Dialog action label text line height */
+  --ad-comp-dialog-action-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Dialog action label text font */
+  --ad-comp-dialog-action-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Dialog supporting text tracking */
+  --ad-comp-dialog-supporting-text-tracking: var(--ad-sys-typescale-body-medium-tracking);
+  /* Dialog supporting text weight */
+  --ad-comp-dialog-supporting-text-weight: var(--ad-sys-typescale-body-medium-weight);
+  /* Dialog supporting text size */
+  --ad-comp-dialog-supporting-text-size: var(--ad-sys-typescale-body-medium-size);
+  /* Dialog supporting text line height */
+  --ad-comp-dialog-supporting-text-line-height: var(--ad-sys-typescale-body-medium-line-height);
+  /* Dialog supporting text font */
+  --ad-comp-dialog-supporting-text-font: var(--ad-sys-typescale-body-medium-font);
+  /* Dialog icon size */
+  --ad-comp-dialog-with-icon-icon-size: 24px;
+  /* Dialog container shape */
+  --ad-comp-dialog-container-shape: var(--ad-sys-shape-corner-extra-large);
+  /* Dialog container elevation */
+  --ad-comp-dialog-container-elevation: var(--ad-sys-elevation-level3);
+  /* Dialog action pressed state layer opacity */
+  --ad-comp-dialog-action-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

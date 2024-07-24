@@ -1,0 +1,65 @@
+:where(html),
+.tokens {
+  /* Outlined text field container height */
+  --ad-comp-outlined-text-field-container-height: 56px;
+  /* Outlined text field hover outline width */
+  --ad-comp-outlined-text-field-hover-outline-width: 1px;
+  /* Outlined text field focus outline width */
+  --ad-comp-outlined-text-field-focus-outline-width: 2px;
+  /* Outlined text field disabled trailing-icon opacity */
+  --ad-comp-outlined-text-field-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Outlined text field disabled leading icon opacity */
+  --ad-comp-outlined-text-field-disabled-leading-icon-opacity: 0.3799999952316284;
+  /* Outlined text field disabled supporting text opacity */
+  --ad-comp-outlined-text-field-disabled-supporting-text-opacity: 0.3799999952316284;
+  /* Outlined text field disabled input text opacity */
+  --ad-comp-outlined-text-field-disabled-input-text-opacity: 0.3799999952316284;
+  /* Outlined text field disabled label text opacity */
+  --ad-comp-outlined-text-field-disabled-label-text-opacity: 0.3799999952316284;
+  /* Outlined text field disabled outline opacity */
+  --ad-comp-outlined-text-field-disabled-outline-opacity: 0.11999999731779099;
+  /* Outlined text field disabled outline width */
+  --ad-comp-outlined-text-field-disabled-outline-width: 1px;
+  /* Outlined text field trailing icon size */
+  --ad-comp-outlined-text-field-trailing-icon-size: 24px;
+  /* Outlined text field leading icon size */
+  --ad-comp-outlined-text-field-leading-icon-size: 24px;
+  /* Outlined text field supporting text tracking */
+  --ad-comp-outlined-text-field-supporting-text-tracking: var(--ad-sys-typescale-body-small-tracking);
+  /* Outlined text field supporting text weight */
+  --ad-comp-outlined-text-field-supporting-text-weight: var(--ad-sys-typescale-body-small-weight);
+  /* Outlined text field supporting text size */
+  --ad-comp-outlined-text-field-supporting-text-size: var(--ad-sys-typescale-body-small-size);
+  /* Outlined text field supporting text line height */
+  --ad-comp-outlined-text-field-supporting-text-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Outlined text field supporting text font */
+  --ad-comp-outlined-text-field-supporting-text-font: var(--ad-sys-typescale-body-small-font);
+  /* Outlined text field label text populated size */
+  --ad-comp-outlined-text-field-label-text-populated-size: var(--ad-sys-typescale-body-small-size);
+  /* Outlined text field label text populated line height */
+  --ad-comp-outlined-text-field-label-text-populated-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Outlined text field label text tracking */
+  --ad-comp-outlined-text-field-label-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Outlined text field label text weight */
+  --ad-comp-outlined-text-field-label-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Outlined text field label text size */
+  --ad-comp-outlined-text-field-label-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Outlined text field label text line height */
+  --ad-comp-outlined-text-field-label-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Outlined text field label text font */
+  --ad-comp-outlined-text-field-label-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Outlined text field input text tracking */
+  --ad-comp-outlined-text-field-input-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Outlined text field input text weight */
+  --ad-comp-outlined-text-field-input-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Outlined text field input text size */
+  --ad-comp-outlined-text-field-input-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Outlined text field input text line height */
+  --ad-comp-outlined-text-field-input-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Outlined text field input text font */
+  --ad-comp-outlined-text-field-input-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Outlined text field outline width */
+  --ad-comp-outlined-text-field-outline-width: 1px;
+  /* Outlined text field container shape */
+  --ad-comp-outlined-text-field-container-shape: var(--ad-sys-shape-corner-extra-small);
+}

@@ -1,0 +1,63 @@
+:where(html),
+.tokens {
+  /* Navigation drawers scrim opacity */
+  --ad-comp-navigation-drawer-scrim-opacity: 0.4000000059604645;
+  /* Navigation drawers scrim color */
+  --ad-comp-navigation-drawer-scrim-color: var(--ad-ref-palette-neutral-variant20);
+  /* Navigation drawers focus state layer opacity */
+  --ad-comp-navigation-drawer-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Navigation drawers hover state layer opacity */
+  --ad-comp-navigation-drawer-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Navigation drawers large badge label weight */
+  --ad-comp-navigation-drawer-large-badge-label-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Navigation drawers large badge label tracking */
+  --ad-comp-navigation-drawer-large-badge-label-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Navigation drawers large badge label size */
+  --ad-comp-navigation-drawer-large-badge-label-size: var(--ad-sys-typescale-label-large-size);
+  /* Navigation drawers large badge label line height */
+  --ad-comp-navigation-drawer-large-badge-label-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Navigation drawers large badge label font */
+  --ad-comp-navigation-drawer-large-badge-label-font: var(--ad-sys-typescale-label-large-font);
+  /* Navigation drawers active indicator width */
+  --ad-comp-navigation-drawer-active-indicator-width: 336px;
+  /* Navigation drawers active indicator shape */
+  --ad-comp-navigation-drawer-active-indicator-shape: var(--ad-sys-shape-corner-full);
+  /* Navigation drawers active indicator height */
+  --ad-comp-navigation-drawer-active-indicator-height: 56px;
+  /* Navigation drawers icon size */
+  --ad-comp-navigation-drawer-icon-size: 24px;
+  /* Navigation drawers label text weight */
+  --ad-comp-navigation-drawer-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Navigation drawers label text tracking */
+  --ad-comp-navigation-drawer-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Navigation drawers label text size */
+  --ad-comp-navigation-drawer-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Navigation drawers label text line height */
+  --ad-comp-navigation-drawer-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Navigation drawers label text font */
+  --ad-comp-navigation-drawer-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Navigation drawers headline weight */
+  --ad-comp-navigation-drawer-headline-weight: var(--ad-sys-typescale-title-small-weight);
+  /* Navigation drawers headline tracking */
+  --ad-comp-navigation-drawer-headline-tracking: var(--ad-sys-typescale-title-small-tracking);
+  /* Navigation drawers headline size */
+  --ad-comp-navigation-drawer-headline-size: var(--ad-sys-typescale-title-small-size);
+  /* Navigation drawers headline line height */
+  --ad-comp-navigation-drawer-headline-line-height: var(--ad-sys-typescale-title-small-line-height);
+  /* Navigation drawers headline font */
+  --ad-comp-navigation-drawer-headline-font: var(--ad-sys-typescale-title-small-font);
+  /* Navigation drawers container width */
+  --ad-comp-navigation-drawer-container-width: 360px;
+  /* Navigation drawers bottom container shape */
+  --ad-comp-navigation-drawer-bottom-container-shape: var(--ad-sys-shape-corner-large-top);
+  /* Navigation drawers container shape */
+  --ad-comp-navigation-drawer-container-shape: var(--ad-sys-shape-corner-large-end);
+  /* Navigation drawers container height */
+  --ad-comp-navigation-drawer-container-height: 100%;
+  /* Navigation drawers standard container elevation */
+  --ad-comp-navigation-drawer-standard-container-elevation: var(--ad-sys-elevation-level0);
+  /* Navigation drawers modal container elevation */
+  --ad-comp-navigation-drawer-modal-container-elevation: var(--ad-sys-elevation-level1);
+  /* Navigation drawers pressed state layer opacity */
+  --ad-comp-navigation-drawer-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

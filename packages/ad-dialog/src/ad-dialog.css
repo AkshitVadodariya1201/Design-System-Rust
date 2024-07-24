@@ -1,0 +1,161 @@
+/* write css for dialog */
+/* take value from packages/ad-dialog/readme.md */
+
+/* style dialog class */
+.dialog {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    inset: 0;
+    block-size: 100dvh;
+    inline-size: 100dvw;
+    max-block-size: 100dvh;
+    max-inline-size: 100dvw;
+    z-index: 100;
+    outline: none;
+    border: none;
+    background-color: var(--ad-sys-color-surface);
+    border-radius: var(--ad-comp-dialog-dialog-container-shape);
+    box-shadow: var(--ad-comp-dialog-dialog-container-shadow);
+    overflow: clip;
+}
+
+/* style dialog before */
+.dialog::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style container class */
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: var(--ad-ref-palette-neutral20);
+    border-radius: 28px;
+    min-width: 280px;
+    max-width: 560px;
+
+    padding: 24px 0;
+}
+
+/* style all item inside of container */
+.container > * {
+    box-sizing: border-box;
+    padding: 0 24px;
+
+    padding: 24px;
+    gap: 24px;
+}
+
+/* style text class */
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+
+/* style header class */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+/* style slot inside of header class */
+.header slot[name="header"]::slotted(*) {
+    flex: 1;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* style first child and third child slot inside of header class */
+.header slot[name="headline-prefix"]::slotted(*),
+.header slot[name="headline-suffix"]::slotted(*) {
+
+}
+
+/* style first child slot inside of header class */
+.header slot[name="headline-prefix"]::slotted(*) {
+
+    color: var(--ad-sys-color-secondary);
+    font-size: var(--ad-comp-dialog-with-icon-icon-size);
+}
+
+/* style second child slot inside of header class */
+.header slot[name="header"]::slotted(*),
+.header slot[name="headline"]::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    font-size: var(--ad-comp-dialog-headline-size);
+    font-weight: var(--ad-comp-dialog-headline-weight);
+    line-height: var(--ad-comp-dialog-headline-line-height);
+    font-family: var(--ad-comp-dialog-headline-font);
+    letter-spacing: var(--ad-comp-dialog-headline-tracking);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* style content class */
+.content {
+    flex: 1;
+    overflow: auto;
+    margin: 16px 0 24px 0;
+
+/* style third child slot inside of header class */
+.header slot[name="headline-suffix"]::slotted(*) {
+    color: var(--ad-sys-color-secondary);
+    font-size: var(--ad-comp-dialog-with-icon-icon-size);
+
+}
+
+/* style slot inside of content class */
+.content slot::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-size: var(--ad-comp-dialog-supporting-text-size);
+    font-weight: var(--ad-comp-dialog-supporting-text-weight);
+    line-height: var(--ad-comp-dialog-supporting-text-line-height);
+    font-family: var(--ad-comp-dialog-supporting-text-font);
+    letter-spacing: var(--ad-comp-dialog-supporting-text-tracking);
+}
+
+/* style footer class */
+.footer {
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: stretch;
+    box-sizing: border-box;
+    gap: 8px;
+}
+
+/* style footer when stacked class */
+.stacked .footer {
+    flex-direction: column;
+    align-items: flex-end;
+
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    gap: 8px;
+
+}

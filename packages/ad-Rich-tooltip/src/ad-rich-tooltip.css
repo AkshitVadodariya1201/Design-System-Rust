@@ -1,0 +1,35 @@
+.state-layer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    inset: 0;
+    padding: 12px 16px 8px 16px;
+}
+
+.state-layer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--ad-ref-palette-neutral95);
+    border-radius: var(--ad-sys-shape-corner-medium);
+}
+
+.label-text {
+    position: relative;
+    font-family: var(--ad-comp-rich-tooltip-subhead-font);
+    font-weight: var(--ad-comp-rich-tooltip-subhead-weight);
+    line-height: var(--ad-comp-rich-tooltip-subhead-line-height);
+    letter-spacing: var(--ad-comp-rich-tooltip-subhead-tracking);
+    color: var(--ad-sys-color-on-surface-variant);
+    font-size: var(--ad-comp-rich-tooltip-subhead-size);
+}
+
+.supporting-text {
+    position: relative;
+    font-family: var(--ad-comp-rich-tooltip-supporting-text-font);
+    line-height: var(--ad-comp-rich-tooltip-supporting-text-line-height);
+    font-size: var(--ad-comp-rich-tooltip-supporting-text-size);
+    font-weight: var(--ad-comp-rich-tooltip-supporting-text-weight);
+    letter-spacing: var(--ad-comp-rich-tooltip-supporting-text-tracking);
+    color: var(--ad-sys-color-on-surface-variant);
+}

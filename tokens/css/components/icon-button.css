@@ -1,0 +1,23 @@
+:where(html),
+.tokens {
+  /* Icon button selected pressed state layer opacity */
+  --ad-comp-icon-button-selected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Icon button unselected pressed state layer opacity */
+  --ad-comp-icon-button-unselected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Icon button selected focus state layer opacity */
+  --ad-comp-icon-button-selected-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Icon button unselected focus state layer opacity */
+  --ad-comp-icon-button-unselected-focus-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Icon button selected hover state layer opacity */
+  --ad-comp-icon-button-selected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Icon button icon unselected hover state layer opacity */
+  --ad-comp-icon-button-unselected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Icon button state layer shape */
+  --ad-comp-icon-button-state-layer-shape: var(--ad-sys-shape-corner-full);
+  /* Icon button state layer size */
+  --ad-comp-icon-button-state-layer-size: 40px;
+  /* Icon button icon size */
+  --ad-comp-icon-button-icon-size: 24px;
+  /* Icon button disabled icon opacity */
+  --ad-comp-icon-button-disabled-icon-opacity: 0.3799999952316284;
+}

@@ -1,0 +1,104 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkbox</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script type="module">
+        import * as btn from "../../../packages/ad-checkbox/pkg/ad_checkbox.js";
+        import * as icon from "../../../packages/ad-icon/pkg/ad_icon.js";
+
+        async function main() {
+            const init = btn.default;
+            await init();
+            btn.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        body {
+            display: flex;
+            gap: 2rem;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Default</h1>
+        <ad-checkbox>
+            <ad-icon slot="icon">done</ad-icon>
+        </ad-checkbox>
+        <ad-checkbox checked>
+            <ad-icon slot="icon">done</ad-icon>
+        </ad-checkbox>
+        <ad-checkbox indeterminate>
+            <ad-icon slot="icon">remove</ad-icon>
+        </ad-checkbox>
+    </div>
+
+    <div>
+        <h1>Disabled</h1>
+        <ad-checkbox disabled>
+            <ad-icon slot="icon">done</ad-icon>
+        </ad-checkbox>
+        <ad-checkbox disabled checked>
+            <ad-icon slot="icon">done</ad-icon>
+        </ad-checkbox>
+        <ad-checkbox disabled indeterminate>
+            <ad-icon slot="icon">remove</ad-icon>
+        </ad-checkbox>
+    </div>
+
+    <div>
+        <h1>Error</h1>
+        <ad-checkbox error>
+            <ad-icon slot="icon">done</ad-icon>
+        </ad-checkbox>
+        <ad-checkbox error checked>
+            <ad-icon slot="icon">done</ad-icon>
+        </ad-checkbox>
+        <ad-checkbox indeterminate error>
+            <ad-icon slot="icon">remove</ad-icon>
+        </ad-checkbox>
+    </div>
+
+
+    <label for="checkbox">
+        Checkbox
+        <ad-checkbox checked>
+            <ad-icon slot="icon">done</ad-icon>
+        </ad-checkbox>
+    </label>
+
+</body>
+
+</html>

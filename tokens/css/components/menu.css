@@ -1,0 +1,39 @@
+:where(html),
+.tokens {
+  /* Menu divider height */
+  --ad-comp-menu-divider-height: 1px;
+  /* Menu list item focus state layer opacity */
+  --ad-comp-menu-list-item-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Menu list item hover state layer opacity */
+  --ad-comp-menu-list-item-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Menu icon size */
+  --ad-comp-menu-cascading-menu-indicator-icon-size: 24px;
+  /* Menu list item trailing icon size */
+  --ad-comp-menu-list-item-with-trailing-icon-trailing-icon-size: 24px;
+  /* Menu list item leading icon size */
+  --ad-comp-menu-list-item-with-leading-icon-leading-icon-size: 24px;
+  /* Menu list item label text weight */
+  --ad-comp-menu-list-item-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Menu list item label text tracking */
+  --ad-comp-menu-list-item-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Menu list item label text size */
+  --ad-comp-menu-list-item-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Menu list item label text line height */
+  --ad-comp-menu-list-item-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Menu list item label text font */
+  --ad-comp-menu-list-item-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Menu list item container height */
+  --ad-comp-menu-list-item-container-height: 48px;
+  /* Menu container shape */
+  --ad-comp-menu-container-shape: var(--ad-sys-shape-corner-extra-small);
+  /* Menu container elevation */
+  --ad-comp-menu-container-elevation: var(--ad-sys-elevation-level2);
+  /* Menu list item pressed state layer opacity */
+  --ad-comp-menu-list-item-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Menu list item disabled trailing icon opacity */
+  --ad-comp-menu-list-item-with-trailing-icon-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Menu list item disabled leading icon opacity */
+  --ad-comp-menu-list-item-with-leading-icon-disabled-leading-icon-opacity: 0.3799999952316284;
+  /* Menu list item disabled label text opacity */
+  --ad-comp-menu-list-item-disabled-label-text-opacity: 0.3799999952316284;
+}

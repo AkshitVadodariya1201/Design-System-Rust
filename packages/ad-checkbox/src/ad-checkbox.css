@@ -1,0 +1,419 @@
+/* write css for checkbox */
+/* take value from ../../../packages/ad-checkbox/readme.md */
+
+/* style input for checkbox */
+input {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    outline: none;
+    block-size: 100%;
+    inline-size: 100%;
+    appearance: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* style container class */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: var(--ad-comp-checkbox-container-shape);
+    outline: none;
+    cursor: pointer;
+}
+
+/* style state-layer class */
+.state-layer {
+    position: relative;
+    inset: 0;
+    height: var(--ad-comp-checkbox-state-layer-size);
+    width: var(--ad-comp-checkbox-state-layer-size);
+    border-radius: var(--ad-comp-checkbox-state-layer-shape);
+}
+
+/* style outline class, background class and icon class */
+.outline,
+.background,
+.icon {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* style outline class and background class */
+.outline,
+.background {
+    border-radius: inherit;
+    height: var(--ad-comp-checkbox-container-height);
+    width: var(--ad-comp-checkbox-container-width);
+}
+
+/* style outline class */
+.outline {
+    border: var(--ad-comp-checkbox-unselected-outline-width) solid var(--ad-sys-color-on-surface);
+}
+
+/* style background class */
+.background {
+    background-color: transparent;
+}
+
+/* style background when container  input:checked and :indeterminate */
+.container > input:checked ~ .background,
+.container > input:indeterminate ~ .background {
+    background-color: var(--ad-sys-color-primary);
+}
+
+/* style outline class when container input:checked and :indeterminate*/
+.container > input:checked ~ .outline,
+.container > input:indeterminate ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-outline-width);
+}
+
+/* style icon class */
+.icon {
+    height: var(--ad-comp-checkbox-icon-size);
+    width: var(--ad-comp-checkbox-icon-size);
+}
+
+/* style slot inside of icon class */
+.icon ::slotted(*) {
+    font-size: var(--ad-comp-checkbox-icon-size);
+    color: var(--ad-sys-color-on-primary);
+    opacity: 0;
+    height: var(--ad-comp-checkbox-icon-size);
+    position: absolute;
+}
+
+/* style slot inside of icon class when input:checked and :indeterminate */
+input:checked ~ .icon ::slotted(*),
+input:indeterminate ~ .icon ::slotted(*) {
+    opacity: 1;
+}
+
+
+
+/* style outline class when container and error */
+.container.error .outline {
+    border-color: var(--ad-sys-color-error);
+}
+
+/* style background class when container error input:checked and input:indeterminate */
+.container.error > input:checked ~ .background,
+.container.error > input:indeterminate ~ .background {
+    background-color: var(--ad-sys-color-error);
+}
+
+/* style slot inside of icon class when container error input:checked and :indeterminate*/
+.container.error > input:checked ~ .icon ::slotted(*),
+.container.error > input:indeterminate ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-error);
+}
+
+
+
+/* style background when container input:enabled */
+.container > input:enabled ~ .background {
+    height: var(--ad-comp-checkbox-container-height);
+    width: var(--ad-comp-checkbox-container-width);
+    border-radius: var(--ad-comp-checkbox-container-shape);
+}
+
+/* style outline class when container input:enabled */
+.container > input:enabled ~ .outline {
+    border: var(--ad-comp-checkbox-unselected-outline-width) solid var(--ad-sys-color-on-surface);
+}
+
+/* style background class when container input:checked:enabled */
+.container > input:checked:enabled ~ .background {
+    background-color: var(--ad-sys-color-primary);
+}
+
+/* style outline class when container input:checked:enabled and :indeterminate*/
+.container > input:checked:enabled ~ .outline,
+.container > input:indeterminate:enabled ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-outline-width);
+}
+
+/* style slot inside of icon class when container input:enabled */
+.container > input:enabled ~ .icon ::slotted(*) {
+    font-size: var(--ad-comp-checkbox-icon-size);
+}
+
+/* style slot inside of icon class when container input:checked:enabled */
+.container > input:checked:enabled ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-primary);
+}
+
+/* style outline class when container error input:enabled */
+.container.error > input:enabled ~ .outline {
+    border-color: var(--ad-sys-color-error);
+}
+
+/* style background class when container error input:checked:enabled */
+.container.error > input:checked:enabled ~ .background {
+    background-color: var(--ad-sys-color-error);
+}
+
+/* style slot inside of icon class when container error input:checked:enabled */
+.container.error > input:checked:enabled ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-error);
+}
+
+/* style container before when container input:enabled */
+.container::before > input:enabled {
+    height: var(--ad-comp-checkbox-state-layer-size);
+    width: var(--ad-comp-checkbox-state-layer-size);
+    border-radius: var(--ad-comp-checkbox-state-layer-shape);
+}
+
+
+
+/* style state-layer class when container and input:checked:hover and input:indeterminate:hover */
+.container > input:checked:hover ~ .state-layer,
+.container > input:indeterminate:hover ~ .state-layer {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-checkbox-selected-hover-state-layer-opacity);
+}
+
+/* style state-layer class when container input:hover */
+.container > input:hover ~ .state-layer {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-checkbox-selected-hover-state-layer-opacity);
+}
+
+/* style outline class when container input:hover */
+.container > input:hover ~ .outline {
+    border-color: var(--ad-sys-color-on-surface);
+    border-width: var(--ad-comp-checkbox-unselected-outline-width);
+}
+
+/* style outline class when container input:checked:hover and input:indeterminate:hover */
+.container > input:checked:hover ~ .outline,
+.container > input:indeterminate:hover ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-hover-outline-width);
+}
+
+/* style background class when container input:checked:hover amd input:indeterminate:hover */
+.container > input:checked:hover ~ .background,
+.container > input:indeterminate:hover ~ .background {
+    background-color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of icon class when container input:checked:hover and input:indeterminate:hover */
+.container > input:checked:hover ~ .icon ::slotted(*),
+.container > input:indeterminate:hover ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-primary);
+}
+
+/* style state-layer class when container error input:hover */
+.container.error > input:hover ~ .state-layer {
+    background-color: var(--ad-sys-color-error);
+    opacity: var(--ad-comp-checkbox-error-hover-state-layer-opacity);
+}
+
+/* style outline class when container error input:hover */
+.container.error > input:hover ~ .outline {
+    border-color: var(--ad-sys-color-error);
+    border-width: var(--ad-comp-checkbox-unselected-outline-width);
+}
+
+/* style ouline class when container error input:checked:hover and input:indeterminate:hover */
+.container.error > input:checked:hover ~ .outline,
+.container.error > input:indeterminate:hover ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-hover-outline-width);
+}
+
+/* style background class when container error input:checked:hover and input:indeterminate:hover */
+.container.error > input:checked:hover ~ .background,
+.container.error > input:indeterminate:hover ~ .background {
+    background-color: var(--ad-sys-color-error);
+}
+
+/* style slot inside of icon class when container error input:checked:hover and input:indeterminate:hover */
+.container.error > input:checked:hover ~ .icon ::slotted(*),
+.container.error > input:indeterminate:hover ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-error);
+}
+
+
+
+/* style state-layer class when container input:checked:focus */
+.container > input:checked:focus ~ .state-layer {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-checkbox-unselected-focus-state-layer-opacity);
+}
+
+/* style state-layer class when container input:focus */
+.container > input:focus ~ .state-layer {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-checkbox-unselected-focus-state-layer-opacity);
+}
+
+/* style outline class when container input:focus */
+.container > input:focus ~ .outline {
+    border-color: var(--ad-sys-color-on-surface);
+    border-width: var(--ad-comp-checkbox-unselected-focus-outline-width);
+}
+
+/* style outline class when container input:checked:focus and input:indeterminate:focus */
+.container > input:checked:focus ~ .outline,
+.container > input:indeterminate:focus ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-focus-outline-width);
+}
+
+/* style background class when container input:checked:focus and input:indeterminate:focus */
+.container > input:checked:focus ~ .background,
+.container > input:indeterminate:focus ~ .background {
+    background-color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of icon class when container input:checked:focus and input:indeterminate:focus */
+.container > input:checked:focus ~ .icon ::slotted(*),
+.container > input:indeterminate:focus ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-primary);
+}
+
+/* style state-layer class when container error input:focus */
+.container.error > input:focus ~ .state-layer {
+    background-color: var(--ad-sys-color-error);
+}
+
+/* style outline class when container error input:focus */
+.container.error > input:focus ~ .outline {
+    border-color: var(--ad-sys-color-error);
+    border-width: var(--ad-comp-checkbox-unselected-focus-outline-width);
+}
+
+/* style outline class when container error input:checked:focus and input:indeterminate:focus */
+.container.error > input:checked:focus ~ .outline,
+.container.error > input:indeterminate:focus ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-focus-outline-width);
+}
+
+/* style background class when container error input:checked:focus and input:indeterminate:focus */
+.container.error > input:checked:focus ~ .background,
+.container.error > input:indeterminate:focus ~ .background {
+    background-color: var(--ad-sys-color-error);
+}
+
+/* style slot inside of icon class when container error input:checked:focus and input:indeterminate:focus */
+.container.error > input:checked:focus ~ .icon ::slotted(*),
+.container.error > input:indeterminate:focus ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-error);
+}
+
+
+
+
+/* style state-layer class when container input:active */
+.container > input:active ~ .state-layer {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-checkbox-unselected-pressed-state-layer-opacity);
+}
+
+/* style outline class when container input:active */
+.container > input:active ~ .outline {
+    border-color: var(--ad-sys-color-on-surface);
+    border-width: var(--ad-comp-checkbox-unselected-pressed-outline-width);
+}
+
+/* style state-layer class when container input:checked:active and input:indeterminate:active */
+.container > input:checked:active ~ .state-layer,
+.container > input:indeterminate:active ~ .state-layer {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-checkbox-selected-pressed-state-layer-opacity);
+}
+
+/* style outline class when container input:checked:active and input:indeterminate:active */
+.container > input:checked:active ~ .outline,
+.container > input:indeterminate:active ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-pressed-outline-width);
+}
+
+/* style background class when container input:checked:active and input:indeterminate:active */
+.container > input:checked:active ~ .background,
+.container > input:indeterminate:active ~ .background {
+    background-color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of icon class when container input:checked:active and input:indeterminate:active */
+.container > input:checked:active ~ .icon ::slotted(*),
+.container > input:indeterminate:active ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-primary);
+}
+
+/* style state-layer class when container error input:active */
+.container.error > input:active ~ .state-layer {
+    background-color: var(--ad-sys-color-error);
+    opacity: var(--ad-comp-checkbox-error-pressed-state-layer-opacity);
+}
+
+/* style outline class when container error input:active */
+.container.error > input:active ~ .outline {
+    border-color: var(--ad-sys-color-error);
+    border-width: var(--ad-comp-checkbox-unselected-pressed-outline-width);
+}
+
+/* style outline class when container error input:checked:active and input:indeterminate:active */
+.container.error > input:checked:active ~ .outline,
+.container.error > input:indeterminate:active ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-pressed-outline-width);
+}
+
+/* style background class when container error input:checked:active and input:indeterminate:active */
+.container.error > input:checked:active ~ .background,
+.container.error > input:indeterminate:active ~ .background {
+    background-color: var(--ad-sys-color-error);
+}
+
+/* style slot inside of icon class when container error input:checked:active and input:indeterminate:active */
+.container.error > input:checked:active ~ .icon ::slotted(*),
+.container.error > input:indeterminate:active ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-error);
+}
+
+
+
+/* style input when :disabled */
+input:disabled {
+    cursor: default;
+}
+
+/* style state-layer class when container input:disabled, input:checked:disabled, input:checked:indeterminate:disabled */
+.container > input:disabled ~ .state-layer,
+.container > input:checked:disabled ~ .state-layer,
+.container > input:indeterminate:disabled ~ .state-layer {
+    background-color: transparent;
+}
+
+/* style outline class when container input:disabled */
+.container > input:disabled ~ .outline {
+    border: var(--ad-comp-checkbox-unselected-outline-width) solid var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-checkbox-unselected-disabled-container-opacity);
+}
+
+/* style background class when container input:disabled:checked, input:indeterminate:disabled */
+.container > input:checked:disabled ~ .background,
+.container > input:indeterminate:disabled ~ .background {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-checkbox-selected-disabled-container-opacity);
+}
+
+/* style outline class when container input:checked:disabled and input:indeterminate:disabled*/
+.container > input:checked:disabled ~ .outline,
+.container > input:indeterminate:disabled ~ .outline {
+    border-width: var(--ad-comp-checkbox-selected-outline-width);
+}
+
+/* style slot inside of icon class when container input:disabled:checked and input:indeterminate:disabled */
+.container > input:checked:disabled ~ .icon ::slotted(*),
+.container > input:indeterminate:disabled ~ .icon ::slotted(*) {
+    color: var(--ad-sys-color-surface);
+}

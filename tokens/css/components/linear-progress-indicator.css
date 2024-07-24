@@ -1,0 +1,11 @@
+:where(html),
+.tokens {
+  /* Linear progress indicator active indicator shape */
+  --ad-comp-linear-progress-indicator-active-indicator-shape: var(--ad-sys-shape-corner-none);
+  /* Linear progress indicator active indicator height */
+  --ad-comp-linear-progress-indicator-active-indicator-height: 4px;
+  /* Linear progress indicator track shape */
+  --ad-comp-linear-progress-indicator-track-shape: var(--ad-sys-shape-corner-none);
+  /* Linear progress indicator track height */
+  --ad-comp-linear-progress-indicator-track-height: 4px;
+}

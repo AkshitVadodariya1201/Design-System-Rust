@@ -1,0 +1,43 @@
+:where(html),
+.tokens {
+  /* Filled mneu button focus container elevation */
+  --ad-comp-filled-menu-button-focus-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filled mneu button hover container elevation */
+  --ad-comp-filled-menu-button-hover-container-elevation: var(--ad-sys-elevation-level1);
+  /* Filled menu button pressed state layer opacity */
+  --ad-comp-filled-menu-button-pressed-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Filled menu button focus state layer opacity */
+  --ad-comp-filled-menu-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Filled menu button hover state layer opacity */
+  --ad-comp-filled-menu-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Filled menu button disabled trailing icon opacity */
+  --ad-comp-filled-menu-button-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Filled menu button with icon disabled leading icon opacity */
+  --ad-comp-filled-menu-button-with-icon-disabled-leading-icon-opacity: 0.3799999952316284;
+  /* Filled menu button disabled label text opacity */
+  --ad-comp-filled-menu-button-disabled-label-text-opacity: 0.3799999952316284;
+  /* Filled menu button disabled container elevation */
+  --ad-comp-filled-menu-button-disabled-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filled menu button disabled container opacity */
+  --ad-comp-filled-menu-button-disabled-container-opacity: 0.11999999731779099;
+  /* Filled menu button trailing icon size */
+  --ad-comp-filled-menu-button-trailing-icon-size: 18px;
+  /* Filled menu button with icon leading icon size */
+  --ad-comp-filled-menu-button-with-icon-leading-icon-size: 18px;
+  /* Filled menu button label text weight */
+  --ad-comp-filled-menu-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Filled menu button label text tracking */
+  --ad-comp-filled-menu-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Filled menu button label text size */
+  --ad-comp-filled-menu-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Filled menu button label text line height */
+  --ad-comp-filled-menu-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Filled menu button label text font */
+  --ad-comp-filled-menu-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Filled menu button shape ignore */
+  --ad-comp-filled-menu-button-shape: var(--ad-sys-shape-corner-full);
+  /* Filled menu button container elevation */
+  --ad-comp-filled-menu-button-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filled menu button container height */
+  --ad-comp-filled-menu-button-container-height: 40px;
+}

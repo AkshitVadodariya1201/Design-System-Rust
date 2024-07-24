@@ -1,0 +1,24 @@
+:host {
+    box-sizing: border-box;
+    color: var(--ad-color-divider);
+    display: flex;
+    height: var(--ad-comp-divider-thickness, 1px);
+    width: 100%;
+}
+
+:host([inset]),
+:host([inset-start]) {
+    padding-inline-start: 16px;
+}
+
+:host([inset]),
+:host([inset-end]) {
+    padding-inline-end: 16px;
+}
+
+:host::before {
+    background: currentColor;
+    content: '';
+    height: 100%;
+    width: 100%;
+}

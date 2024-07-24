@@ -1,0 +1,19 @@
+.container {
+    background-color: var(--ad-ref-palette-neutral10);
+    border-radius: var(--ad-sys-shape-corner-extra-large-top);
+    max-width: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+    margin: 72px 56px 0 56px;
+    padding: 22px 0 22px 0;
+}
+
+.drag-handle {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: 40%;
+    width: 32px;
+    height: 4px;
+}

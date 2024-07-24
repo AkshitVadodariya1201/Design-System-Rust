@@ -1,0 +1,27 @@
+:where(html),
+.tokens {
+  /* Carousel item disabled outline opacity */
+  --ad-comp-carousel-item-with-outline-disabled-outline-opacity: 0.11999999731779099;
+  /* Carousel item outline width */
+  --ad-comp-carousel-item-with-outline-outline-width: 1px;
+  /* Carousel item container shape */
+  --ad-comp-carousel-item-container-shape: var(--ad-sys-shape-corner-extra-large);
+  /* Carousel item container elevation */
+  --ad-comp-carousel-item-container-elevation: var(--ad-sys-elevation-level0);
+  /* Carousel item hover state layer opacity */
+  --ad-comp-carousel-item-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Carousel item hover container elevation */
+  --ad-comp-carousel-item-hover-container-elevation: var(--ad-sys-elevation-level1);
+  /* Carousel item focus state layer opacity */
+  --ad-comp-carousel-item-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Carousel item focus container elevation */
+  --ad-comp-carousel-item-focus-container-elevation: var(--ad-sys-elevation-level0);
+  /* Carousel item pressed state layer opacity */
+  --ad-comp-carousel-item-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Carousel item pressed container elevation */
+  --ad-comp-carousel-item-pressed-container-elevation: var(--ad-sys-elevation-level0);
+  /* Carousel item disabled container elevation */
+  --ad-comp-carousel-item-disabled-container-elevation: var(--ad-sys-elevation-level0);
+  /* Carousel item disabled container opacity */
+  --ad-comp-carousel-item-disabled-container-opacity: 0.3799999952316284;
+}

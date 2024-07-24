@@ -1,0 +1,53 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bottom-sheets</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-bottom-sheets/pkg/ad_bottom_sheets.js";
+        import * as icon from "../../../packages/ad-icon-standard-button/pkg/ad_icon_standard_button.js";
+        import * as btn from "../../../packages/ad-button-outline/pkg/ad_button_outline.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+            const initBtn = btn.default;
+            await initBtn();
+            btn.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-bottom-sheets>
+        <ad-icon-standard-button icon="arrow_back" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="attach_file" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="today" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="more_vert" selected></ad-icon-standard-button>
+    </ad-bottom-sheets>
+
+    <ad-bottom-sheets>
+        <ad-button-outline icon="content_copy" title="Copy"></ad-button-outline>
+        <ad-button-outline icon="content_paste" title="Paste"></ad-button-outline>
+    </ad-bottom-sheets>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+:where(html),
+.tokens {
+  /* Outlined segmented button shape */
+  --ad-comp-outlined-segmented-button-shape: var(--ad-sys-shape-corner-full);
+  /* Outlined segmented button container height */
+  --ad-comp-outlined-segmented-button-container-height: 40px;
+  /* Outlined segmented button outline width */
+  --ad-comp-outlined-segmented-button-outline-width: 1px;
+  /* Outlined segmented button pressed state layer opacity */
+  --ad-comp-outlined-segmented-button-pressed-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Outlined segmented button focus state layer opacity */
+  --ad-comp-outlined-segmented-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Outlined segmented button hover state layer opacity */
+  --ad-comp-outlined-segmented-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Outlined segmented button disabled icon opacity */
+  --ad-comp-outlined-segmented-button-disabled-icon-opacity: 0.3799999952316284;
+  /* Outlined segmented button disabled label text opacity */
+  --ad-comp-outlined-segmented-button-disabled-label-text-opacity: 0.3799999952316284;
+  /* Outlined segmented button disabled outline opacity */
+  --ad-comp-outlined-segmented-button-disabled-outline-opacity: 0.11999999731779099;
+  /* Outlined segmented button icon size */
+  --ad-comp-outlined-segmented-button-with-icon-icon-size: 18px;
+  /* Outlined segmented button label text weight */
+  --ad-comp-outlined-segmented-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Outlined segmented button label text tracking */
+  --ad-comp-outlined-segmented-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Outlined segmented button label text size */
+  --ad-comp-outlined-segmented-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Outlined segmented button label text line height */
+  --ad-comp-outlined-segmented-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Outlined segmented button label text font */
+  --ad-comp-outlined-segmented-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+}

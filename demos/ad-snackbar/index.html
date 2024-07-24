@@ -1,0 +1,54 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snackbar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as snackbar from "../../../packages/ad-snackbar/pkg/ad_snackbar.js";
+        import * as btn from "../../../packages/ad-button-text/pkg/ad_button_text.js";
+        import * as icon from "../../../packages/ad-icon-standard-button/pkg/ad_icon_standard_button.js";
+
+        async function main() {
+            const init = snackbar.default;
+            await init();
+            snackbar.run();
+            const initBtn = btn.default;
+            await initBtn();
+            btn.run();
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        ad-button-text::part(button) {
+            color: var(--ad-sys-color-inverse-on-surface);
+        }
+    </style>
+</head>
+
+<body>
+    <ad-snackbar labeltext="Single-line snackbar"></ad-snackbar>
+
+    <ad-snackbar labeltext="Single-line snackbar">
+        <ad-button-text slot="action" label="Action" title="Action"></ad-button-text>
+    </ad-snackbar>
+
+    <ad-snackbar labeltext="Single-line snackbar">
+        <ad-button-text slot="action" label="Action" title="Action"></ad-button-text>
+        <ad-icon-standard-button slot="close" icon="close"></ad-icon-standard-button>
+    </ad-snackbar>
+</body>
+
+</html>

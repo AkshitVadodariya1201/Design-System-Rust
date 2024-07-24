@@ -1,0 +1,35 @@
+:where(html),
+.tokens {
+  /* Outlined button container elevation */
+  --ad-comp-outlined-button-container-elevation: var(--ad-sys-elevation-level0);
+  /* Outlined button focus state layer opacity */
+  --ad-comp-outlined-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Outlined button hover state layer opacity */
+  --ad-comp-outlined-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Outlined button label tracking */
+  --ad-comp-outlined-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Outlined button label weight */
+  --ad-comp-outlined-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Outlined button label size */
+  --ad-comp-outlined-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Outlined button label line height */
+  --ad-comp-outlined-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Outlined button label font */
+  --ad-comp-outlined-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Outlined button with icon icon size */
+  --ad-comp-outlined-button-with-icon-icon-size: 18px;
+  /* Outlined button outline width */
+  --ad-comp-outlined-button-outline-width: 1px;
+  /* Outlined button container height */
+  --ad-comp-outlined-button-container-height: 40px;
+  /* Outlined button container shape */
+  --ad-comp-outlined-button-container-shape: var(--ad-sys-shape-corner-full);
+  /* Outlined button pressed state layer opacity */
+  --ad-comp-outlined-button-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Outlined button with icon disabled icon opacity */
+  --ad-comp-outlined-button-with-icon-disabled-icon-opacity: 0.3799999952316284;
+  /* Outlined button disabled label opacity */
+  --ad-comp-outlined-button-disabled-label-text-opacity: 0.3799999952316284;
+  /* Outlined button disabled outline opacity */
+  --ad-comp-outlined-button-disabled-outline-opacity: 0.11999999731779099;
+}

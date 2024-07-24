@@ -1,0 +1,29 @@
+:where(html),
+.tokens {
+  /* Elevated card disabled container opacity */
+  --ad-comp-elevated-card-disabled-container-opacity: 0.3799999952316284;
+  /* Elevated card disabled container elevation */
+  --ad-comp-elevated-card-disabled-container-elevation: var(--ad-sys-elevation-level1);
+  /* Elevated card icon size */
+  --ad-comp-elevated-card-icon-size: 24px;
+  /* Elevated card focus state layer opacity */
+  --ad-comp-elevated-card-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Elevated card focus container elevation */
+  --ad-comp-elevated-card-focus-container-elevation: var(--ad-sys-elevation-level1);
+  /* Elevated card hover state layer opacity */
+  --ad-comp-elevated-card-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Elevated card hover container elevation */
+  --ad-comp-elevated-card-hover-container-elevation: var(--ad-sys-elevation-level2);
+  /* Elevated card container shape */
+  --ad-comp-elevated-card-container-shape: var(--ad-sys-shape-corner-medium);
+  /* Elevated card container elevation */
+  --ad-comp-elevated-card-container-elevation: var(--ad-sys-elevation-level1);
+  /* Elevated card dragged state layer opacity */
+  --ad-comp-elevated-card-dragged-state-layer-opacity: var(--ad-sys-state-dragged-state-layer-opacity);
+  /* Elevated card dragged container elevation */
+  --ad-comp-elevated-card-dragged-container-elevation: var(--ad-sys-elevation-level4);
+  /* Elevated card pressed state layer opacity */
+  --ad-comp-elevated-card-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Elevated card pressed container elevation */
+  --ad-comp-elevated-card-pressed-container-elevation: var(--ad-sys-elevation-level1);
+}

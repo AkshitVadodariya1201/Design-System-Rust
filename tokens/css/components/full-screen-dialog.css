@@ -1,0 +1,65 @@
+:where(html),
+.tokens {
+  /* Full screen dialog divider height */
+  --ad-comp-full-screen-dialog-with-divider-divider-height: 1px;
+  /* Full screen dialog action bar pressed state layer opacity */
+  --ad-comp-full-screen-dialog-action-bar-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Full screen dialog action bar focus state layer opacity */
+  --ad-comp-full-screen-dialog-action-bar-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Full screen dialog action bar hover state layer opacity */
+  --ad-comp-full-screen-dialog-action-bar-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Full screen dialog action bar label text tracking */
+  --ad-comp-full-screen-dialog-action-bar-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Full screen dialog action bar label text weight */
+  --ad-comp-full-screen-dialog-action-bar-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Full screen dialog action bar label text size */
+  --ad-comp-full-screen-dialog-action-bar-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Full screen dialog action bar label text line height */
+  --ad-comp-full-screen-dialog-action-bar-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Full screen dialog action bar label text font */
+  --ad-comp-full-screen-dialog-action-bar-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Full screen dialog action bar on scroll container elevation */
+  --ad-comp-full-screen-dialog-action-bar-on-scroll-container-elevation: var(--ad-sys-elevation-level2);
+  /* Full screen dialog action bar container elevation */
+  --ad-comp-full-screen-dialog-action-bar-container-elevation: var(--ad-sys-elevation-level0);
+  /* Full screen dialog action bar container height */
+  --ad-comp-full-screen-dialog-action-bar-container-height: 56px;
+  /* Full screen dialog header action focus state layer opacity */
+  --ad-comp-full-screen-dialog-header-action-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Full screen dialog header action hover state layer opacity */
+  --ad-comp-full-screen-dialog-header-action-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Full screen dialog header action label text tracking */
+  --ad-comp-full-screen-dialog-header-action-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Full screen dialog header action label text weight */
+  --ad-comp-full-screen-dialog-header-action-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Full screen dialog header action label text size */
+  --ad-comp-full-screen-dialog-header-action-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Full screen dialog header action label text line height */
+  --ad-comp-full-screen-dialog-header-action-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Full screen dialog header action label text font */
+  --ad-comp-full-screen-dialog-header-action-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Full screen dialog header headline tracking */
+  --ad-comp-full-screen-dialog-header-headline-tracking: var(--ad-sys-typescale-title-large-tracking);
+  /* Full screen dialog header headline weight */
+  --ad-comp-full-screen-dialog-header-headline-weight: var(--ad-sys-typescale-title-large-weight);
+  /* Full screen dialog header headline size */
+  --ad-comp-full-screen-dialog-header-headline-size: var(--ad-sys-typescale-title-large-size);
+  /* Full screen dialog header headline line height */
+  --ad-comp-full-screen-dialog-header-headline-line-height: var(--ad-sys-typescale-title-large-line-height);
+  /* Full screen dialog header headline font */
+  --ad-comp-full-screen-dialog-header-headline-font: var(--ad-sys-typescale-title-large-font);
+  /* Full screen dialog header icon size */
+  --ad-comp-full-screen-dialog-header-icon-size: 24px;
+  /* Full screen dialog header on scroll container elevation */
+  --ad-comp-full-screen-dialog-header-on-scroll-container-elevation: var(--ad-sys-elevation-level2);
+  /* Full screen dialog header container elevation */
+  --ad-comp-full-screen-dialog-header-container-elevation: var(--ad-sys-elevation-level0);
+  /* Full screen dialog header container height */
+  --ad-comp-full-screen-dialog-header-container-height: 56px;
+  /* Full screen dialog container shape */
+  --ad-comp-full-screen-dialog-container-shape: var(--ad-sys-shape-corner-none);
+  /* Full screen dialog container elevation */
+  --ad-comp-full-screen-dialog-container-elevation: var(--ad-sys-elevation-level0);
+  /* Full screen dialog header action pressed state layer opacity */
+  --ad-comp-full-screen-dialog-header-action-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

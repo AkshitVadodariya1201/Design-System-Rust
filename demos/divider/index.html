@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Divider</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as divider from "../../../packages/ad-divider/pkg/ad_divider.js";
+
+        async function main() {
+            const initDivider = divider.default;
+            await initDivider();
+            divider.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        :root {
+            --ad-color-divider:var(--ad-sys-color-outline-variant);
+        }
+
+        ul {
+            border: 1px solid var(--md-sys-color-outline);
+            margin: 0;
+            padding: 0;
+            width: 256px;
+        }
+
+        li {
+            color: var(--md-sys-color-on-background);
+            list-style: none;
+            margin: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>List item One</li>
+        <ad-divider inset-start></ad-divider>
+        <li>List item Two</li>
+        <ad-divider></ad-divider>
+        <li>List item Three</li>
+        <ad-divider inset-start inset-end></ad-divider>
+        <li>List item Four</li>
+        <ad-divider></ad-divider>
+        <li>List item five</li>
+        <ad-divider inset></ad-divider>  
+    </ul>
+
+</body>
+
+</html>

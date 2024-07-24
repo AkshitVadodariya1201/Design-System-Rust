@@ -1,0 +1,51 @@
+:where(html),
+.tokens {
+  /* Assist chip dragged state layer opacity */
+  --ad-comp-assist-chip-dragged-state-layer-opacity: var(--ad-sys-state-dragged-state-layer-opacity);
+  /* Assist chip dragged container elevation */
+  --ad-comp-assist-chip-dragged-container-elevation: var(--ad-sys-elevation-level4);
+  /* Assist chip (Elevated style) pressed container elevation */
+  --ad-comp-assist-chip-elevated-pressed-container-elevation: var(--ad-sys-elevation-level1);
+  /* Assist chip pressed state layer opacity */
+  --ad-comp-assist-chip-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Assist chip (Elevated style) focus container elevation */
+  --ad-comp-assist-chip-elevated-focus-container-elevation: var(--ad-sys-elevation-level1);
+  /* Assist chip focus state layer opacity */
+  --ad-comp-assist-chip-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Assist chip (Elevated style) hover container elevation */
+  --ad-comp-assist-chip-elevated-hover-container-elevation: var(--ad-sys-elevation-level2);
+  /* Assist chip hover state layer opacity */
+  --ad-comp-assist-chip-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Assist chip (Elevated style)  disabled container opacity */
+  --ad-comp-assist-chip-elevated-disabled-container-opacity: 0.11999999731779099;
+  /* Assist chip (Elevated style)  disabled container elevation */
+  --ad-comp-assist-chip-elevated-disabled-container-elevation: var(--ad-sys-elevation-level0);
+  /* Assist chip with icon disabled icon opacity */
+  --ad-comp-assist-chip-with-icon-disabled-icon-opacity: 0.3799999952316284;
+  /* Assist chip disabled label text opacity */
+  --ad-comp-assist-chip-disabled-label-text-opacity: 0.3799999952316284;
+  /* Assist chip flat diabled outline opacity */
+  --ad-comp-assist-chip-flat-disabled-outline-opacity: 0.11999999731779099;
+  /* Assist chip icon size */
+  --ad-comp-assist-chip-with-icon-icon-size: 18px;
+  /* Assist chip label text tracking */
+  --ad-comp-assist-chip-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Assist chip label text weight */
+  --ad-comp-assist-chip-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Assist chip label text size */
+  --ad-comp-assist-chip-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Assist chip label text line height */
+  --ad-comp-assist-chip-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Assist chip label text font */
+  --ad-comp-assist-chip-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* (Elevated style) Assist chip container elevation */
+  --ad-comp-assist-chip-elevated-container-elevation: var(--ad-sys-elevation-level1);
+  /* Assist chip container outline width */
+  --ad-comp-assist-chip-flat-outline-width: 1px;
+  /* Assist chip container elevation */
+  --ad-comp-assist-chip-flat-container-elevation: var(--ad-sys-elevation-level0);
+  /* Assist chip container height */
+  --ad-comp-assist-chip-container-height: 32px;
+  /* Assist chip container shape */
+  --ad-comp-assist-chip-container-shape: var(--ad-sys-shape-corner-small);
+}

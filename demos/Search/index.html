@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script type="module">
+        import * as button from "../../../packages/ad-search/pkg/ad_search.js";
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            /* flex-direction: column; */
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-search avatar>
+        <img src="/packages/ad-search/src/avatar.jpg" alt="avatar">
+    </ad-search>
+    <ad-search icon>search menu</ad-search>
+    <ad-search icon avatar>search <img src="/packages/ad-search/src/avatar.jpg" alt="avatar"></ad-search>
+</body>
+
+</html>

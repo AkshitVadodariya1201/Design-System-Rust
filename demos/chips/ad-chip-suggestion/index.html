@@ -1,0 +1,94 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suggestion Chip</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-chip-suggestion/pkg/ad_chip_suggestion.js";
+        import * as icon from "../../../packages/adapt-icon/pkg/adapt_icon.js";
+        import * as chipset from "../../../packages/ad-chip-set/pkg/ad_chip_set.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+
+            const initChipset = chipset.default;
+            await initChipset();
+            chipset.run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        :root {
+            --max-width: 512px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ad-chip-set>
+        <ad-chip-suggestion title="suggesion chip"></ad-chip-suggestion>
+
+        <ad-chip-suggestion title="suggestion chip">
+            <adapt-icon slot="leading-icon">directions_car</adapt-icon>
+        </ad-chip-suggestion>
+
+        <ad-chip-suggestion title="suggestion chip" disabled></ad-chip-suggestion>
+        
+        <ad-chip-suggestion title="suggestion chip" disabled>
+            <adapt-icon slot="leading-icon">directions_car</adapt-icon>
+        </ad-chip-suggestion>
+    </ad-chip-set>
+
+    <h1>Scrollable</h1>
+
+    <ad-chip-set scrollable>
+        <ad-chip-suggestion title="suggesion chip"></ad-chip-suggestion>
+
+        <ad-chip-suggestion title="suggestion chip">
+            <adapt-icon slot="leading-icon">directions_car</adapt-icon>
+        </ad-chip-suggestion>
+
+        <ad-chip-suggestion title="suggestion chip" disabled></ad-chip-suggestion>
+
+        <ad-chip-suggestion title="suggestion chip" disabled>
+            <adapt-icon slot="leading-icon">directions_car</adapt-icon>
+        </ad-chip-suggestion>
+    </ad-chip-set>
+
+    <!-- <div>
+        <ad-chip-suggestion title="suggesion chip" elevated></ad-chip-suggestion>
+        <ad-chip-suggestion title="suggestion chip" elevated>
+            <adapt-icon slot="leading-icon">directions_car</adapt-icon>
+        </ad-chip-suggestion>
+        <ad-chip-suggestion title="suggesion chip" elevated disabled></ad-chip-suggestion>
+        <ad-chip-suggestion title="suggestion chip" elevated disabled>
+            <adapt-icon slot="leading-icon">directions_car</adapt-icon>
+        </ad-chip-suggestion>
+    </div> -->
+</body>
+
+</html>

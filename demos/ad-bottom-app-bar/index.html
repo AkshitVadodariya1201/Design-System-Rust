@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bottom-app-bar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-bottom-app-bar/pkg/ad_bottom_app_bar.js";
+        import * as icon from "../../../packages/ad-icon-standard-button/pkg/ad_icon_standard_button.js";
+        import * as fab from "../../../packages/ad-fab/pkg/ad_fab.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+            const initFab = fab.default;
+            await initFab();
+            fab.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-bottom-app-bar>
+        <!-- <ad-icon-standard-button icon="arrow_back" selected></ad-icon-standard-button> -->
+        <ad-icon-standard-button icon="attach_file" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="today" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="more_vert" selected></ad-icon-standard-button>
+    </ad-bottom-app-bar>
+
+    <ad-bottom-app-bar>
+        <!-- <ad-icon-standard-button icon="arrow_back" selected></ad-icon-standard-button> -->
+        <ad-icon-standard-button icon="attach_file" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="today" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="more_vert" selected></ad-icon-standard-button>
+        <ad-fab name="edit" slot="fab"></ad-fab>
+    </ad-bottom-app-bar>
+</body>
+
+</html>

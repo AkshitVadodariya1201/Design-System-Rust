@@ -1,0 +1,33 @@
+:where(html),
+.tokens {
+  /* Standard menu button pressed state layer opacity */
+  --ad-comp-standard-menu-button-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Standard menu button focus state layer opacity */
+  --ad-comp-standard-menu-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Standard menu button hover state layer opacity */
+  --ad-comp-standard-menu-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Standard menu button disabled trailing icon opacity */
+  --ad-comp-standard-menu-button-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Standard menu button with icon disabled leading icon opacity */
+  --ad-comp-standard-menu-button-with-icon-disabled-leading-icon-opacity: 0.3799999952316284;
+  /* Standard menu button disabled label text opacity */
+  --ad-comp-standard-menu-button-disabled-label-text-opacity: 0.3799999952316284;
+  /* Standard menu button trailing icon size */
+  --ad-comp-standard-menu-button-trailing-icon-size: 18px;
+  /* Standard menu button with icon leading icon size */
+  --ad-comp-standard-menu-button-with-icon-leading-icon-size: 18px;
+  /* Standard menu button label text weight */
+  --ad-comp-standard-menu-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Standard menu button label text tracking */
+  --ad-comp-standard-menu-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Standard menu button label text size */
+  --ad-comp-standard-menu-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Standard menu button label text line height */
+  --ad-comp-standard-menu-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Standard menu button label text font */
+  --ad-comp-standard-menu-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Standard menu button container shape */
+  --ad-comp-standard-menu-button-container-shape: var(--ad-sys-shape-corner-full);
+  /* Standard menu button container height */
+  --ad-comp-standard-menu-button-container-height: 40px;
+}

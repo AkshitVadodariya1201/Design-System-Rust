@@ -1,0 +1,49 @@
+.track {
+    width: 100%;
+    height: var(--ad-comp-linear-progress-indicator-active-indicator-height);
+    border-radius: var(--ad-comp-linear-progress-indicator-active-indicator-shape);
+    background-color: var(--ad-ref-palette-neutral90);
+    overflow: hidden;
+    position: absolute;
+    inset: 0;
+}
+
+.active_indicator {
+    height: var(--ad-comp-linear-progress-indicator-track-height);
+    border-radius: var(--ad-comp-linear-progress-indicator-track-shape);
+    background-color: var(--ad-sys-color-primary);
+    position: absolute;
+    inset: 0;
+    width: 25%;
+    animation-delay: 0.1s;
+    transform-origin: 0 0;
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.inderminate {
+    animation: move2 4s linear infinite;
+}
+
+@keyframes move2 {
+    0% {
+        transform: scaleX(0);
+    }
+
+    50% {
+        transform: scaleX(5);
+    }
+
+    100% {
+        transform: scaleX(5) translateX(100%);
+    }
+}

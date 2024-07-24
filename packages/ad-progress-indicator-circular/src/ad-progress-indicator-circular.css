@@ -1,0 +1,59 @@
+.svg {
+    width: var(--ad-comp-circular-progress-indicator-size);
+    height: var(--ad-comp-circular-progress-indicator-size);
+}
+
+.circle {
+    stroke: var(--ad-sys-color-primary);
+    stroke-width: var(--ad-comp-circular-progress-indicator-active-indicator-width);
+}
+
+.determinate_svg {
+    transform: rotate(270deg);
+}
+
+.determinate_active_indicator {
+    stroke-dashoffset: 200;
+    stroke-dasharray: 200;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    90% {
+        stroke-dashoffset: 0;
+        stroke-width: var(--ad-comp-circular-progress-indicator-active-indicator-width);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-width: 0px;
+    }
+}
+
+.indeterminate_svg {
+    animation: rotate 1.8s linear infinite;
+}
+
+.indeterminate_active_indicator {
+    animation: dash 1.4s ease-in-out infinite;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 4px 126px;
+    }
+
+    50% {
+        stroke-dasharray: 120px 126px;
+    }
+
+    100% {
+        stroke-dasharray: 4px 126px;
+        stroke-dashoffset: -122px;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

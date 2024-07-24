@@ -1,0 +1,320 @@
+/* write css for list item */
+/* take value from packages/ad-list-item/readme.md */
+
+:host {
+    --ad-list-background-color: var(--ad-color-list-surface)
+}
+
+/* style list-item and enabled class */
+.list-item.enabled {
+    display: flex;
+    align-items: center;
+    position: relative;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--ad-list-background-color);
+    border-radius: var(--ad-comp-list-list-item-container-shape);
+}
+
+/* style list-item before */
+.list-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+/* style one-line class when list-item enabled */
+.list-item.enabled.one-line {
+    height: var(--ad-comp-list-md-comp-list-list-item-one-line-container-height);
+}
+
+/* style two-line class when list-item enabled */
+.list-item.enabled.two-line {
+    height: var(--ad-comp-list-md-comp-list-list-item-two-line-container-height);
+}
+
+/* style three-line class when list-item enabled */
+.list-item.enabled.three-line {
+    height: var(--ad-comp-list-md-comp-list-list-item-three-line-container-height);
+}
+
+/* style container class */
+.container {
+    display: flex;
+    width: 100%;
+    border-radius: inherit;
+    padding: 8px 24px 8px 16px;
+}
+
+/* style video class */
+.video {
+    padding: 12px 24px 12px 0;
+}
+
+/* style start class */
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* style slot inside of start class when list-item enabled */
+.list-item.enabled .start ::slotted(*) {
+    margin-inline-end: 16px;
+}
+.list-item.enabled .start ::slotted(*:not(ad-checkbox)) {
+    height: var(--ad-comp-list-list-item-leading-icon-size);
+}
+
+/* style body class */
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+/* style end class */
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+/* style icon and trailing class */
+.leading, .trailing {
+    justify-content: flex-start;
+}
+
+/* style headline class when list-item enabled */
+.list-item.enabled .headline {
+    color: var(--ad-sys-color-on-surface);
+    font-weight: var(--ad-comp-list-list-item-label-text-weight);
+    font-size: var(--ad-comp-list-list-item-label-text-size);
+    line-height: var(--ad-comp-list-list-item-label-text-line-height);
+    letter-spacing: var(--ad-comp-list-list-item-label-text-tracking);
+    font-family: var(--ad-comp-list-list-item-label-text-font);
+}
+
+/* style supporting-text class when list-item enabled */
+.list-item.enabled .supporting-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-weight: var(--ad-comp-list-list-item-supporting-text-weight);
+    font-size: var(--ad-comp-list-list-item-supporting-text-size);
+    line-height: var(--ad-comp-list-list-item-supporting-text-line-height);
+    letter-spacing: var(--ad-comp-list-list-item-supporting-text-tracking);
+    font-family: var(--ad-comp-list-list-item-supporting-text-font);
+}
+
+/* style trailing-supporting-text class when list-item enabled */
+.list-item.enabled .trailing-supporting-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-weight: var(--ad-comp-list-list-item-trailing-supporting-text-weight);
+    font-size: var(--ad-comp-list-list-item-trailing-supporting-text-size);
+    line-height: var(--ad-comp-list-list-item-trailing-supporting-text-line-height);
+    letter-spacing: var(--ad-comp-list-list-item-trailing-supporting-text-tracking);
+    font-family: var(--ad-comp-list-list-item-trailing-supporting-text-font);
+}
+
+/* style slot inside end class when list-item enabled */
+.list-item.enabled .end ::slotted(*) {
+    font-size: var(--ad-comp-list-list-item-trailing-icon-size);
+    color: var(--ad-sys-color-primary);
+    padding-inline-start: 16px;
+}
+
+/* style slot inside of start class when inside slot img */
+.list-item.enabled .start ::slotted(img) {
+    width: var(--ad-comp-list-list-item-leading-image-width);
+    height: var(--ad-comp-list-list-item-leading-image-height);
+    border-radius: var(--ad-comp-list-list-item-leading-image-shape);
+    object-fit: cover;
+}
+
+
+.list-item.enabled.avatar .start ::slotted(img),
+.list-item.enabled .start ::slotted(span) {
+    width: var(--ad-comp-list-list-item-leading-avatar-size);
+        height: var(--ad-comp-list-list-item-leading-avatar-size);
+        border-radius: var(--ad-comp-list-list-item-leading-avatar-shape);
+        background-color: var(--ad-sys-color-primary-container);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    /* width: var(--ad-comp-list-list-item-leading-avatar-size);
+    height: var(--ad-comp-list-list-item-leading-avatar-size);
+    border-radius: var(--ad-comp-list-list-item-leading-avatar-shape); */
+    object-fit: cover;
+}
+
+/* style slot inside of start class when inside slot not img */
+.list-item.enabled .start ::slotted(span) {
+    
+
+    color: var(--ad-sys-color-on-primary-container);
+    font-weight: var(--ad-comp-list-list-item-leading-avatar-label-weight);
+    font-size: var(--ad-comp-list-list-item-leading-avatar-label-size);
+    line-height: var(--ad-comp-list-list-item-leading-avatar-label-line-height);
+    letter-spacing: var(--ad-comp-list-list-item-leading-avatar-label-tracking);
+    font-family: var(--ad-comp-list-list-item-leading-avatar-label-font);
+}
+
+/* style slot inside of start class */
+.list-item.enabled .start ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-size: var(--ad-comp-list-list-item-leading-icon-size);
+    border-radius: var(--ad-comp-list-list-item-leading-icon-shape);
+}
+
+/* style slot inside of start class when inside slot video */
+.list-item.enabled .start ::slotted(:is(video, iframe)) {
+    width: var(--ad-comp-list-list-item-leading-video-width);
+    height: var(--ad-comp-list-list-item-small-leading-video-height);
+    border-radius: var(--ad-comp-list-list-item-leading-video-shape);
+    object-fit: cover;
+}
+
+
+
+/* style list-item before when hover */
+.list-item:hover::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-hover-state-layer-opacity);
+}
+
+/* style headline when hover */
+.list-item:hover .headline {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* style slot inside of start class when hover */
+.list-item:hover .start ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of end class when hover */
+.list-item:hover .end ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* style list-item before when focus */
+.list-item:focus::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-focus-state-layer-opacity);
+}
+
+/* style headline when focus */
+.list-item:focus .headline {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* style slot inside of start class when focus */
+.list-item:focus .start ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of end class when focus */
+.list-item:focus .end ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* style list-item before when pressed */
+.list-item:active::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-pressed-state-layer-opacity);
+}
+
+/* style headline when pressed */
+.list-item:active .headline {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* style slot inside of start class when pressed */
+.list-item:active .start ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of end class when pressed */
+.list-item:active .end ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* style list-item before when dragged */
+.list-item:active::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-dragged-state-layer-opacity);
+}
+
+/* style headline when dragged */
+.list-item:active .headline {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* style slot inside of start class when dragged */
+.list-item:active .start ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of end class when dragged */
+.list-item:active .end ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* style list-item class when disabled */
+.list-item.disabled {
+    cursor: default;
+    background-color: transparent;
+}
+
+/* style headline class when list-item disabled */
+.list-item.disabled .headline {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-disabled-label-text-opacity);
+}
+
+/* style supporting-text class when list-item disabled */
+.list-item.disabled .supporting-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-disabled-label-text-opacity);
+}
+
+/* style trailing-supporting-text class when list-item disabled */
+.list-item.disabled .trailing-supporting-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-disabled-label-text-opacity);
+}
+
+/* style list-item before when disabled */
+.list-item.disabled::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-disabled-state-layer-opacity);
+}
+
+/* style slot inside of start class when list-item disabled */
+.list-item.disabled .start ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-disabled-leading-icon-opacity);
+}
+
+/* style slot inside of end class when list-item disabled */
+.list-item.disabled .end ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-list-list-item-disabled-trailing-icon-opacity);
+}

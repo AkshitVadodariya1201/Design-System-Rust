@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plain-Tooltip</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-tooltip/pkg/ad_tooltip.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        .container {
+            width: 81px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ad-plain-tooltip title="Plain tooltip"></ad-plain-tooltip>
+    </div>
+
+</body>
+
+</html>

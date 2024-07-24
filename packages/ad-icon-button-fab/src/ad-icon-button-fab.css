@@ -1,0 +1,158 @@
+/* write css for floating action buttons */
+/* take value from ../../../packages/ad-icon-button-fab/readme.md */
+
+/* style button for floating action buttons */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 56px;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--ad-sys-color-primary-container);
+}
+
+/* style button before */
+button::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style icon class  */
+.icon {
+    height: 24px;
+}
+
+/* style slot inside of icon class */
+.icon ::slotted(*) {
+    font-size: 24px;
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+
+
+/* style small class when button */
+button.small {
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+}
+
+/* style slot inside of icon class when button and small both */
+button.small .icon ::slotted(*) {
+    font-size: 24px;
+}
+
+
+
+/* style large class when button */
+button.large {
+    height: var(--ad-comp-fab-branded-large-container-height);
+    width: var(--ad-comp-fab-branded-large-container-width);
+    border-radius: var(--ad-comp-fab-branded-large-container-shape);
+}
+
+/* style slot inside of icon class when button and large both */
+button.large .icon ::slotted(*) {
+    font-size: 36px;
+}
+
+/* style icon class when button large both */
+button.large .icon {
+    height: 36px;
+}
+
+
+
+/* style surface class when button:enabled */
+button.surface:enabled {
+    background: var(--ad-ref-palette-neutral20);
+}
+
+/* style slot inside of icon class when button:enabled and surface both */
+button.surface:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+/* style button before when surface, button:hover, focus, active */
+button.surface:hover::before,
+button.surface:focus::before,
+button.surface:active::before {
+    background: var(--ad-sys-color-primary);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+
+
+/* style secondary class when button:enabled */
+button.secondary:enabled {
+    background: var(--ad-sys-color-secondary-container);
+}
+
+/* style slot inside of icon class when button:enabled and secondary both */
+button.secondary:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* style button before when secondary, button:hover, focus, active */
+button.secondary:hover::before,
+button.secondary:focus::before,
+button.secondary:active::before {
+    background: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+
+
+/* style tertiary class when button */
+button.tertiary:enabled {
+    background: var(--ad-sys-color-tertiary);
+}
+
+/* style slot inside of icon class when button and tertiary both */
+button.tertiary:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-tertiary-container);
+}
+
+/* style button before when tertiary, button:hover, focus, active */
+button.tertiary:hover::before,
+button.tertiary:focus::before,
+button.tertiary:active::before {
+    background: var(--ad-sys-color-on-tertiary-container);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+
+/* style button when :enabled */
+button:enabled {
+    background: var(--ad-sys-color-primary-container);
+}
+
+/* style slot inside of icon class when button:enabled */
+button:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+/* style button before when button:hover */
+button:hover::before {
+    background: var(--ad-sys-color-on-primary-container);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+/* style button before when button:focus */
+button:focus::before {
+    background: var(--ad-sys-color-on-primary-container);
+    opacity: var(--ad-sys-state-focus-state-layer-opacity);
+}
+
+/* style button before when button:active */
+button:active::before {
+    background: var(--ad-sys-color-on-primary-container);
+    opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

@@ -1,0 +1,5 @@
+:where(html),
+.tokens {
+  /* Divider thickness */
+  --ad-comp-divider-thickness: 1px;
+}

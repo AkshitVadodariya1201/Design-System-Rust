@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filled-text-field</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as field from "../../../packages/ad-filled-field/pkg/ad_filled_field.js";
+        import * as icon from "../../../packages/ad-icon/pkg/ad_icon.js";
+
+        async function main() {
+            const initField = field.default;
+            await initField();
+            field.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ad-filled-field>
+        <ad-icon slot="start">search</ad-icon>
+        <input type="text" placeholder="Search" />
+        <ad-icon slot="end">close</ad-icon>
+        <span slot="supporting-text-start">Supporting text (optional)</span>
+        <span slot="supporting-text-end">Supporting text (optional)</span>
+    </ad-filled-field>
+</body>
+
+</html>

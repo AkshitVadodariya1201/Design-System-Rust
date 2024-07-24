@@ -1,0 +1,28 @@
+.outline {
+    background-color: var(--ad-sys-color-surface);
+    border-radius: 12px;
+}
+
+.outline .state-layer::before {
+    border: 1px solid var(--ad-sys-color-outline);
+}
+
+.outline:hover .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+.outline:focus .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-focus-state-layer-opacity);
+}
+
+.outline:active .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}
+
+.outline:disabled {
+    border: var(--ad-sys-color-outline);
+    opacity: var(--ad-comp-outlined-card-disabled-outline-opacity);
+}

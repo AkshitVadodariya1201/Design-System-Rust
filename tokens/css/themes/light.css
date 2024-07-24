@@ -1,0 +1,96 @@
+:where(html),
+.tokens {
+  /* Scrim */
+  --ad-sys-color-scrim: var(--ad-ref-palette-neutral0);
+  --ad-sys-color-scrim-rgb: var(--ad-ref-palette-neutral0-rgb);
+  /* Outline Variant */
+  --ad-sys-color-outline-variant: var(--ad-ref-palette-neutral-variant80);
+  --ad-sys-color-outline-variant-rgb: var(--ad-ref-palette-neutral-variant80-rgb);
+  /* Surface tint */
+  --ad-sys-color-surface-tint: var(--ad-sys-color-primary);
+  --ad-sys-color-surface-tint-rgb: var(--ad-sys-color-primary-rgb);
+  /* Surface tint color */
+  --ad-sys-color-surface-tint-color: var(--ad-sys-color-primary);
+  --ad-sys-color-surface-tint-color-rgb: var(--ad-sys-color-primary-rgb);
+  /* On error container */
+  --ad-sys-color-on-error-container: var(--ad-ref-palette-error10);
+  --ad-sys-color-on-error-container-rgb: var(--ad-ref-palette-error10-rgb);
+  /* On error */
+  --ad-sys-color-on-error: var(--ad-ref-palette-error100);
+  --ad-sys-color-on-error-rgb: var(--ad-ref-palette-error100-rgb);
+  /* Error container */
+  --ad-sys-color-error-container: var(--ad-ref-palette-error90);
+  --ad-sys-color-error-container-rgb: var(--ad-ref-palette-error90-rgb);
+  /* On tertiary container */
+  --ad-sys-color-on-tertiary-container: var(--ad-ref-palette-tertiary10);
+  --ad-sys-color-on-tertiary-container-rgb: var(--ad-ref-palette-tertiary10-rgb);
+  /* On tertiary */
+  --ad-sys-color-on-tertiary: var(--ad-ref-palette-tertiary100);
+  --ad-sys-color-on-tertiary-rgb: var(--ad-ref-palette-tertiary100-rgb);
+  /* Tertiary container */
+  --ad-sys-color-tertiary-container: var(--ad-ref-palette-tertiary90);
+  --ad-sys-color-tertiary-container-rgb: var(--ad-ref-palette-tertiary90-rgb);
+  /* Tertiary */
+  --ad-sys-color-tertiary: var(--ad-ref-palette-tertiary40);
+  --ad-sys-color-tertiary-rgb: var(--ad-ref-palette-tertiary40-rgb);
+  /* Shadow */
+  --ad-sys-color-shadow: var(--ad-ref-palette-neutral0);
+  --ad-sys-color-shadow-rgb: var(--ad-ref-palette-neutral0-rgb);
+  /* Error */
+  --ad-sys-color-error: var(--ad-ref-palette-error40);
+  --ad-sys-color-error-rgb: var(--ad-ref-palette-error40-rgb);
+  /* Outline */
+  --ad-sys-color-outline: var(--ad-ref-palette-neutral-variant50);
+  --ad-sys-color-outline-rgb: var(--ad-ref-palette-neutral-variant50-rgb);
+  /* On background */
+  --ad-sys-color-on-background: var(--ad-ref-palette-neutral10);
+  --ad-sys-color-on-background-rgb: var(--ad-ref-palette-neutral10-rgb);
+  /* Background */
+  --ad-sys-color-background: var(--ad-ref-palette-neutral99);
+  --ad-sys-color-background-rgb: var(--ad-ref-palette-neutral99-rgb);
+  /* Inverse on surface */
+  --ad-sys-color-inverse-on-surface: var(--ad-ref-palette-neutral95);
+  --ad-sys-color-inverse-on-surface-rgb: var(--ad-ref-palette-neutral95-rgb);
+  /* Inverse surface */
+  --ad-sys-color-inverse-surface: var(--ad-ref-palette-neutral20);
+  --ad-sys-color-inverse-surface-rgb: var(--ad-ref-palette-neutral20-rgb);
+  /* On surface variant */
+  --ad-sys-color-on-surface-variant: var(--ad-ref-palette-neutral-variant30);
+  --ad-sys-color-on-surface-variant-rgb: var(--ad-ref-palette-neutral-variant30-rgb);
+  /* On surface */
+  --ad-sys-color-on-surface: var(--ad-ref-palette-neutral10);
+  --ad-sys-color-on-surface-rgb: var(--ad-ref-palette-neutral10-rgb);
+  /* Surface Variant */
+  --ad-sys-color-surface-variant: var(--ad-ref-palette-neutral-variant90);
+  --ad-sys-color-surface-variant-rgb: var(--ad-ref-palette-neutral-variant90-rgb);
+  /* Surface */
+  --ad-sys-color-surface: var(--ad-ref-palette-neutral99);
+  --ad-sys-color-surface-rgb: var(--ad-ref-palette-neutral99-rgb);
+  /* On secondary container */
+  --ad-sys-color-on-secondary-container: var(--ad-ref-palette-secondary10);
+  --ad-sys-color-on-secondary-container-rgb: var(--ad-ref-palette-secondary10-rgb);
+  /* On secondary */
+  --ad-sys-color-on-secondary: var(--ad-ref-palette-secondary100);
+  --ad-sys-color-on-secondary-rgb: var(--ad-ref-palette-secondary100-rgb);
+  /* Secondary container */
+  --ad-sys-color-secondary-container: var(--ad-ref-palette-secondary90);
+  --ad-sys-color-secondary-container-rgb: var(--ad-ref-palette-secondary90-rgb);
+  /* Secondary */
+  --ad-sys-color-secondary: var(--ad-ref-palette-secondary40);
+  --ad-sys-color-secondary-rgb: var(--ad-ref-palette-secondary40-rgb);
+  /* Inverse primary */
+  --ad-sys-color-inverse-primary: var(--ad-ref-palette-primary80);
+  --ad-sys-color-inverse-primary-rgb: var(--ad-ref-palette-primary80-rgb);
+  /* On primary container */
+  --ad-sys-color-on-primary-container: var(--ad-ref-palette-primary10);
+  --ad-sys-color-on-primary-container-rgb: var(--ad-ref-palette-primary10-rgb);
+  /* On primary */
+  --ad-sys-color-on-primary: var(--ad-ref-palette-primary100);
+  --ad-sys-color-on-primary-rgb: var(--ad-ref-palette-primary100-rgb);
+  /* Primary container */
+  --ad-sys-color-primary-container: var(--ad-ref-palette-primary90);
+  --ad-sys-color-primary-container-rgb: var(--ad-ref-palette-primary90-rgb);
+  /* Primary */
+  --ad-sys-color-primary: var(--ad-ref-palette-primary40);
+  --ad-sys-color-primary-rgb: var(--ad-ref-palette-primary40-rgb);
+}

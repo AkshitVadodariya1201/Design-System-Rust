@@ -1,0 +1,41 @@
+:where(html),
+.tokens {
+  /* Elevated button focus container elevation */
+  --ad-comp-elevated-button-focus-container-elevation: var(--ad-sys-elevation-level1);
+  /* Elevated button focus state layer opacity */
+  --ad-comp-elevated-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Elevated button hover container elevation */
+  --ad-comp-elevated-button-hover-container-elevation: var(--ad-sys-elevation-level2);
+  /* Elevated button hover state layer opacity */
+  --ad-comp-elevated-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Elevated button label tracking */
+  --ad-comp-elevated-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Elevated button label weight */
+  --ad-comp-elevated-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Elevated button label size */
+  --ad-comp-elevated-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Elevated button label line height */
+  --ad-comp-elevated-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Elevated button label font */
+  --ad-comp-elevated-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Elevated button with icon icon size */
+  --ad-comp-elevated-button-with-icon-icon-size: 18px;
+  /* Elevated button container elevation */
+  --ad-comp-elevated-button-container-elevation: var(--ad-sys-elevation-level1);
+  /* Elevated button container height */
+  --ad-comp-elevated-button-container-height: 40px;
+  /* Elevated button container shape */
+  --ad-comp-elevated-button-container-shape: var(--ad-sys-shape-corner-full);
+  /* Elevated button pressed container elevation */
+  --ad-comp-elevated-button-pressed-container-elevation: var(--ad-sys-elevation-level1);
+  /* Elevated button pressed state layer opacity */
+  --ad-comp-elevated-button-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Elevated button with icon disabled icon opacity */
+  --ad-comp-elevated-button-with-icon-disabled-icon-opacity: 0.3799999952316284;
+  /* Elevated button disabled label opacity */
+  --ad-comp-elevated-button-disabled-label-text-opacity: 0.3799999952316284;
+  /* Elevated button disabled container elevation */
+  --ad-comp-elevated-button-disabled-container-elevation: var(--ad-sys-elevation-level0);
+  /* Elevated button disabled container opacity */
+  --ad-comp-elevated-button-disabled-container-opacity: 0.11999999731779099;
+}

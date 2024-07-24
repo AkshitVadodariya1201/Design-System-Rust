@@ -1,0 +1,149 @@
+/* write css for button filled tonal */
+/* take value from ../../../packages/ad-button-filled-tonal/readme.md */
+
+/* style the button for filled tonal */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-filled-tonal-button-container-height);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--ad-sys-color-secondary-container);
+    padding: 0 16px 0 16px;
+    gap: 8px;
+}
+
+/* style button brfore  */
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style label-text class for filled tonal butoon */
+.label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+    font: var(--ad-comp-filled-tonal-button-label-text-font);
+    line-height: var(--ad-comp-filled-tonal-button-label-text-line-height);
+    font-size: var(--ad-comp-filled-tonal-button-label-text-size);
+    letter-spacing: var(--ad-comp-filled-tonal-button-label-text-tracking);
+    font-weight: var(--ad-comp-filled-tonal-button-label-text-weight);
+}
+
+/* style leading-icon and trailing-icon both class for filled tonal button */
+:is(.leading-icon, .trailing-icon) {
+    display: flex;
+    height: var(--ad-comp-filled-tonal-button-with-icon-icon-size);
+}
+
+/* style slot inside of leading-icon and trailing-icon for filled tonal button */
+:is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+    font-size: var(--ad-comp-filled-tonal-button-with-icon-icon-size);
+}
+
+
+
+/* style button when :enabled  and  add background color*/
+button:enabled {
+    background-color: var(--ad-sys-color-secondary-container);
+}
+
+/* style label-text when button enabled */
+button:enabled .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+    font: var(--ad-comp-filled-tonal-button-label-text-font);
+    line-height: var(--ad-comp-filled-tonal-button-label-text-line-height);
+    font-size: var(--ad-comp-filled-tonal-button-label-text-size);
+    letter-spacing: var(--ad-comp-filled-tonal-button-label-text-tracking);
+    font-weight: var(--ad-comp-filled-tonal-button-label-text-weight);
+}
+
+/* style slot inside of leading-icon and trailing-icon when button enabled */
+button:enabled :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+    font-size: var(--ad-comp-filled-tonal-button-with-icon-icon-size);
+}
+
+/* style button before when :hover */
+button:hover::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-comp-filled-tonal-button-hover-state-layer-opacity);
+}
+
+/* style label-text when :hover */
+button:hover .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* style slot inside of leading-icon and trailing-icon when :hover */
+button:hover :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+
+
+/* style button before before when :focus */
+button:focus::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-comp-filled-tonal-button-focus-state-layer-opacity);
+}
+
+/* style label-text when :focus */
+button:focus .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* style slot inside of leading-icon and trailing-icon when :focus */
+button:focus :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+
+
+/* style button before when :active */
+button:active::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-comp-filled-tonal-button-pressed-state-layer-opacity);
+}
+
+/* style label-text when :active */
+button:active .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* style slot inside of leading-icon and trailing-icon when :active */
+button:active :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+
+
+/* style button when :disabled add background-color transparent */
+button:disabled {
+    background-color: transparent;
+    cursor: default;
+}
+
+/* style button before when :disabled  and  add background color on-surface and opacity */
+button:disabled::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-filled-tonal-button-disabled-container-opacity);
+}
+
+/* style label-text when button disabled add color and opacity */
+button:disabled .label-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-filled-tonal-button-disabled-label-text-opacity);
+}
+
+/* style slot inside of leading-icon and trailing-icon when button disabled add color and opacity */
+button:disabled :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-filled-tonal-button-with-icon-disabled-icon-opacity);
+}

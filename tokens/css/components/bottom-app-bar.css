@@ -1,0 +1,11 @@
+:where(html),
+.tokens {
+  /* Bottom app bar with FAB container height */
+  --ad-comp-bottom-app-bar-with-fab-container-height: 72px;
+  /* Bottom app bar container height */
+  --ad-comp-bottom-app-bar-container-height: 80px;
+  /* Bottom app bar container elevation */
+  --ad-comp-bottom-app-bar-container-elevation: var(--ad-sys-elevation-level2);
+  /* Bottom app bar container shape */
+  --ad-comp-bottom-app-bar-container-shape: var(--ad-sys-shape-corner-none);
+}

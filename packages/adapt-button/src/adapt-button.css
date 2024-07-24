@@ -1,0 +1,55 @@
+button {
+  color: #6200ee;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #f5f2f9;
+}
+
+.buttonfilled, .unelevated {
+  color: white;
+  background-color: #6200ee;
+}
+
+.buttonfilled:hover , .unelevated:hover{
+  background-color: #7530d5;
+}
+
+.outline {
+  border: 0.5px solid lightgray;
+}
+
+.raised {
+  box-shadow: 0px 3px 3px 0px lightgrey;
+}
+
+.raised:hover {
+  box-shadow: 3px 3px 4px 1px lightgrey;
+}
+
+.dense {
+  font-size: 15px;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.disabled {
+  color: gray;
+}
+
+.disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+
+.grayfilled,
+.grayfilled:hover {
+  background-color: lightgray;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Custom Elements - Button</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <script type="module">
+            import init, { run } from '../packages/button-new/pkg/button_new.js';
+            async function main ()
+            {
+                await init();
+                run();
+            }
+            main();
+        </script>
+        <style>
+            /* This will only affect the paragraph outside the Web Components. */
+            p {
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Outline</h1>
+        <my-button outline></my-button>
+
+        <h1>Outline Sharp</h1>
+        <my-button outline sharp></my-button>
+        
+        <h1>Sharp</h1>
+        <my-button sharp="true"></my-button>
+        
+        <h1>Circle</h1>
+        <my-button circle></my-button>
+        
+        <h1>Standard</h1>
+        <my-button standard icon="search"></my-button> 
+        
+        <h1>Raised</h1>
+        <my-button raised></my-button>
+        
+        <h1>Unelevated</h1>
+        <my-button unelevated></my-button>
+        
+        <h1>Dense</h1>
+        <my-button dense></my-button>
+        
+        <h1>Trailing icon</h1>
+        <my-button trailing_icon1><span class="material-icons">
+search
+</span></my-button>
+        <my-button trailing_icon2></my-button>
+        <my-button trailing_icon3><span class="material-icons">
+home
+</span></my-button>
+        <my-button trailing_icon4></my-button>
+        
+        
+        <h1>Disabled</h1>
+        <my-button disabled1></my-button>
+        <my-button disabled2></my-button>
+        <my-button disabled3></my-button>
+        <my-button disabled4></my-button>
+        
+        
+        <h1>Full Width</h1>
+        <my-button full_width></my-button>
+        
+        
+    </body>
+
+</html>

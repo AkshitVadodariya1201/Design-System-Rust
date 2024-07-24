@@ -1,0 +1,31 @@
+:where(html),
+.tokens {
+  /* Sheet side docked action pressed state layer opacity */
+  --ad-comp-sheet-side-docked-action-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Sheet side docked action focus state layer opacity */
+  --ad-comp-sheet-side-docked-action-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Sheet side docked action hover state layer opacity */
+  --ad-comp-sheet-side-docked-action-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Sheet side docked headline weight */
+  --ad-comp-sheet-side-docked-headline-weight: var(--ad-sys-typescale-title-small-weight);
+  /* Sheet side docked headline tracking */
+  --ad-comp-sheet-side-docked-headline-tracking: var(--ad-sys-typescale-title-small-tracking);
+  /* Sheet side docked headline size */
+  --ad-comp-sheet-side-docked-headline-size: var(--ad-sys-typescale-title-small-size);
+  /* Sheet side docked headline line height */
+  --ad-comp-sheet-side-docked-headline-line-height: var(--ad-sys-typescale-title-small-line-height);
+  /* Sheet side docked headline font */
+  --ad-comp-sheet-side-docked-headline-font: var(--ad-sys-typescale-title-small-font);
+  /* Sheet side docked container width */
+  --ad-comp-sheet-side-docked-container-width: 256px;
+  /* Sheet side detached container shape */
+  --ad-comp-sheet-side-detached-container-shape: var(--ad-sys-shape-corner-large);
+  /* Sheet side docked container shape */
+  --ad-comp-sheet-side-docked-container-shape: var(--ad-sys-shape-corner-none);
+  /* Sheet side docked container height */
+  --ad-comp-sheet-side-docked-container-height: 100%;
+  /* Sheet side docked standard container elevation */
+  --ad-comp-sheet-side-docked-standard-container-elevation: var(--ad-sys-elevation-level0);
+  /* Sheet side docked modal container elevation */
+  --ad-comp-sheet-side-docked-modal-container-elevation: var(--ad-sys-elevation-level1);
+}

@@ -1,0 +1,81 @@
+:where(html),
+.tokens {
+  /* Time input period selector container height */
+  --ad-comp-time-input-period-selector-container-height: 72px;
+  /* Time input period selector container width */
+  --ad-comp-time-input-period-selector-container-width: 52px;
+  /* Time input time input field container height */
+  --ad-comp-time-input-time-input-field-container-height: 72px;
+  /* Time input time input field container width */
+  --ad-comp-time-input-time-input-field-container-width: 96px;
+  /* Time input period selector pressed state layer opacity */
+  --ad-comp-time-input-period-selector-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Time input period selector focus state layer opacity */
+  --ad-comp-time-input-period-selector-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Time input time input field focus outline width */
+  --ad-comp-time-input-time-input-field-focus-outline-width: 2px;
+  /* Time input period selector hover state layer opacity */
+  --ad-comp-time-input-period-selector-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Time input time input field hover state layer opacity */
+  --ad-comp-time-input-time-input-field-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Time input period selector label text tracking */
+  --ad-comp-time-input-period-selector-label-text-tracking: var(--ad-sys-typescale-title-medium-tracking);
+  /* Time input period selector label text weight */
+  --ad-comp-time-input-period-selector-label-text-weight: var(--ad-sys-typescale-title-medium-weight);
+  /* Time input period selector label text size */
+  --ad-comp-time-input-period-selector-label-text-size: var(--ad-sys-typescale-title-medium-size);
+  /* Time input period selector label text line height */
+  --ad-comp-time-input-period-selector-label-text-line-height: var(--ad-sys-typescale-title-medium-line-height);
+  /* Time input period selector label text font */
+  --ad-comp-time-input-period-selector-label-text-font: var(--ad-sys-typescale-title-medium-font);
+  /* Time input period selector outline width */
+  --ad-comp-time-input-period-selector-outline-width: 1px;
+  /* Time input period selector container shape */
+  --ad-comp-time-input-period-selector-container-shape: var(--ad-sys-shape-corner-small);
+  /* Time input time input field supporting text tracking */
+  --ad-comp-time-input-time-input-field-supporting-text-tracking: var(--ad-sys-typescale-body-small-tracking);
+  /* Time input time input field supporting text weight */
+  --ad-comp-time-input-time-input-field-supporting-text-weight: var(--ad-sys-typescale-body-small-weight);
+  /* Time input time input field supporting text size */
+  --ad-comp-time-input-time-input-field-supporting-text-size: var(--ad-sys-typescale-body-small-size);
+  /* Time input time input field supporting text line height */
+  --ad-comp-time-input-time-input-field-supporting-text-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Time input time input field supporting text font */
+  --ad-comp-time-input-time-input-field-supporting-text-font: var(--ad-sys-typescale-body-small-font);
+  /* Time input time input field separator tracking */
+  --ad-comp-time-input-time-input-field-separator-tracking: var(--ad-sys-typescale-display-large-tracking);
+  /* Time input time input field separator weight */
+  --ad-comp-time-input-time-input-field-separator-weight: var(--ad-sys-typescale-display-large-weight);
+  /* Time input time input field separator size */
+  --ad-comp-time-input-time-input-field-separator-size: var(--ad-sys-typescale-display-large-size);
+  /* Time input time input field separator line height */
+  --ad-comp-time-input-time-input-field-separator-line-height: var(--ad-sys-typescale-display-large-line-height);
+  /* Time input time input field separator font */
+  --ad-comp-time-input-time-input-field-separator-font: var(--ad-sys-typescale-display-large-font);
+  /* Time input time input field label text tracking */
+  --ad-comp-time-input-time-input-field-label-text-tracking: var(--ad-sys-typescale-display-medium-tracking);
+  /* Time input time input field label text weight */
+  --ad-comp-time-input-time-input-field-label-text-weight: var(--ad-sys-typescale-display-medium-weight);
+  /* Time input time input field label text size */
+  --ad-comp-time-input-time-input-field-label-text-size: var(--ad-sys-typescale-display-medium-size);
+  /* Time input time input field label text line height */
+  --ad-comp-time-input-time-input-field-label-text-line-height: var(--ad-sys-typescale-display-medium-line-height);
+  /* Time input time input field label text font */
+  --ad-comp-time-input-time-input-field-label-text-font: var(--ad-sys-typescale-display-medium-font);
+  /* Time input time input field container shape */
+  --ad-comp-time-input-time-input-field-container-shape: var(--ad-sys-shape-corner-small);
+  /* Time input headline tracking */
+  --ad-comp-time-input-headline-tracking: var(--ad-sys-typescale-label-medium-tracking);
+  /* Time input headline weight */
+  --ad-comp-time-input-headline-weight: var(--ad-sys-typescale-label-medium-weight);
+  /* Time input headline size */
+  --ad-comp-time-input-headline-size: var(--ad-sys-typescale-label-medium-size);
+  /* Time input headline line height */
+  --ad-comp-time-input-headline-line-height: var(--ad-sys-typescale-label-medium-line-height);
+  /* Time input headline font */
+  --ad-comp-time-input-headline-font: var(--ad-sys-typescale-label-medium-font);
+  /* Time input container shape */
+  --ad-comp-time-input-container-shape: var(--ad-sys-shape-corner-extra-large);
+  /* Time input container elevation */
+  --ad-comp-time-input-container-elevation: var(--ad-sys-elevation-level3);
+}

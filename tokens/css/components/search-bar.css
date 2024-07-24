@@ -1,0 +1,37 @@
+:where(html),
+.tokens {
+  /* Search bar avatar size */
+  --ad-comp-search-bar-avatar-size: 30px;
+  /* Search bar container height */
+  --ad-comp-search-bar-container-height: 56px;
+  /* Search bar pressed state layer opacity */
+  --ad-comp-search-bar-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Search bar hover state layer opacity */
+  --ad-comp-search-bar-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Search bar avatar shape */
+  --ad-comp-search-bar-avatar-shape: var(--ad-sys-shape-corner-full);
+  /* Search bar input text tracking */
+  --ad-comp-search-bar-input-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Search bar input text weight */
+  --ad-comp-search-bar-input-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Search bar input text size */
+  --ad-comp-search-bar-input-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Search bar input text line height */
+  --ad-comp-search-bar-input-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Search bar input text font */
+  --ad-comp-search-bar-input-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Search bar supporting text tracking */
+  --ad-comp-search-bar-supporting-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Search bar supporting text weight */
+  --ad-comp-search-bar-supporting-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Search bar supporting text size */
+  --ad-comp-search-bar-supporting-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Search bar supporting text line height */
+  --ad-comp-search-bar-supporting-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Search bar supporting text font */
+  --ad-comp-search-bar-supporting-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Search bar container shape */
+  --ad-comp-search-bar-container-shape: var(--ad-sys-shape-corner-full);
+  /* Search bar container elevation */
+  --ad-comp-search-bar-container-elevation: var(--ad-sys-elevation-level3);
+}

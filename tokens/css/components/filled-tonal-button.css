@@ -1,0 +1,41 @@
+:where(html),
+.tokens {
+  /* Filled tonal button pressed container elevation */
+  --ad-comp-filled-tonal-button-pressed-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filled tonal button pressed state layer opacity */
+  --ad-comp-filled-tonal-button-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Filled tonal button focus container elevation */
+  --ad-comp-filled-tonal-button-focus-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filled tonal button focus state layer opacity */
+  --ad-comp-filled-tonal-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Filled tonal button hover container elevation */
+  --ad-comp-filled-tonal-button-hover-container-elevation: var(--ad-sys-elevation-level1);
+  /* Filled tonal button hover state layer opacity */
+  --ad-comp-filled-tonal-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Filled tonal button disabled icon opacity */
+  --ad-comp-filled-tonal-button-with-icon-disabled-icon-opacity: 0.3799999952316284;
+  /* Filled tonal button disabled label text opacity */
+  --ad-comp-filled-tonal-button-disabled-label-text-opacity: 0.3799999952316284;
+  /* Filled tonal button disabled container opacity */
+  --ad-comp-filled-tonal-button-disabled-container-opacity: 0.11999999731779099;
+  /* Filled tonal button disabled container elevation */
+  --ad-comp-filled-tonal-button-disabled-container-elevation: var(--ad-sys-elevation-level0);
+  /* Filled tonal button icon size */
+  --ad-comp-filled-tonal-button-with-icon-icon-size: 18px;
+  /* Filled tonal button label text weight */
+  --ad-comp-filled-tonal-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Filled tonal button label text tracking */
+  --ad-comp-filled-tonal-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Filled tonal button label text size */
+  --ad-comp-filled-tonal-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Filled tonal button label text line height */
+  --ad-comp-filled-tonal-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Filled tonal button label text font */
+  --ad-comp-filled-tonal-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Filled tonal button container shape */
+  --ad-comp-filled-tonal-button-container-shape: var(--ad-sys-shape-corner-full);
+  /* Filled tonal button container height */
+  --ad-comp-filled-tonal-button-container-height: 40px;
+  /* Filled tonal button container elevation */
+  --ad-comp-filled-tonal-button-container-elevation: var(--ad-sys-elevation-level0);
+}

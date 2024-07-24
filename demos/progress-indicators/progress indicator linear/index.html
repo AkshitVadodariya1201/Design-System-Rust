@@ -1,0 +1,32 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Progress Indicator Linear</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-progress-indicator-linear/pkg/ad_progress_indicator_linear.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+    </style>
+</head>
+
+<body>
+    <!-- Note: Only one can be used at a time -->
+    <!-- <ad-progress-indicator-linear></ad-progress-indicator-linear> -->
+    <ad-progress-indicator-linear inderminate></ad-progress-indicator-linear>
+
+</body>
+
+</html>

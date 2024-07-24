@@ -1,0 +1,31 @@
+<!-- write html structure for filled text field -->
+<div class="field">
+    <div class="container-overflow">
+        <div class="background"></div>
+        <div class="state-layer"></div>
+        <div class="active-indicator"></div>
+        <div class="container">
+            <div class="start">
+                <slot name="start"></slot>
+            </div>
+            <div class="middle">
+                <span class="label"></span>
+                <span class="label"></span>
+                <div class="content">
+                    <slot></slot>
+                </div>
+            </div>
+            <div class="end">
+                <slot name="end"></slot>
+            </div>
+        </div>
+    </div>
+    <div class="supporting-text">
+        <div class="supporting-text-start">
+            <slot name="supporting-text"></slot>
+        </div>
+        <div class="supporting-text-end">
+            <slot name="supporting-text-end"></slot>
+        </div>
+    </div>
+</div>

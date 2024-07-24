@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toggle Switch</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import init, { run } from "../../../packages/ad-toggle-switch/pkg/ad_toggle_switch.js";
+        async function main() {
+            await init();
+            run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-toggle-switch></ad-toggle-switch>
+    <ad-toggle-switch checked></ad-toggle-switch>
+    <ad-toggle-switch disabled></ad-toggle-switch>
+    <ad-toggle-switch checked disabled></ad-toggle-switch>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Center aligned Top app Bar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-center-aligned-top-app-bar/pkg/ad_center_aligned_top_app_bar.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-center-aligned-top-app-bar icon="menu" title="Title Large" trailingicon="account_circle"></ad-center-aligned-top-app-bar>
+</body>
+
+</html>

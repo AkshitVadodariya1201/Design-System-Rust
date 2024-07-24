@@ -1,0 +1,9 @@
+:where(html),
+.tokens {
+  /* Circular progress indicator active indicator shape */
+  --ad-comp-circular-progress-indicator-active-indicator-shape: var(--ad-sys-shape-corner-none);
+  /* Circular progress indicator active indicator width */
+  --ad-comp-circular-progress-indicator-active-indicator-width: 4px;
+  /* Circular progress indicator active indicator size */
+  --ad-comp-circular-progress-indicator-size: 48px;
+}

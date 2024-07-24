@@ -1,0 +1,13 @@
+:where(html),
+.tokens {
+  /* Plain typeface */
+  --ad-ref-typeface-plain: Roboto;
+  /* Brand typeface */
+  --ad-ref-typeface-brand: Roboto;
+  /* Bold weight */
+  --ad-ref-typeface-weight-bold: 700;
+  /* Medium weight */
+  --ad-ref-typeface-weight-medium: 500;
+  /* Regular weight */
+  --ad-ref-typeface-weight-regular: 400;
+}

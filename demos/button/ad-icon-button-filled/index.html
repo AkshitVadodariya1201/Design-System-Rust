@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Icon-Button-Filled</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as btn from "../../../packages/ad-icon-button-filled/pkg/ad_icon_button_filled.js";
+        import * as icon from "../../../packages/ad-icon/pkg/ad_icon.js";
+
+        async function main() {
+            const init = btn.default;
+            await init();
+            btn.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        body {
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-icon-button-filled>
+        <ad-icon>settings</ad-icon>
+    </ad-icon-button-filled>
+
+    <ad-icon-button-filled unselected>
+        <ad-icon>settings</ad-icon>
+    </ad-icon-button-filled>
+
+    <ad-icon-button-filled selected>
+        <ad-icon>settings</ad-icon>
+    </ad-icon-button-filled>
+
+    <ad-icon-button-filled disabled>
+        <ad-icon>settings</ad-icon>
+    </ad-icon-button-filled>
+
+    <ad-icon-button-filled unselected disabled>
+        <ad-icon>settings</ad-icon>
+    </ad-icon-button-filled>
+    
+    <ad-icon-button-filled selected disabled>
+        <ad-icon>settings</ad-icon>
+    </ad-icon-button-filled>
+</body>
+
+</html>

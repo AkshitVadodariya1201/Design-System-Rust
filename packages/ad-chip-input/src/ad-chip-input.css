@@ -1,0 +1,298 @@
+/* write css for input chip */
+/* take value from ../../../packages/ad-chip-input/readme.md */
+
+/* style container class for input chip */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-input-chip-container-height);
+    border-radius: var(--ad-comp-input-chip-container-shape);
+    position: relative;
+    cursor: pointer;
+}
+
+/* style container before for input chip */
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style outline class for input chip */
+.outline {
+    border: var(--ad-comp-input-chip-outline-width) solid var(--ad-sys-color-outline);
+    border-radius: inherit;
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+/* style button defoult property none */
+button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* style primary class , flex , center, padding 0 16px 0 8px */
+.primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 4px;
+    gap: 8px;
+}
+
+/* style leading-icon class for input chip */
+.leading-icon ::slotted(*) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ad-sys-color-on-surface-variant);
+    font-size: 18px;
+}
+
+/* style leading-icon class for input chip */
+.leading-icon ::slotted(img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-input-chip-with-avatar-avatar-size);
+    border-radius: var(--ad-comp-input-chip-with-avatar-avatar-shape);
+}
+
+/* style avatar class for input chip */
+.avatar {
+    padding-left: 4px;
+    gap: 8px;
+}
+
+/* style leading class for input chip */
+.leading {
+    gap: 8px;
+    padding-left: 8px;
+}
+
+/* style trailing-icon class for input chip */
+.trailing-icon {
+    display: flex;
+    padding: 0 8px;
+}
+
+/* style label-text class  for input chip */
+.label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font: var(--ad-comp-input-chip-label-text-font);
+    font-size: var(--ad-comp-input-chip-label-text-size);
+    font-weight: var(--ad-comp-input-chip-label-text-weight);
+    line-height: var(--ad-comp-input-chip-label-text-line-height);
+    letter-spacing: var(--ad-comp-input-chip-label-text-tracking);
+}
+
+/* style material-icons class*/
+.material-icons {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--ad-comp-input-chip-with-trailing-icon-trailing-icon-size);
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* style container class when enabled class */
+.enabled {
+    background-color: var(--ad-sys-color-surface);
+}
+
+/* style outline class when enabled add border color width */
+.enabled .outline {
+    border: var(--ad-comp-input-chip-outline-width) solid var(--ad-sys-color-outline);
+}
+
+/* style label-text class when enabled */
+.enabled .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font: var(--ad-comp-input-chip-label-text-font);
+    font-size: var(--ad-comp-input-chip-label-text-size);
+    font-weight: var(--ad-comp-input-chip-label-text-weight);
+    line-height: var(--ad-comp-input-chip-label-text-line-height);
+    letter-spacing: var(--ad-comp-input-chip-label-text-tracking);
+}
+
+/* style leading-icon class when enabled */
+.enabled .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-size: var(--ad-comp-input-chip-with-leading-icon-leading-icon-size);
+}
+
+/* style leading-icon class when enabled */
+.enabled .leading-icon ::slotted(img) {
+    height: var(--ad-comp-input-chip-with-avatar-avatar-size);
+    border-radius: var(--ad-comp-input-chip-with-avatar-avatar-shape);
+}
+
+/* style material-icons class when enabled */
+.enabled .material-icons {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* style disabled class */
+.disabled {
+    pointer-events: none;
+}
+
+/* style outline class when disabled , add border-color and opacity */
+.disabled .outline {
+    border-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-input-chip-disabled-outline-opacity);
+}
+
+/* style label-text class when disabled , add color and opacity */
+.disabled .label-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-input-chip-disabled-label-text-opacity);
+}
+
+/* style leading-icon class when disabled , add color and opacity */
+.disabled .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-input-chip-with-leading-icon-disabled-leading-icon-opacity);
+}
+
+/* style leading-icon class when disabled , add color and opacity */
+.disabled .leading-icon ::slotted(img) {
+    opacity: var(--ad-comp-input-chip-with-avatar-disabled-avatar-opacity);
+}
+
+/* style material-icons class when disabled , add color and opacity */
+.disabled .material-icons {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-input-chip-with-trailing-icon-disabled-trailing-icon-opacity);
+}
+
+
+
+/* style container before when container hover, add background color on-surface-variant and opacity */
+.container:hover::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-input-chip-hover-state-layer-opacity);
+}
+
+/* style label-text class when hover  */
+.container:hover .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style leading-icon class when hover  */
+.container:hover .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style material-icons class when hover  */
+.container:hover .material-icons {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* style container before when container focus, add background color on-surface-variant and opacity */
+.container:focus::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-input-chip-focus-state-layer-opacity);
+}
+
+/* style label-text class when focus  */
+.container:focus .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style leading-icon class when focus  */
+.container:focus .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style material-icons class when focus  */
+.container:focus .material-icons {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style button when focus */
+button:focus {
+    border: 2px solid var(--ad-sys-color-outline);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+
+
+
+/* style container before when container active, add background color on-surface-variant and opacity */
+.container:active::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-input-chip-pressed-state-layer-opacity);
+}
+
+/* style label-text when container active */
+.container:active .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style leading-icon when container active */
+.container:active .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style material-icons when container active */
+.container:active .material-icons {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+
+
+/* style container before when container dragged */
+.container:dragged::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-input-chip-dragged-state-layer-opacity);
+}
+
+/* style label-text when container dragged */
+.container:dragged .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style leading-icon when container dragged */
+.container:dragged .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style material-icons when container dragged */
+.container:dragged .material-icons {
+    color: var(--ad-sys-color-on-surface-variant);
+}

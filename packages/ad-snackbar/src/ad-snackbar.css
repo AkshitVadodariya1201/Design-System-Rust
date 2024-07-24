@@ -1,0 +1,67 @@
+/* .snackbar {
+    z-index: 8;
+    margin: 8px;
+    display: none;
+    position: fixed;
+    inset: 0;
+} */
+
+.state-layer {
+    height: var(--ad-comp-snackbar-with-single-line-container-height);
+    min-width: 344px;
+    max-width: 672px;
+    border-radius: var(--ad-comp-snackbar-container-shape);
+    inset: 0;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 0px;
+    padding-right: 8px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.state-layer-icon {
+    padding: 0 12px 0 16px;
+}
+
+.with-icon {
+    /* display: flex;
+    gap: 12px; */
+
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.state-layer::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--ad-sys-color-inverse-surface);
+    border-radius: var(--ad-comp-snackbar-container-shape);
+
+}
+
+.label-text {
+    position: relative;
+
+    color: var(--ad-sys-color-inverse-on-surface);
+    
+    font-family: var(--ad-comp-snackbar-supporting-text-font);
+    line-height: var(--ad-comp-snackbar-supporting-text-line-height);
+    font-size: var(--ad-comp-snackbar-supporting-text-size);
+    letter-spacing: var(--ad-comp-snackbar-supporting-text-tracking);
+    font-weight: var(--ad-comp-snackbar-supporting-text-weight);
+
+    padding: 14px 8px 14px 16px;
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin: 0px;
+}

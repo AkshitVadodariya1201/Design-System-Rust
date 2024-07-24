@@ -1,0 +1,232 @@
+/* write css for outlined icon button */
+/* take value from ../../../packages/ad-icon-button-outlined/readme.md */
+
+/* style button for outlined icon button */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-outlined-icon-button-container-size);
+    width: var(--ad-comp-outlined-icon-button-container-size);
+    border-radius: var(--ad-comp-outlined-icon-button-container-shape);
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* style button before */
+button::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style outlined class */
+.outlined {
+    border: var(--ad-comp-outlined-icon-button-unselected-outline-width) solid var(--ad-sys-color-outline);
+    border-radius: inherit;
+    position: absolute;
+    pointer-events: none;
+    inset: 0;
+}
+
+/* style outlined class when unselected class */
+button.unselected .outlined {
+    border: var(--ad-comp-outlined-icon-button-unselected-outline-width) solid var(--ad-sys-color-outline);
+}
+
+/* style outlined class when selected class */
+button.selected .outlined {
+    border: var(--ad-comp-outlined-icon-button-unselected-outline-width) solid var(--ad-sys-color-inverse-surface);
+}
+
+/* style icon class */
+.icon {
+    height: var(--ad-comp-outlined-icon-button-icon-size);
+}
+
+/* style slot inside of icon class */
+.icon ::slotted(*) {
+    font-size: var(--ad-comp-outlined-icon-button-icon-size);
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when button unselected */
+button.unselected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when button selected */
+button.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-inverse-surface);
+}
+
+
+
+/* style outlined class when button:enabled */
+button:enabled .outlined {
+    border: var(--ad-comp-outlined-icon-button-unselected-outline-width) solid var(--ad-sys-color-outline);
+}
+
+/* style outlined class when button:enabled unselected */
+button:enabled.unselected .outlined {
+    border: var(--ad-comp-outlined-icon-button-unselected-outline-width) solid var(--ad-sys-color-outline);
+}
+
+/* style outlined class when button:enabled selected */
+button:enabled.selected {
+    background-color: var(--ad-sys-color-inverse-surface);
+}
+
+/* style slot inside of icon class when button:enabled */
+button:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when button:enabled unselected */
+button:enabled.unselected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when button:enabled selected */
+button:enabled.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-inverse-on-surface);
+}
+
+
+
+/* style button before when button:hover */
+button:hover::before {
+    opacity: var(--ad-comp-outlined-icon-button-hover-state-layer-opacity);
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style button before when button:hover, unselected */
+button.unselected:hover::before {
+    opacity: var(--ad-comp-outlined-icon-button-hover-state-layer-opacity);
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style button before when button:hover, selected */
+button.selected:hover::before {
+    opacity: var(--ad-comp-outlined-icon-button-hover-state-layer-opacity);
+    background-color: var(--ad-sys-color-inverse-on-surface);
+}
+
+/* style solt inside of icon class when button:hover */
+button:hover .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style solt inside of icon class when button:hover, unselected */
+button.unselected:hover .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style solt inside of icon class when button:hover, selected */
+button.selected:hover .icon ::slotted(*) {
+    color: var(--ad-sys-color-inverse-on-surface);
+}
+
+
+
+/* style button before when button:focus */
+button:focus::before {
+    opacity: var(--ad-comp-outlined-icon-button-focus-state-layer-opacity);
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style button before when button:focus, unselected */
+button.unselected:focus::before {
+    opacity: var(--ad-comp-outlined-icon-button-focus-state-layer-opacity);
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style button before when button:focus, selected */
+button.selected:focus::before {
+    opacity: var(--ad-comp-outlined-icon-button-focus-state-layer-opacity);
+    background-color: var(--ad-sys-color-inverse-on-surface);
+}
+
+/* style solt inside of icon class when button:focus */
+button:focus .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style solt inside of icon class when button:focus, unselected */
+button.unselected:focus .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style solt inside of icon class when button:focus, selected */
+button.selected:focus .icon ::slotted(*) {
+    color: var(--ad-sys-color-inverse-on-surface);
+}
+
+
+
+/* style button before when button:active */
+button:active::before {
+    opacity: var(--ad-comp-outlined-icon-button-pressed-state-layer-opacity);
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style button before when button:active, unselected */
+button.unselected:active::before {
+    opacity: var(--ad-comp-outlined-icon-button-pressed-state-layer-opacity);
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style button before when button:active, selected */
+button.selected:active::before {
+    opacity: var(--ad-comp-outlined-icon-button-pressed-state-layer-opacity);
+    background-color: var(--ad-sys-color-inverse-on-surface);
+}
+
+/* style solt inside of icon class when button:active */
+button:active .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style solt inside of icon class when button:active, unselected */
+button.unselected:active .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style solt inside of icon class when button:active, selected */
+button.selected:active .icon ::slotted(*) {
+    color: var(--ad-sys-color-inverse-on-surface);
+}
+
+
+
+/* style button when :disabled */
+button:disabled {
+    cursor: default;
+}
+
+/* style button before when button:disabled, unselected, selected */
+button:disabled::before, 
+button:disabled.unselected::before,
+button:disabled.selected::before {
+    background-color: transparent;
+}
+
+/* style outlined class when button:disabled, unselected, selected */
+button:disabled .outlined,
+button:disabled.unselected .outlined,
+button:disabled.selected .outlined {
+    border-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-outlined-icon-button-disabled-outline-opacity);
+}
+
+/* style slot inside of icon class when button:disabled, unselected, selected */
+button:disabled .icon ::slotted(*),
+button:disabled.unselected .icon ::slotted(*),
+button:disabled.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-outlined-icon-button-disabled-icon-opacity);
+}

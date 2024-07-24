@@ -1,0 +1,142 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dialogs</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script type="module">
+        import * as dialogs from "../../../packages/ad-dialog/pkg/ad_dialog.js";
+        import * as button from "../../../packages/ad-button-text/pkg/ad_button_text.js";
+        import * as icon from "../../../packages/ad-icon/pkg/ad_icon.js";
+
+        import * as divider from "../../../packages/ad-divider/pkg/ad_divider.js";
+        import * as list from "../../../packages/ad-list/pkg/ad_list.js";
+        import * as list_item from "../../../packages/ad-list-item/pkg/ad_list_item.js";
+        import * as checkbox from "../../../packages/ad-checkbox/pkg/ad_checkbox.js";
+
+
+
+        async function main() {
+            const initDialogs = dialogs.default;
+            await initDialogs();
+            dialogs.run();
+
+            const initButton = button.default;
+            await initButton();
+            button.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+
+
+            const initDivider = divider.default;
+            await initDivider();
+            divider.run();
+
+            const initList = list.default;
+            await initList();
+            list.run();
+
+            const initListItem = list_item.default;
+            await initListItem();
+            list_item.run();
+
+            const initCheckbox = checkbox.default;
+            await initCheckbox();
+            checkbox.run();
+
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+
+        :root {
+            --ad-color-divider: var(--ad-sys-color-outline-variant);
+        }
+       
+        ad-divider {
+            margin-block-start: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+
+    <ad-dialog >
+        <!-- <ad-icon slot="headline-prefix">star_rate</ad-icon> -->
+        <h1 slot="header">Dialog Title</h1>
+        <span>A dialog is a type of modal type of modaltype of modaltype of modaltype of modaltype of modaltype of modaltype of modaltype of modal </span>
+        <ad-divider></ad-divider>
+        <ad-list>
+            <ad-list-item headline="Headline" one-line>
+                <span slot="start">A</span>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+            <ad-list-item headline="Headline" one-line avatar>
+                <img slot="start" src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+        <ad-divider></ad-divider>
+        <ad-button-text slot="footer">Cancel</ad-button-text>
+        <ad-button-text slot="footer">Accept</ad-button-text>
+    </ad-dialog>
+    <ad-dialog >
+        <!-- <ad-icon slot="headline-prefix">star_rate</ad-icon> -->
+        <h1 slot="header">Dialog Title</h1>
+        <span>A dialog is a type of modal type of modaltype of modaltype of modaltype of modaltype of modaltype of modaltype of modaltype of modal </span>
+        <ad-divider></ad-divider>
+        <ad-list>
+            <ad-list-item headline="Headline" one-line>
+                <span slot="start">A</span>
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+            <ad-list-item headline="Headline" one-line avatar>
+                <img slot="start" src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                <ad-checkbox checked slot="end">
+                    <ad-icon slot="icon">done</ad-icon>
+                </ad-checkbox>
+            </ad-list-item>
+        </ad-list>
+        <ad-divider></ad-divider>
+
+    <ad-dialog>
+        <ad-icon slot="headline-prefix">star_rate</ad-icon>
+        <h1 slot="headline">Dialog Title</h1>
+        <span>A dialog is a type of modal window that appears in front of app content to provide critical information, or prompt for a
+        decision to be made.</span>
+
+        <ad-button-text slot="footer">Cancel</ad-button-text>
+        <ad-button-text slot="footer">Accept</ad-button-text>
+    </ad-dialog>
+
+</body>
+
+</html>

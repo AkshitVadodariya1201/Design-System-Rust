@@ -1,0 +1,171 @@
+/* write css for extended fab icon button */
+/* take value from packages/ad-icon-button-extended-fab/readme.md */
+
+/* style button for extended fab icon button */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding: 16px 20px;
+    min-width: 80px;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--ad-sys-color-primary-container);
+}
+
+/* style leading-icon class */
+.leading-icon {
+    gap: 12px;
+    padding: 16px 20px 16px 16px;
+}
+
+/* style button before */
+button::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style label-text class */
+.label-text {
+    color: var(--ad-sys-color-on-primary-container);
+    font-family: var(--ad-comp-extended-fab-branded-label-text-font);
+    font-size: var(--ad-comp-extended-fab-branded-label-text-size);
+    font-weight: var(--ad-comp-extended-fab-branded-label-text-weight);
+    line-height: var(--ad-comp-extended-fab-branded-label-text-line-height);
+    letter-spacing: var(--ad-comp-extended-fab-branded-label-text-tracking);
+}
+
+/* style icon class  */
+.icon {
+    height: 24px;
+}
+
+/* style slot inside of icon class */
+.icon ::slotted(*) {
+    font-size: 24px;
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+
+
+/* style button when button:enabled, primary */
+button:enabled,
+button.primary:enabled {
+    background-color: var(--ad-sys-color-primary-container);
+}
+
+/* style label-text when button:enabled , primary */
+button:enabled .label-text, button.primary:enabled .label-text {
+    color: var(--ad-sys-color-on-primary-container);
+    font-family: var(--ad-comp-extended-fab-branded-label-text-font);
+    font-size: var(--ad-comp-extended-fab-branded-label-text-size);
+    font-weight: var(--ad-comp-extended-fab-branded-label-text-weight);
+    line-height: var(--ad-comp-extended-fab-branded-label-text-line-height);
+    letter-spacing: var(--ad-comp-extended-fab-branded-label-text-tracking);
+}
+
+/* style slot inside of icon when button:enabled, primary */
+button:enabled .icon ::slotted(*), button.primary:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+
+
+/* style button before when button:hover, primary  */
+button:hover::before, button.primary:hover::before {
+    background-color: var(--ad-sys-color-on-primary-container);
+    opacity: var(--ad-comp-extended-fab-branded-hover-state-layer-opacity);
+}
+
+
+
+/* style button before when button:focus, primary */
+button:focus::before, button.primary:focus::before {
+    background-color: var(--ad-sys-color-on-primary-container);
+    opacity: var(--ad-comp-extended-fab-branded-focus-state-layer-opacity);
+}
+
+
+
+/* style button before when button:active, primary */
+button:active::before, button.primary:active::before {
+    background-color: var(--ad-sys-color-on-primary-container);
+    opacity: var(--ad-comp-extended-fab-branded-pressed-state-layer-opacity);
+}
+
+
+/* style surface class when button:enabled */
+button:enabled.surface {
+    background-color: var(--ad-ref-palette-neutral20);
+}
+
+/* style button before when surface button:hover, :focus and :active */
+button.surface:hover::before,
+button.surface:focus::before,
+button.surface:active::before {
+    background-color: var(--ad-sys-color-primary);
+}
+
+/* style label-text when button:enabled and surface */
+button.surface:enabled .label-text {
+    color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of icon class when button:enabled and surface both */
+button.surface:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style secondary class when button:enabled */
+button:enabled.secondary {
+    background-color: var(--ad-sys-color-secondary-container);
+}
+
+/* style button before when secondary button:hover, :focus and :active */
+button.secondary:hover::before,
+button.secondary:focus::before,
+button.secondary:active::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* style label-text when button:enabled and secondary */
+button.secondary:enabled .label-text {
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+/* style slot inside of icon class when button:enabled and secondary both */
+button.secondary:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+
+
+/* style tertiary class when button:enabled */
+button:enabled.tertiary {
+    background-color: var(--ad-sys-color-tertiary-container);
+}
+
+/* style button before when tertiary button:hover, :focus and :active */
+button.tertiary:hover::before,
+button.tertiary:focus::before,
+button.tertiary:active::before {
+    background-color: var(--ad-sys-color-on-tertiary-container);
+}
+
+/* style label-text when button:enabled and tertiary */
+button.tertiary:enabled .label-text {
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+/* style slot inside of icon class when button:enabled and tertiary both */
+button.tertiary:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-tertiary-container);
+}

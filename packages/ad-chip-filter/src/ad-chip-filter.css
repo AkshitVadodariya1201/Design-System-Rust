@@ -1,0 +1,331 @@
+/* write css for enabled, disabled and all state using above file */
+
+/* write a css for filter chip */
+
+/* take value from ../../../packages/ad-chip-filter/readme.md */
+
+/* style the filter chip container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-filter-chip-container-height);
+    border-radius: var(--ad-comp-filter-chip-container-shape);
+    cursor: pointer;
+    position: relative;
+    padding: 0 8px;
+}
+
+/* style outline class */
+.outline {
+    border: var(--ad-comp-filter-chip-flat-unselected-outline-width) solid var(--ad-sys-color-outline);
+    /* border radius inherit, position, pointer events, inset  */
+    border-radius: inherit;
+    position: absolute;
+    pointer-events: none;
+    inset: 0;
+}
+
+/* style elevated class */
+.elevated {
+    /* elevation */
+    box-shadow: var(--ad-comp-filter-chip-elevated-container-elevation);
+    /* background color --ad-ref-palette-neutral95 */
+    background-color: var(--ad-ref-palette-neutral95);
+}
+
+/* style the filter chip label-text and take color on-serface-variant */
+.label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-family: var(--ad-comp-filter-chip-label-text-font);
+    line-height: var(--ad-comp-filter-chip-label-text-line-height);
+    font-size: var(--ad-comp-filter-chip-label-text-size);
+    letter-spacing: var(--ad-comp-filter-chip-label-text-tracking);
+    font-weight: var(--ad-comp-filter-chip-label-text-weight);
+}
+
+/* style slot color on suface variant and font size and take component variable*/
+::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-size: var(--ad-comp-filter-chip-with-icon-icon-size);
+}
+
+/* style outline class when selected */
+.selected .outline {
+    border-width: var(--ad-comp-filter-chip-flat-selected-outline-width);
+}
+
+/* write css for button all defoult propery are none */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.leading-icon, .icon {
+    height: var(--ad-comp-filter-chip-with-icon-icon-size);
+}
+
+/* style the primary class */
+.primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-right: 8px;
+    /* padding: 0 8px; */
+}
+
+/* style the container before */
+.container:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+
+
+/* style outline class when enabled and take color outline */
+.enabled .outline {
+    border: var(--ad-comp-filter-chip-flat-unselected-outline-width) solid var(--ad-sys-color-outline);
+}
+
+/* style outline class when container and selected enabled */
+.container.selected.enabled .outline {
+    border: var(--ad-comp-filter-chip-flat-selected-outline-width);
+}
+
+/* style container and selected both take color secondary container */
+.container.selected {
+    background-color: var(--ad-sys-color-secondary-container);
+}
+
+/* style elevated class when container enabled */
+.container.enabled.elevated {
+    /* background color */
+    background-color: var(--ad-ref-palette-neutral95);
+    box-shadow: var(--ad-comp-filter-chip-elevated-container-elevation);
+}
+
+/* style elevated class when container selected enabled */
+.container.selected.enabled.elevated {
+    /* background color */
+    background-color: var(--ad-sys-color-secondary-container);
+    box-shadow: var(--ad-comp-filter-chip-elevated-container-elevation);
+}
+
+/* style label text when container enabled */
+.enabled .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+    font-family: var(--ad-comp-filter-chip-label-text-font);
+    line-height: var(--ad-comp-filter-chip-label-text-line-height);
+    font-size: var(--ad-comp-filter-chip-label-text-size);
+    letter-spacing: var(--ad-comp-filter-chip-label-text-tracking);
+    font-weight: var(--ad-comp-filter-chip-label-text-weight);
+}
+
+/* style label text when container selected enabled take color on-secondary-container */
+.container.selected.enabled .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* style the slot when container enabled */
+.enabled ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style the slot when container selected enabled */
+.container.selected.enabled ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+
+
+/* style disabled class pointer-events */
+.disabled {
+    pointer-events: none;
+}
+
+/* style outline class when disabled  color and opacity */
+.disabled .outline {
+    border-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-filter-chip-flat-disabled-unselected-outline-opacity);
+}
+
+.disabled.selected {
+    background-color: transparent;
+}
+
+/* style selected class when disabled background and opacity */
+.disabled.selected::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-filter-chip-flat-disabled-selected-container-opacity);
+}
+
+/* style elevated class when disabled  color and opacity */
+.disabled .elevated {
+    box-shadow: var(--ad-comp-filter-chip-elevated-disabled-container-elevation);
+    opacity: var(--ad-comp-filter-chip-elevated-disabled-container-opacity);
+}
+
+/* style label text when disabled color and opacity */
+.disabled .label-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-filter-chip-disabled-label-text-opacity);
+}
+
+/* style the slot when disabled color and opacity */
+.disabled ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-filter-chip-disabled-label-text-opacity);
+}
+
+
+
+/* add hover effect on container::before */
+.container:hover::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+/* add hover effect on container when selected */
+.container.selected:hover::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+/* add hover effect on label text when container hover take color on-surface-variant */
+.container:hover .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add hover effect on label text when container selected hover take color on-secondary-container */
+.container.selected:hover .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* add hover effect on slot when container hover take color on-surface-variant */
+.container:hover ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add hover effect on slot when container selected hover take color on-secondary-container */
+.container.selected:hover ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+
+
+/* add focused effect on outline when container focus take color on-surface-variant-state-content */
+.container:focus .outline {
+    border-color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add focus effect on contianer before when container focus */
+.container:focus::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-sys-state-focus-state-layer-opacity);
+}
+
+/* add focused effect on container when selected focus */
+.container.selected:focus::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-sys-state-focus-state-layer-opacity);
+}
+
+/* add focused effect on label text when container focus take color on-surface-variant */
+.container:focus .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add focused effect on label-text when container and selected focus */
+.container.selected:focus .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* add focused effect on slot when container focus */
+.container:focus ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add focused effect on slot when container selected focus */
+.container.selected:focus ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+button:focus.icon {
+    border: 2px solid var(--ad-sys-color-on-surface-variant);
+    height: 22px;
+    border-radius: 4px;
+}
+
+
+/* add pressed effect on container before */
+.container:active::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}
+
+/* add pressed effect on container when selected */
+.container.selected:active::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}
+
+/* add pressed effect on label text when container */
+.container:active .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add pressed effect on label text when container selected */
+.container.selected:active .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* add pressed effect on slot when container */
+.container:active ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add pressed effect on slot when container selected */
+.container.selected:active ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+
+
+/* add dragged effect on container before */
+.container:dragged::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-sys-state-dragged-state-layer-opacity);
+}
+
+/* add dragged effect on container when selected */
+.container.selected:dragged::before {
+    background-color: var(--ad-sys-color-on-secondary-container);
+    opacity: var(--ad-sys-state-dragged-state-layer-opacity);
+}
+
+/* add dragged effect on label text when container */
+.container:dragged .label-text {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add dragged effect on label text when container selected */
+.container.selected:dragged .label-text {
+    color: var(--ad-sys-color-on-secondary-container);
+}
+
+/* add dragged effect on slot when container */
+.container:dragged ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* add dragged effect on slot when container selected */
+.container.selected:dragged ::slotted(*) {
+    color: var(--ad-sys-color-on-secondary-container);
+}

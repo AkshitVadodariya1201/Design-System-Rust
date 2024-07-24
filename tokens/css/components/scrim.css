@@ -1,0 +1,5 @@
+:where(html),
+.tokens {
+  /* Scrim container opacity */
+  --ad-comp-scrim-container-opacity: 0.3199999928474426;
+}

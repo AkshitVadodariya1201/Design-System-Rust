@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Elements - Button</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script type="module">
+        import init, { run } from '../../packages/button/pkg/button.js';
+        async function main() {
+            await init();
+            run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        /* This will only affect the paragraph outside the Web Components. */
+        p {
+            color: blue;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <my-button outline title="Hello world">
+        <span class="material-icons">search</span>
+    </my-button>
+    <my-button class="dark-theme" outline title="Click Me"></my-button>
+    <my-button class="light-theme" outline title="Click Me"></my-button>
+    <my-button title="Hello world"></my-button>
+
+</body>
+
+</html>

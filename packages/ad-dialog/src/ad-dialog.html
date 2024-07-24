@@ -1,0 +1,31 @@
+<!-- write html structure for dialog -->
+<dialog class="dialog tokens" open>
+    <div class="container">
+
+        <header class="header">
+            <slot name="header">
+                <slot name="headline-prefix"></slot>
+                <slot name="headline"></slot>
+                <slot name="headline-suffix"></slot>
+            </slot>
+        </header>
+        <section class="content">
+            <slot></slot>
+        </section>
+
+        <div class="text">
+            <header class="header">
+                <slot name="headline-prefix"></slot>
+                <slot name="headline"></slot>
+                <slot name="headline-suffix"></slot>
+            </header>
+            <section class="content">
+                <slot></slot>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <slot name="footer"></slot>
+        </footer>
+    </div>
+</dialog>

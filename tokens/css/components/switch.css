@@ -1,0 +1,69 @@
+:where(html),
+.tokens {
+  /* Switch track shape */
+  --ad-comp-switch-track-shape: var(--ad-sys-shape-corner-full);
+  /* Switch track outline width */
+  --ad-comp-switch-track-outline-width: 2px;
+  /* Switch handle width */
+  --ad-comp-switch-handle-width: 20px;
+  /* Switch handle height */
+  --ad-comp-switch-handle-height: 20px;
+  /* Switch disabled handle elevation */
+  --ad-comp-switch-disabled-handle-elevation: var(--ad-sys-elevation-level0);
+  /* Switch disabled handle opacity */
+  --ad-comp-switch-disabled-handle-opacity: 0.3799999952316284;
+  /* Switch handle elevation */
+  --ad-comp-switch-handle-elevation: var(--ad-sys-elevation-level1);
+  /* Switch unselected pressed state layer opacity */
+  --ad-comp-switch-unselected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Switch selected pressed state layer opacity */
+  --ad-comp-switch-selected-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Switch unselected focus state layer opacity */
+  --ad-comp-switch-unselected-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Switch selected focus state layer opacity */
+  --ad-comp-switch-selected-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Switch unselected hover state layer opacity */
+  --ad-comp-switch-unselected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Switch selected hover state layer opacity */
+  --ad-comp-switch-selected-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Switch disabled selected handle opacity */
+  --ad-comp-switch-disabled-selected-handle-opacity: 1;
+  /* Switch disabled unselected handle opacity */
+  --ad-comp-switch-disabled-unselected-handle-opacity: 0.3799999952316284;
+  /* Switch state layer shape */
+  --ad-comp-switch-state-layer-shape: var(--ad-sys-shape-corner-full);
+  /* Switch handle shape */
+  --ad-comp-switch-handle-shape: var(--ad-sys-shape-corner-full);
+  /* Switch pressed handle width */
+  --ad-comp-switch-pressed-handle-width: 28px;
+  /* Switch selected handle width */
+  --ad-comp-switch-selected-handle-width: 24px;
+  /* Switch with icon handle width */
+  --ad-comp-switch-with-icon-handle-width: 24px;
+  /* Switch unselected handle width */
+  --ad-comp-switch-unselected-handle-width: 16px;
+  /* Switch pressed handle height */
+  --ad-comp-switch-pressed-handle-height: 28px;
+  /* Switch selected handle height */
+  --ad-comp-switch-selected-handle-height: 24px;
+  /* Switch with icon handle height */
+  --ad-comp-switch-with-icon-handle-height: 24px;
+  /* Switch unselected handle height */
+  --ad-comp-switch-unselected-handle-height: 16px;
+  /* Switch unselected icon size */
+  --ad-comp-switch-unselected-icon-size: 16px;
+  /* Switch selected icon size */
+  --ad-comp-switch-selected-icon-size: 16px;
+  /* Switch state layer size */
+  --ad-comp-switch-state-layer-size: 40px;
+  /* Switch track width */
+  --ad-comp-switch-track-width: 52px;
+  /* Switch track height */
+  --ad-comp-switch-track-height: 32px;
+  /* Switch disabled unselected icon opacity */
+  --ad-comp-switch-disabled-unselected-icon-opacity: 0.3799999952316284;
+  /* Switch disabled selected icon opacity */
+  --ad-comp-switch-disabled-selected-icon-opacity: 0.3799999952316284;
+  /* Switch disabled track opacity */
+  --ad-comp-switch-disabled-track-opacity: 0.11999999731779099;
+}

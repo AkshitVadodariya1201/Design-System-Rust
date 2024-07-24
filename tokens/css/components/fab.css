@@ -1,0 +1,33 @@
+:where(html),
+.tokens {
+  /* FAB (large branded) focus state layer opacity */
+  --ad-comp-fab-branded-large-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* FAB (large branded) hover state layer opacity */
+  --ad-comp-fab-branded-large-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* FAB (large branded) hover container elevation */
+  --ad-comp-fab-branded-large-hover-container-elevation: var(--ad-sys-elevation-level4);
+  /* FAB (large branded) icon size */
+  --ad-comp-fab-branded-large-icon-size: 48px;
+  /* FAB (large branded) lowered focus container elevation */
+  --ad-comp-fab-branded-large-lowered-focus-container-elevation: var(--ad-sys-elevation-level1);
+  /* FAB (large branded) focus focus container elevation */
+  --ad-comp-fab-branded-large-focus-container-elevation: var(--ad-sys-elevation-level3);
+  /* FAB (large branded) lowered hover container elevation */
+  --ad-comp-fab-branded-large-lowered-hover-container-elevation: var(--ad-sys-elevation-level2);
+  /* FAB (large branded) lowered container elevation */
+  --ad-comp-fab-branded-large-lowered-container-elevation: var(--ad-sys-elevation-level1);
+  /* FAB (large branded) container elevation */
+  --ad-comp-fab-branded-large-container-elevation: var(--ad-sys-elevation-level3);
+  /* FAB (large branded) container height */
+  --ad-comp-fab-branded-large-container-height: 96px;
+  /* FAB (large branded) container width */
+  --ad-comp-fab-branded-large-container-width: 96px;
+  /* FAB (large branded) container shape */
+  --ad-comp-fab-branded-large-container-shape: var(--ad-sys-shape-corner-extra-large);
+  /* FAB (large branded) pressed state layer opacity */
+  --ad-comp-fab-branded-large-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* FAB (large branded) pressed container elevation */
+  --ad-comp-fab-branded-large-pressed-container-elevation: var(--ad-sys-elevation-level3);
+  /* FAB (large branded) lowered pressed container elevation */
+  --ad-comp-fab-branded-large-lowered-pressed-container-elevation: var(--ad-sys-elevation-level1);
+}

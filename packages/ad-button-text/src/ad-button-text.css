@@ -1,0 +1,153 @@
+/* write css for text button */
+/* take value from  ../../../packages/ad-button-text/readme.md*/
+
+/* style the button for text button*/
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--ad-comp-text-button-container-height);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0 4px 0 4px;
+    gap: 8px;
+}
+
+/* style with-leading-icon class and add padding 0 8px 0 12px */
+.with-leading-icon {
+    padding: 0 8px 0 12px;
+}
+
+/* style with-trailing-icon class and add padding 0 12px 0 8px */
+.with-trailing-icon {
+    padding: 0 12px 0 8px;
+}
+
+/* style button before  */
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style label-text class for text button */
+.label-text {
+    color: var(--ad-sys-color-primary);
+    font: var(--ad-comp-text-button-label-text-font);
+    line-height: var(--ad-comp-text-button-label-text-line-height);
+    font-size: var(--ad-comp-text-button-label-text-size);
+    letter-spacing: var(--ad-comp-text-button-label-text-tracking);
+    font-weight: var(--ad-comp-text-button-label-text-weight);
+}
+
+/* style leading-icon and trailing-icon both class for text button */
+:is(.leading-icon, .trailing-icon) {
+    display: flex;
+    height: var(--ad-comp-text-button-with-icon-icon-size);
+}
+
+/* style slot inside of leading-icon and trailing-icon for text button */
+:is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+    font-size: var(--ad-comp-text-button-with-icon-icon-size);
+}
+
+
+
+/* style label-text when button enabled */
+button:enabled .label-text {
+    color: var(--ad-sys-color-primary);
+    font: var(--ad-comp-text-button-label-text-font);
+    line-height: var(--ad-comp-text-button-label-text-line-height);
+    font-size: var(--ad-comp-text-button-label-text-size);
+    letter-spacing: var(--ad-comp-text-button-label-text-tracking);
+    font-weight: var(--ad-comp-text-button-label-text-weight);
+}
+
+/* style slot inside of leading-icon and trailing-icon when button enabled */
+button:enabled :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button before when hover */
+button:hover::before {
+    background: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-text-button-hover-state-layer-opacity);
+}
+
+/* style label-text when hover */
+button:hover .label-text{
+    color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of leading-icon and trailing-icon when hover */
+button:hover :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button before when focused */
+button:focus::before {
+    background: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-text-button-focus-state-layer-opacity);
+}
+
+/* style label-text when focused */
+button:focus .label-text{
+    color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of leading-icon and trailing-icon when focused */
+button:focus :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button before when pressed */
+button:active::before {
+    background: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-text-button-pressed-state-layer-opacity);
+}
+
+/* style label-text when pressed */
+button:active .label-text {
+    color: var(--ad-sys-color-primary);
+}
+
+/* style slot inside of leading-icon and trailing-icon when pressed */
+button:active :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button when disabled */
+button:disabled {
+    cursor: default;
+}
+
+/* style button before when disabled */
+button:disabled::before {
+    background: transparent;
+}
+
+/* style label-text when button disabled */
+button:disabled .label-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-text-button-disabled-label-text-opacity);
+}
+
+/* style slot inside of leading-icon and trailing-icon when button disabled */
+button:disabled :is(.leading-icon, .trailing-icon) ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-text-button-with-icon-disabled-icon-opacity);
+}

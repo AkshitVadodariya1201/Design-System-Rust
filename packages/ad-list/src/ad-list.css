@@ -1,0 +1,23 @@
+/* write css for list */
+/* style list class */
+
+:host {
+    --ad-list-background-color: var(--ad-color-list-surface);
+    --ad-margin-top-value: var(--ad-divider-margin-top); 
+    --ad-margin-bottom-value: var(--ad-divider-margin-bottom); 
+}
+
+.list {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0;
+    position: relative;
+    outline: none;
+    background-color: var(--ad-list-background-color);
+}
+
+::slotted(ad-divider) {
+    margin-top: var(--ad-margin-top-value);
+    margin-bottom: var(--ad-margin-bottom-value);
+}

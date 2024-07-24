@@ -1,0 +1,33 @@
+:where(html),
+.tokens {
+  /* Search view docked header container height */
+  --ad-comp-search-view-docked-header-container-height: 56px;
+  /* Search view full screen header container height */
+  --ad-comp-search-view-full-screen-header-container-height: 72px;
+  /* Search view header input text tracking */
+  --ad-comp-search-view-header-input-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Search view header input text weight */
+  --ad-comp-search-view-header-input-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Search view header input text size */
+  --ad-comp-search-view-header-input-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Search view header input text line height */
+  --ad-comp-search-view-header-input-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Search view header input text font */
+  --ad-comp-search-view-header-input-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Search view header supporting text tracking */
+  --ad-comp-search-view-header-supporting-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Search view header supporting text weight */
+  --ad-comp-search-view-header-supporting-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Search view header supporting text size */
+  --ad-comp-search-view-header-supporting-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Search view header supporting text line height */
+  --ad-comp-search-view-header-supporting-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Search view header supporting text font */
+  --ad-comp-search-view-header-supporting-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Search view container elevation */
+  --ad-comp-search-view-container-elevation: var(--ad-sys-elevation-level3);
+  /* Search view docked container shape */
+  --ad-comp-search-view-docked-container-shape: var(--ad-sys-shape-corner-extra-large);
+  /* Search view full screen container shape */
+  --ad-comp-search-view-full-screen-container-shape: var(--ad-sys-shape-corner-none);
+}

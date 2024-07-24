@@ -1,0 +1,26 @@
+:host {
+    --img-padding: var(--img-padding, 16px);
+}
+
+.container {
+    border-radius: 12px;
+    inset: 0;
+    position: relative;
+    cursor: pointer;
+    padding: var(--img-padding);
+}
+
+.state-layer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.lable-text ::slotted(*) {
+    padding: var(--img-padding);
+    display: block;
+}

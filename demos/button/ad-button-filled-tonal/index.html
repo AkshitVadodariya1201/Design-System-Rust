@@ -1,0 +1,63 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Button-Filled-Tonal</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-button-filled-tonal/pkg/ad_button_filled_tonal.js";
+        import * as icon from "../../../packages/ad-icon/pkg/ad_icon.js";
+
+        async function main() {
+            const initButton = button.default;
+            await initButton();
+            button.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+        }
+        main();
+    </script>
+    
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        body {
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-button-filled-tonal>Tonal button</ad-button-filled-tonal>
+    <ad-button-filled-tonal>
+        Tonal button
+        <ad-icon slot="leading-icon">add</ad-icon>
+    </ad-button-filled-tonal>
+    <ad-button-filled-tonal>
+        Tonal button
+        <ad-icon slot="trailing-icon">add</ad-icon>
+    </ad-button-filled-tonal>
+    <ad-button-filled-tonal disabled>
+        Tonal button
+        <ad-icon slot="trailing-icon">add</ad-icon>
+    </ad-button-filled-tonal>
+</body>
+
+</html>

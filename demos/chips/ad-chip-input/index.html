@@ -1,0 +1,99 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Input Chip</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-chip-input/pkg/ad_chip_input.js";
+        import * as icon from "../../../packages/adapt-icon/pkg/adapt_icon.js";
+        import * as chipset from "../../../packages/ad-chip-set/pkg/ad_chip_set.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+            
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+
+            const initChipset = chipset.default;
+            await initChipset();
+            chipset.run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        :root {
+            --max-width: 512px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <ad-chip-set>
+        <ad-chip-input title="Input chip"></ad-chip-input>
+
+        <ad-chip-input title="Input chip" icon>
+            <adapt-icon slot="icon">image</adapt-icon>
+        </ad-chip-input>
+
+        <ad-chip-input title="Input chip" icon disabled>
+            <adapt-icon slot="icon">image</adapt-icon>
+        </ad-chip-input>
+
+        <ad-chip-input title="Input chip" avatar>
+            <img src="https://static.vecteezy.com/system/resources/previews/017/395/385/non_2x/google-contacts-icon-free-png.png" alt="user" slot="icon">
+        </ad-chip-input>
+
+        <ad-chip-input title="Input chip" avatar disabled>
+            <img src="https://t3.ftcdn.net/jpg/02/15/13/96/360_F_215139693_l9vzsRJhStj0XfWbFNNTlOkGUHCkyk3Z.jpg" alt="user" slot="icon">
+        </ad-chip-input>
+        
+        <ad-chip-input title="Input chip" disabled></ad-chip-input>
+    </ad-chip-set>
+    
+    <h1>Scrollable</h1>
+
+    <ad-chip-set scrollable>
+        <ad-chip-input title="Input chip"></ad-chip-input>
+
+        <ad-chip-input title="Input chip" icon>
+            <adapt-icon slot="icon">image</adapt-icon>
+        </ad-chip-input>
+
+        <ad-chip-input title="Input chip" icon disabled>
+            <adapt-icon slot="icon">image</adapt-icon>
+        </ad-chip-input>
+
+        <ad-chip-input title="Input chip" avatar>
+            <img src="https://static.vecteezy.com/system/resources/previews/017/395/385/non_2x/google-contacts-icon-free-png.png" alt="user" slot="icon">
+        </ad-chip-input>
+
+        <ad-chip-input title="Input chip" avatar disabled>
+            <img src="https://t3.ftcdn.net/jpg/02/15/13/96/360_F_215139693_l9vzsRJhStj0XfWbFNNTlOkGUHCkyk3Z.jpg" alt="user" slot="icon">
+        </ad-chip-input>
+
+        <ad-chip-input title="Input chip" disabled></ad-chip-input>
+    </ad-chip-set>
+</body>
+
+</html>

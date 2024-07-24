@@ -1,0 +1,50 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Small-top-app-bar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-small-top-app-bar/pkg/ad_small_top_app_bar.js";
+        import * as icon from "../../../packages/ad-icon-standard-button/pkg/ad_icon_standard_button.js";
+
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+        }
+        main();
+    </script>
+
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <ad-small-top-app-bar icon="arrow_back" title="Title Large">
+        <span tabindex="1">attach_file</span>
+        <span tabindex="1">today</span>
+        <span tabindex="1">more_vert</span>
+    </ad-small-top-app-bar>
+
+    <ad-small-top-app-bar icon="arrow_back" title="Title Large">
+        <ad-icon-standard-button icon="attach_file" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="today" selected></ad-icon-standard-button>
+        <ad-icon-standard-button icon="more_vert" selected></ad-icon-standard-button>
+    </ad-small-top-app-bar>
+</body>
+
+</html>

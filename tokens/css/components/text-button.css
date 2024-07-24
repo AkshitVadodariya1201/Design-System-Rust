@@ -1,0 +1,31 @@
+:where(html),
+.tokens {
+  /* Text button container elevation */
+  --ad-comp-text-button-container-elevation: var(--ad-sys-elevation-level0);
+  /* Text button focus state layer opacity */
+  --ad-comp-text-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Text button hover state layer opacity */
+  --ad-comp-text-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Text button label tracking */
+  --ad-comp-text-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Text button label weight */
+  --ad-comp-text-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Text button label size */
+  --ad-comp-text-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Text button label line height */
+  --ad-comp-text-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Text button label font */
+  --ad-comp-text-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Text button with icon icon size */
+  --ad-comp-text-button-with-icon-icon-size: 18px;
+  /* Text button container height */
+  --ad-comp-text-button-container-height: 40px;
+  /* Text button container shape */
+  --ad-comp-text-button-container-shape: var(--ad-sys-shape-corner-full);
+  /* Text button pressed state layer opacity */
+  --ad-comp-text-button-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Text button with icon disabled icon opacity */
+  --ad-comp-text-button-with-icon-disabled-icon-opacity: 0.3799999952316284;
+  /* Text button disabled label opacity */
+  --ad-comp-text-button-disabled-label-text-opacity: 0.3799999952316284;
+}

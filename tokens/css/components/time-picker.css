@@ -1,0 +1,103 @@
+:where(html),
+.tokens {
+  /* Time picker clock dial selector track container width */
+  --ad-comp-time-picker-clock-dial-selector-track-container-width: 2px;
+  /* Time picker clock dial selector center container size */
+  --ad-comp-time-picker-clock-dial-selector-center-container-size: 8px;
+  /* Time picker clock dial selector handle container size */
+  --ad-comp-time-picker-clock-dial-selector-handle-container-size: 48px;
+  /* Time picker clock dial container size */
+  --ad-comp-time-picker-clock-dial-container-size: 256px;
+  /* Time picker period selector horizontal container height */
+  --ad-comp-time-picker-period-selector-horizontal-container-height: 38px;
+  /* Time picker period selector horizontal container width */
+  --ad-comp-time-picker-period-selector-horizontal-container-width: 216px;
+  /* Time picker period selector vertical container height */
+  --ad-comp-time-picker-period-selector-vertical-container-height: 80px;
+  /* Time picker period selector vertical container width */
+  --ad-comp-time-picker-period-selector-vertical-container-width: 52px;
+  /* Time picker time selector container height */
+  --ad-comp-time-picker-time-selector-container-height: 80px;
+  /* Time picker time selector 24h vertical container width */
+  --ad-comp-time-picker-time-selector-24h-vertical-container-width: 114px;
+  /* Time picker time selector container width */
+  --ad-comp-time-picker-time-selector-container-width: 96px;
+  /* Time picker period selector pressed state layer opacity */
+  --ad-comp-time-picker-period-selector-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Time picker time selector pressed state layer opacity */
+  --ad-comp-time-picker-time-selector-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Time picker period selector focus state layer opacity */
+  --ad-comp-time-picker-period-selector-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Time picker time selector focus state layer opacity */
+  --ad-comp-time-picker-time-selector-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Time picker period selector hover state layer opacity */
+  --ad-comp-time-picker-period-selector-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Time picker time selector hover state layer opacity */
+  --ad-comp-time-picker-time-selector-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Time picker clock dial selector center container shape */
+  --ad-comp-time-picker-clock-dial-selector-center-container-shape: var(--ad-sys-shape-corner-full);
+  /* Time picker clock dial selector handle container shape */
+  --ad-comp-time-picker-clock-dial-selector-handle-container-shape: var(--ad-sys-shape-corner-full);
+  /* Time picker clock dial label text tracking */
+  --ad-comp-time-picker-clock-dial-label-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Time picker clock dial label text weight */
+  --ad-comp-time-picker-clock-dial-label-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Time picker clock dial label text size */
+  --ad-comp-time-picker-clock-dial-label-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Time picker clock dial label text line height */
+  --ad-comp-time-picker-clock-dial-label-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Time picker clock dial label text font */
+  --ad-comp-time-picker-clock-dial-label-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Time picker clock dial shape ignore */
+  --ad-comp-time-picker-clock-dial-shape-ignore: var(--ad-sys-shape-corner-full);
+  /* Time picker period selector label text tracking */
+  --ad-comp-time-picker-period-selector-label-text-tracking: var(--ad-sys-typescale-title-medium-tracking);
+  /* Time picker period selector label text weight */
+  --ad-comp-time-picker-period-selector-label-text-weight: var(--ad-sys-typescale-title-medium-weight);
+  /* Time picker period selector label text size */
+  --ad-comp-time-picker-period-selector-label-text-size: var(--ad-sys-typescale-title-medium-size);
+  /* Time picker period selector label text line height */
+  --ad-comp-time-picker-period-selector-label-text-line-height: var(--ad-sys-typescale-title-medium-line-height);
+  /* Time picker period selector label text font */
+  --ad-comp-time-picker-period-selector-label-text-font: var(--ad-sys-typescale-title-medium-font);
+  /* Time picker period selector outline width */
+  --ad-comp-time-picker-period-selector-outline-width: 1px;
+  /* Time picker period selector container shape */
+  --ad-comp-time-picker-period-selector-container-shape: var(--ad-sys-shape-corner-small);
+  /* Time picker time selector separator tracking */
+  --ad-comp-time-picker-time-selector-separator-tracking: var(--ad-sys-typescale-display-large-tracking);
+  /* Time picker time selector separator weight */
+  --ad-comp-time-picker-time-selector-separator-weight: var(--ad-sys-typescale-display-large-weight);
+  /* Time picker time selector separator size */
+  --ad-comp-time-picker-time-selector-separator-size: var(--ad-sys-typescale-display-large-size);
+  /* Time picker time selector separator line height */
+  --ad-comp-time-picker-time-selector-separator-line-height: var(--ad-sys-typescale-display-large-line-height);
+  /* Time picker time selector separator font */
+  --ad-comp-time-picker-time-selector-separator-font: var(--ad-sys-typescale-display-large-font);
+  /* Time picker time selector label text tracking */
+  --ad-comp-time-picker-time-selector-label-text-tracking: var(--ad-sys-typescale-display-large-tracking);
+  /* Time picker time selector label text weight */
+  --ad-comp-time-picker-time-selector-label-text-weight: var(--ad-sys-typescale-display-large-weight);
+  /* Time picker time selector label text size */
+  --ad-comp-time-picker-time-selector-label-text-size: var(--ad-sys-typescale-display-large-size);
+  /* Time picker time selector label text line height */
+  --ad-comp-time-picker-time-selector-label-text-line-height: var(--ad-sys-typescale-display-large-line-height);
+  /* Time picker time selector label text font */
+  --ad-comp-time-picker-time-selector-label-text-font: var(--ad-sys-typescale-display-large-font);
+  /* Time picker time selector container shape */
+  --ad-comp-time-picker-time-selector-container-shape: var(--ad-sys-shape-corner-small);
+  /* Time picker headline tracking */
+  --ad-comp-time-picker-headline-tracking: var(--ad-sys-typescale-label-medium-tracking);
+  /* Time picker headline weight */
+  --ad-comp-time-picker-headline-weight: var(--ad-sys-typescale-label-medium-weight);
+  /* Time picker headline size */
+  --ad-comp-time-picker-headline-size: var(--ad-sys-typescale-label-medium-size);
+  /* Time picker headline line height */
+  --ad-comp-time-picker-headline-line-height: var(--ad-sys-typescale-label-medium-line-height);
+  /* Time picker headline font */
+  --ad-comp-time-picker-headline-font: var(--ad-sys-typescale-label-medium-font);
+  /* Time picker container shape */
+  --ad-comp-time-picker-container-shape: var(--ad-sys-shape-corner-extra-large);
+  /* Time picker container elevation */
+  --ad-comp-time-picker-container-elevation: var(--ad-sys-elevation-level3);
+}

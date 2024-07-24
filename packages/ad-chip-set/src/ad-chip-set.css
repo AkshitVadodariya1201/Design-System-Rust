@@ -1,0 +1,37 @@
+/* write css for chip set */
+/* style container class for chip set */
+:host {
+    --width: var(--max-width)
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: var(--width);
+    padding: 8px;
+    gap: 8px;
+}
+
+/* style scrollable class for chip set */
+.scrollable {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+/* style slot inside of scrollable */
+.scrollable ::slotted(*) {
+    flex-shrink: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollable {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

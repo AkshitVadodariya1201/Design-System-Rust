@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Extended Fab Icon Button</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as btn from "../../../packages/ad-icon-button-extended-fab/pkg/ad_icon_button_extended_fab.js";
+        import * as icon from "../../../packages/ad-icon/pkg/ad_icon.js";
+
+        async function main() {
+            const init = btn.default;
+            await init();
+            btn.run();
+
+            const initIcon = icon.default;
+            await initIcon();
+            icon.run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                color-scheme: light;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+            }
+        }
+
+        body {
+            display: flex;
+            gap: 8px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Primary</h2>
+        <ad-icon-button-extended-fab icon primary>
+            Compose
+            <ad-icon slot="icon">edit</ad-icon>
+        </ad-icon-button-extended-fab>
+        
+        <ad-icon-button-extended-fab primary>
+            Compose
+        </ad-icon-button-extended-fab>
+    </div>
+
+    <div>
+        <h2>Surface</h2>
+        <ad-icon-button-extended-fab icon surface>
+            Compose
+            <ad-icon slot="icon">edit</ad-icon>
+        </ad-icon-button-extended-fab>
+        
+        <ad-icon-button-extended-fab surface>
+            Compose
+        </ad-icon-button-extended-fab>
+    </div>
+
+    <div>
+        <h2>Secondary</h2>
+        <ad-icon-button-extended-fab icon secondary>
+            Compose
+            <ad-icon slot="icon">edit</ad-icon>
+        </ad-icon-button-extended-fab>
+        <ad-icon-button-extended-fab secondary>
+            Compose
+        </ad-icon-button-extended-fab>
+    </div>
+
+    <div>
+        <h2>Tertiary</h2>
+        <ad-icon-button-extended-fab icon tertiary>
+            Compose
+            <ad-icon slot="icon">edit</ad-icon>
+        </ad-icon-button-extended-fab>
+        
+        <ad-icon-button-extended-fab tertiary>
+            Compose
+        </ad-icon-button-extended-fab>
+    </div>
+
+</body>
+
+</html>

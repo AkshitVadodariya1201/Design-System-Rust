@@ -1,0 +1,31 @@
+:where(html),
+.tokens {
+  /* Outlined card disabled outline opacity */
+  --ad-comp-outlined-card-disabled-outline-opacity: 0.11999999731779099;
+  /* Outlined card disabled container elevation */
+  --ad-comp-outlined-card-disabled-container-elevation: var(--ad-sys-elevation-level0);
+  /* Outlined card pressed container elevation */
+  --ad-comp-outlined-card-pressed-container-elevation: var(--ad-sys-elevation-level0);
+  /* Outlined card focus container elevation */
+  --ad-comp-outlined-card-focus-container-elevation: var(--ad-sys-elevation-level0);
+  /* Outlined card hover container elevation */
+  --ad-comp-outlined-card-hover-container-elevation: var(--ad-sys-elevation-level1);
+  /* Outlined card icon size */
+  --ad-comp-outlined-card-icon-size: 24px;
+  /* Outlined card outline width */
+  --ad-comp-outlined-card-outline-width: 1px;
+  /* Outlined card focus state layer opacity */
+  --ad-comp-outlined-card-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Outlined card hover state layer opacity */
+  --ad-comp-outlined-card-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Outlined card container shape */
+  --ad-comp-outlined-card-container-shape: var(--ad-sys-shape-corner-medium);
+  /* Outlined card container elevation */
+  --ad-comp-outlined-card-container-elevation: var(--ad-sys-elevation-level0);
+  /* Outlined card dragged state layer opacity */
+  --ad-comp-outlined-card-dragged-state-layer-opacity: var(--ad-sys-state-dragged-state-layer-opacity);
+  /* Outlined card dragged container elevation */
+  --ad-comp-outlined-card-dragged-container-elevation: var(--ad-sys-elevation-level3);
+  /* Outlined card pressed state layer opacity */
+  --ad-comp-outlined-card-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

@@ -1,0 +1,229 @@
+/* style the assist chip */
+/* take value from ../../../packages/ad-chip-assist/readme.md */
+/* take variable from ad-assist-chip.html,
+"/../../tokens/css/component/assist-chip.css", " ../../../tokens/css/baseline.css" */
+
+/* style the assist chip container */
+.container {
+    position: relative;
+    height: var(--ad-comp-assist-chip-container-height);
+    border-radius: var(--ad-sys-shape-corner-small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* style the class name outline */
+.outline {
+    border: var(--ad-comp-assist-chip-flat-outline-width) solid var(--ad-sys-color-outline);
+    border-radius: var(--ad-sys-shape-corner-small);
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* style the assist chip label text */
+.label-text {
+    font: var(--ad-comp-assist-chip-label-text-font);
+    font-size: var(--ad-comp-assist-chip-label-text-size);
+    font-weight: var(--ad-comp-assist-chip-label-text-weight);
+    line-height: var(--ad-comp-assist-chip-label-text-line-height);
+    letter-spacing: var(--ad-comp-assist-chip-label-text-tracking);
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* style the slot inside of leading icon */
+.leading-icon ::slotted(*) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ad-sys-color-primary);
+    font-size: var(--ad-comp-assist-chip-with-icon-icon-size);
+}
+
+/* style button defoult propery none */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* style primary class  and add padding 0 16*/
+.primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px 0 8px;
+    gap: 8px;
+}
+
+/* style elevated class add border none*/
+.elevated {
+    background-color: var(--ad-ref-palette-neutral95);
+    box-shadow: var(--ad-comp-assist-chip-elevated-container-elevation);
+}
+
+/* style outline class when elevated */
+.elevated .outline {
+    border: none;
+}
+
+/* style container::before */
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+/* style the outline class when enabled class */
+.enabled .outline {
+    border: var(--ad-comp-assist-chip-flat-outline-width) solid var(--ad-sys-color-outline);
+}
+
+/* style outline class when enabled and elevated both */
+.enabled.elevated .outline {
+    border: none;
+}
+
+/* style label-text class when enabled take color on-surface */
+.enabled .label-text {
+    color: var(--ad-sys-color-on-surface);
+    font: var(--ad-comp-assist-chip-label-text-font);
+    font-size: var(--ad-comp-assist-chip-label-text-size);
+    font-weight: var(--ad-comp-assist-chip-label-text-weight);
+    line-height: var(--ad-comp-assist-chip-label-text-line-height);
+    letter-spacing: var(--ad-comp-assist-chip-label-text-tracking);
+}
+
+/* style slot inside of leading icon when enabled */
+.enabled .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+/* style the disabled class */
+.disabled {
+    pointer-events: none;
+}
+
+/* style outline class when disabled , add border color on-surface and opacity*/
+.disabled .outline {
+    border-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-flat-disabled-outline-opacity);
+}
+
+/* style label-text class when disabled , add color on-surface and opacity*/
+.disabled .label-text {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-disabled-label-text-opacity);
+}
+
+/* style outline class when disabled and elevated both */
+.disabled.elevated .outline {
+    border: none;
+}
+
+/* write css for elevated and disabled both before  */
+.disabled.elevated::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-elevated-disabled-container-opacity);
+}
+
+/* style slot inside of leading-icon when disabled */
+.disabled .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-with-icon-disabled-icon-opacity);
+}
+
+/* add hover effect on container when container hover and take elevation level2 */
+.container:hover {
+    box-shadow: var(--ad-comp-assist-chip-elevated-hover-container-elevation);
+}
+
+/* add hover effect on container::before and take color on-surface and opacity */
+.container:hover::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-hover-state-layer-opacity);
+}
+
+/* add hover effect on label-text when container hover and take color on-surface */
+.container:hover .label-text {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* add hover effect on slot inside of leading-icon when container hover and take color primary */
+.container:hover .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+/* add focus effect on outline class when container focus and take color on-surface */
+.container:focus .outline {
+    border-color: var(--ad-sys-color-on-surface);
+}
+
+/* add focus effect on elevated when container focus and take elevation level1 */
+.container:focus.elevated {
+    box-shadow: var(--ad-comp-assist-chip-elevated-focus-container-elevation);
+}
+
+/* add focus effect on container::before and take color on-surface and opacity */
+.container:focus::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-focus-state-layer-opacity);
+}
+
+/* add focus effect on label-text when container focus and take color on-surface  */
+.container:focus .label-text {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* add focus effect on slot inside of leading-icon when container focus and take color primary */
+.container:focus .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+/* write css for pressed effect on contianer::before*/
+.container:active::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-pressed-state-layer-opacity);
+}
+
+/* write css for pressed effect on elevated when container pressed and take elevation level1 */
+.container:active.elevated {
+    box-shadow: var(--ad-comp-assist-chip-elevated-pressed-container-elevation);
+}
+
+/* write css for pressed effect on label-text when container pressed and take color on-surface */
+.container:active .label-text {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* write css for pressed effect on slot inside of leading-icon when container pressed and take color primary */
+.container:active .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+/* write css for dragged effect on container::before */
+.container:dragged::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-assist-chip-dragged-state-layer-opacity);
+}
+
+/* write css for dragged effect on elevated when container dragged and take elevation level4 */
+.container:dragged.elevated {
+    box-shadow: var(--ad-comp-assist-chip-dragged-container-elevation);
+}
+
+/* write css for dragged effect on label-text when container dragged and take color on-surface */
+.container:dragged .label-text {
+    color: var(--ad-sys-color-on-surface);
+}
+
+/* write css for dragged effect on slot inside of leading-icon when container dragged and take color primary */
+.container:dragged .leading-icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}

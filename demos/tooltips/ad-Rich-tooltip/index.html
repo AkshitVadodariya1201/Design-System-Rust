@@ -1,0 +1,68 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rich-Tooltip</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="module">
+        import * as button from "../../../packages/ad-rich-tooltip/pkg/ad_rich_tooltip.js";
+        import * as btn from "../../../packages/ad-button-text/pkg/ad_button_text.js";
+        async function main() {
+            const init = button.default;
+            await init();
+            button.run();
+            const initBtn = btn.default;
+            await initBtn();
+            btn.run();
+        }
+        main();
+    </script>
+    <style>
+        @import url("../../../tokens/css/baseline.css");
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .richtooltip {
+            width: 285px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="richtooltip">
+        <ad-rich-tooltip title="Rich tooltip" labeltext="Rich tooltips bring attention to a particular element of feature that warrants the
+            user's focus">
+            <ad-button-text slot="action" label="Action" title="Action"></ad-button-text>
+        </ad-rich-tooltip>
+    </div>
+
+    <div class="richtooltip">
+        <ad-rich-tooltip title="Rich tooltip" labeltext="Rich tooltips bring attention to a particular element of feature that warrants the
+                user's focus">
+            <ad-button-text slot="action" label="Action" title="Action"></ad-button-text>
+            <ad-button-text slot="action" label="Action" title="Action"></ad-button-text>
+        </ad-rich-tooltip>
+    </div>
+
+    <div class="richtooltip">
+        <ad-rich-tooltip title="Rich tooltip" labeltext="Rich tooltips bring attention to a particular element of feature that warrants the
+                user's focus">
+        </ad-rich-tooltip>
+    </div>
+
+    <div class="richtooltip">
+        <ad-rich-tooltip labeltext="Rich tooltips bring attention to a particular element of feature that warrants the
+                    user's focus">
+            <ad-button-text slot="action" label="Action" title="Action"></ad-button-text>
+        </ad-rich-tooltip>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+:where(html),
+.tokens {
+  /* Outlined menu button pressed state layer opacity */
+  --ad-comp-outlined-menu-button-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Outlined menu button focus state layer opacity */
+  --ad-comp-outlined-menu-button-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Outlined menu button hover state layer opacity */
+  --ad-comp-outlined-menu-button-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Outlined menu button disabled trailing icon opacity */
+  --ad-comp-outlined-menu-button-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Outlined menu button with icon disabled icon opacity */
+  --ad-comp-outlined-menu-button-with-icon-disabled-icon-opacity: 0.3799999952316284;
+  /* Outlined menu button disabled label text opacity */
+  --ad-comp-outlined-menu-button-disabled-label-text-opacity: 0.3799999952316284;
+  /* Outlined menu button disabled container opacity */
+  --ad-comp-outlined-menu-button-disabled-container-opacity: 0.11999999731779099;
+  /* Outlined menu button trailing icon size */
+  --ad-comp-outlined-menu-button-trailing-icon-size: 18px;
+  /* Outlined menu button with icon leading icon size */
+  --ad-comp-outlined-menu-button-with-icon-leading-icon-size: 18px;
+  /* Outlined menu button label text weight */
+  --ad-comp-outlined-menu-button-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Outlined menu button label text tracking */
+  --ad-comp-outlined-menu-button-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Outlined menu button label text size */
+  --ad-comp-outlined-menu-button-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Outlined menu button label text line height */
+  --ad-comp-outlined-menu-button-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Outlined menu button label text font */
+  --ad-comp-outlined-menu-button-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Outlined menu button shape ignore */
+  --ad-comp-outlined-menu-button-shape: var(--ad-sys-shape-corner-full);
+  /* Outlined menu button container height */
+  --ad-comp-outlined-menu-button-container-height: 40px;
+  /* Outlined menu button outline width */
+  --ad-comp-outlined-menu-button-outline-width: 1px;
+}

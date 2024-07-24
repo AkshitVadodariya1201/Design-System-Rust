@@ -1,0 +1,43 @@
+:where(html),
+.tokens {
+  /* Rich tooltip action focus state layer opacity */
+  --ad-comp-rich-tooltip-action-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Rich tooltip action hover state layer opacity */
+  --ad-comp-rich-tooltip-action-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Rich tooltip action label text tracking */
+  --ad-comp-rich-tooltip-action-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Rich tooltip action label text weight */
+  --ad-comp-rich-tooltip-action-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Rich tooltip action label text size */
+  --ad-comp-rich-tooltip-action-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Rich tooltip action label text line height */
+  --ad-comp-rich-tooltip-action-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Rich tooltip action label text font */
+  --ad-comp-rich-tooltip-action-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Rich tooltip supporting text tracking */
+  --ad-comp-rich-tooltip-supporting-text-tracking: var(--ad-sys-typescale-body-medium-tracking);
+  /* Rich tooltip supporting text weight */
+  --ad-comp-rich-tooltip-supporting-text-weight: var(--ad-sys-typescale-body-medium-weight);
+  /* Rich tooltip supporting text size */
+  --ad-comp-rich-tooltip-supporting-text-size: var(--ad-sys-typescale-body-medium-size);
+  /* Rich tooltip supporting text line height */
+  --ad-comp-rich-tooltip-supporting-text-line-height: var(--ad-sys-typescale-body-medium-line-height);
+  /* Rich tooltip supporting text font */
+  --ad-comp-rich-tooltip-supporting-text-font: var(--ad-sys-typescale-body-medium-font);
+  /* Rich tooltip subhead tracking */
+  --ad-comp-rich-tooltip-subhead-tracking: var(--ad-sys-typescale-title-small-tracking);
+  /* Rich tooltip subhead weight */
+  --ad-comp-rich-tooltip-subhead-weight: var(--ad-sys-typescale-title-small-weight);
+  /* Rich tooltip subhead size */
+  --ad-comp-rich-tooltip-subhead-size: var(--ad-sys-typescale-title-small-size);
+  /* Rich tooltip subhead line height */
+  --ad-comp-rich-tooltip-subhead-line-height: var(--ad-sys-typescale-title-small-line-height);
+  /* Rich tooltip subhead font */
+  --ad-comp-rich-tooltip-subhead-font: var(--ad-sys-typescale-title-small-font);
+  /* Rich tooltip container shape */
+  --ad-comp-rich-tooltip-container-shape: var(--ad-sys-shape-corner-small);
+  /* Rich tooltip container elevation */
+  --ad-comp-rich-tooltip-container-elevation: var(--ad-sys-elevation-level2);
+  /* Rich tooltip action pressed state layer opacity */
+  --ad-comp-rich-tooltip-action-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

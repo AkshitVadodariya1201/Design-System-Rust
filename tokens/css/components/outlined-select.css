@@ -1,0 +1,93 @@
+:where(html),
+.tokens {
+  /* Outlined select text field container height */
+  --ad-comp-outlined-select-text-field-container-height: 56px;
+  /* Outlined select text field error hover state layer opacity */
+  --ad-comp-outlined-select-text-field-error-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Outlined select text field hover state layer opacity */
+  --ad-comp-outlined-select-text-field-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Outlined select text field hover outline width */
+  --ad-comp-outlined-select-text-field-hover-outline-width: 1px;
+  /* Outlined select text field focus outline width */
+  --ad-comp-outlined-select-text-field-focus-outline-width: 2px;
+  /* Outlined select text field disabled trailing icon opacity */
+  --ad-comp-outlined-select-text-field-disabled-trailing-icon-opacity: 0.3799999952316284;
+  /* Outlined select text field disabled leading icon opacity */
+  --ad-comp-outlined-select-text-field-disabled-leading-icon-opacity: 0.3799999952316284;
+  /* Outlined select text field disabled supporting text opacity */
+  --ad-comp-outlined-select-text-field-disabled-supporting-text-opacity: 0.3799999952316284;
+  /* Outlined select text field disabled input text opacity */
+  --ad-comp-outlined-select-text-field-disabled-input-text-opacity: 0.3799999952316284;
+  /* Outlined select text field disabled label text opacity */
+  --ad-comp-outlined-select-text-field-disabled-label-text-opacity: 0.3799999952316284;
+  /* Outlined select text field disabled outline opacity */
+  --ad-comp-outlined-select-text-field-disabled-outline-opacity: 0.11999999731779099;
+  /* Outlined select text field disabled outline width */
+  --ad-comp-outlined-select-text-field-disabled-outline-width: 1px;
+  /* Outlined select menu cascading menu indicator icon size */
+  --ad-comp-outlined-select-menu-cascading-menu-indicator-icon-size: 24px;
+  /* Outlined select menu divider height */
+  --ad-comp-outlined-select-menu-divider-height: 1px;
+  /* Outlined select menu list item with trailing icon trailing icon size */
+  --ad-comp-outlined-select-menu-list-item-with-trailing-icon-trailing-icon-size: 24px;
+  /* Outlined select menu list item with leading icon leading icon size */
+  --ad-comp-outlined-select-menu-list-item-with-leading-icon-leading-icon-size: 24px;
+  /* Outlined select menu list item label text weight */
+  --ad-comp-outlined-select-menu-list-item-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Outlined select menu list item label text tracking */
+  --ad-comp-outlined-select-menu-list-item-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Outlined select menu list item label text size */
+  --ad-comp-outlined-select-menu-list-item-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Outlined select menu list item label text line height */
+  --ad-comp-outlined-select-menu-list-item-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Outlined select menu list item label text font */
+  --ad-comp-outlined-select-menu-list-item-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Outlined select menu list item container height */
+  --ad-comp-outlined-select-menu-list-item-container-height: 48px;
+  /* Outlined select menu container shape */
+  --ad-comp-outlined-select-menu-container-shape: var(--ad-sys-shape-corner-extra-small);
+  /* Outlined select menu container elevation */
+  --ad-comp-outlined-select-menu-container-elevation: var(--ad-sys-elevation-level2);
+  /* Outlined select text field trailing icon size */
+  --ad-comp-outlined-select-text-field-trailing-icon-size: 24px;
+  /* Outlined select text field leading icon size */
+  --ad-comp-outlined-select-text-field-leading-icon-size: 24px;
+  /* Outlined select text field supporting text tracking */
+  --ad-comp-outlined-select-text-field-supporting-text-tracking: var(--ad-sys-typescale-body-small-tracking);
+  /* Outlined select text field supporting text weight */
+  --ad-comp-outlined-select-text-field-supporting-text-weight: var(--ad-sys-typescale-body-small-weight);
+  /* Outlined select text field supporting text size */
+  --ad-comp-outlined-select-text-field-supporting-text-size: var(--ad-sys-typescale-body-small-size);
+  /* Outlined select text field supporting text line height */
+  --ad-comp-outlined-select-text-field-supporting-text-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Outlined select text field supporting text font */
+  --ad-comp-outlined-select-text-field-supporting-text-font: var(--ad-sys-typescale-body-small-font);
+  /* Outlined select text field label text populated size */
+  --ad-comp-outlined-select-text-field-label-text-populated-size: var(--ad-sys-typescale-body-small-size);
+  /* Outlined select text field label text populated line height */
+  --ad-comp-outlined-select-text-field-label-text-populated-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Outlined select text field label text tracking */
+  --ad-comp-outlined-select-text-field-label-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Outlined select text field label text weight */
+  --ad-comp-outlined-select-text-field-label-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Outlined select text field label text size */
+  --ad-comp-outlined-select-text-field-label-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Outlined select text field label text line height */
+  --ad-comp-outlined-select-text-field-label-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Outlined select text field label text font */
+  --ad-comp-outlined-select-text-field-label-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Outlined select text field input text tracking */
+  --ad-comp-outlined-select-text-field-input-text-tracking: var(--ad-sys-typescale-body-large-tracking);
+  /* Outlined select text field input text weight */
+  --ad-comp-outlined-select-text-field-input-text-weight: var(--ad-sys-typescale-body-large-weight);
+  /* Outlined select text field input text size */
+  --ad-comp-outlined-select-text-field-input-text-size: var(--ad-sys-typescale-body-large-size);
+  /* Outlined select text field input text line height */
+  --ad-comp-outlined-select-text-field-input-text-line-height: var(--ad-sys-typescale-body-large-line-height);
+  /* Outlined select text field input text font */
+  --ad-comp-outlined-select-text-field-input-text-font: var(--ad-sys-typescale-body-large-font);
+  /* Outlined select text field outline width */
+  --ad-comp-outlined-select-text-field-outline-width: 1px;
+  /* Outlined select text field container shape */
+  --ad-comp-outlined-select-text-field-container-shape: var(--ad-sys-shape-corner-extra-small);
+}

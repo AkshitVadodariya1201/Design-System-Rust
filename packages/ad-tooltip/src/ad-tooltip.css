@@ -1,0 +1,16 @@
+.container {
+    border-radius: var(--ad-sys-shape-corner-extra-small);
+    background-color: var(--ad-sys-color-inverse-surface);
+    inset: 0;
+    min-height: 24px;
+    padding: 0 8px;
+}
+
+.label-text {
+    font-family: var(--ad-comp-plain-tooltip-supporting-text-font);
+    font-weight: var(--ad-comp-plain-tooltip-supporting-text-weight);
+    line-height: var(--ad-comp-plain-tooltip-supporting-text-line-height);
+    letter-spacing: var(--ad-comp-plain-tooltip-supporting-text-tracking);
+    color: var(--ad-sys-color-inverse-on-surface);
+    font-size: var(--ad-comp-plain-tooltip-supporting-text-size);
+}

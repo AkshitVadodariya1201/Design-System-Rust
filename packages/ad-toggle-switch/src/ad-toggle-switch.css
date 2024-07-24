@@ -1,0 +1,277 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    position: relative;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.container {
+    position: absolute;
+    display: flex;
+}
+
+.md3.switch {
+    user-select: none;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
+.md3.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.md3.switch span.switch-track {
+    position: absolute;
+    cursor: pointer;
+    background-color: var(--ad-ref-palette-neutral90);
+    width: var(--ad-comp-switch-track-width);
+    height: var(--ad-comp-switch-track-height);
+    border-radius: 28px;
+    border: var(--ad-comp-switch-track-outline-width) solid var(--ad-sys-color-outline);
+    transition: background-color .1s ease-in-out,
+        border-color .1s ease-in-out;
+}
+
+.md3.switch .switch-track span.state-layer {
+    position: absolute;
+    content: "";
+    height: var(--ad-comp-switch-unselected-handle-height);
+    width: var(--ad-comp-switch-unselected-handle-width);
+    left: 0px;
+    margin: 8px;
+    border-radius: var(--ad-comp-switch-handle-shape);
+    background-color: var(--ad-sys-color-outline);
+    transition: left 175ms cubic-bezier(0, .5, .5, 1.5),
+        background-color .1s ease-in-out,
+        height 50ms ease-in-out,
+        width 50ms ease-in-out,
+        margin 50ms ease-in-out;
+}
+
+.md3.switch .switch-track span.state-layer::before {
+    position: absolute;
+    content: "";
+    height: var(--ad-comp-switch-state-layer-size);
+    width: var(--ad-comp-switch-state-layer-size);
+    left: -12px;
+    top: -12px;
+    border-radius: var(--ad-comp-switch-state-layer-shape);
+}
+
+.md3.switch .switch-track span.state-layer .icon {
+    position: relative;
+    left: 0px;
+    margin: 4px 0px;
+    height: var(--ad-comp-switch-unselected-icon-size);
+    width: var(--ad-comp-switch-unselected-icon-size);
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: left 175ms cubic-bezier(0, .5, .5, 1.5);
+    color: var(--ad-sys-color-surface-variant);
+}
+
+.md3.switch input:checked+.switch-track {
+    background-color: var(--ad-sys-color-primary);
+    border-color: transparent;
+}
+
+.md3.switch input:checked+.switch-track span.state-layer {
+    left: 20px;
+    background-color: var(--ad-sys-color-on-primary);
+    border-color: transparent;
+    height: var(--ad-comp-switch-selected-handle-height);
+    width: var(--ad-comp-switch-selected-handle-width);
+    margin: 4px;
+}
+
+.md3.switch input:checked+.switch-track span.state-layer::before {
+    opacity: var(--ad-comp-switch-selected-state-layer-opacity);
+    left: -8px;
+    top: -8px;
+}
+
+.md3.switch input:not(:disabled):enabled+.switch-track {
+    background-color: var(--ad-ref-palette-neutral90);
+    border-color: var(--ad-sys-color-outline);
+}
+
+.md3.switch input:not(:disabled):enabled+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-outline);
+}
+
+.md3.switch input:not(:disabled):checked:enabled+.switch-track {
+    background-color: var(--ad-sys-color-primary);
+    border-color: transparent;
+}
+
+.md3.switch input:not(:disabled):checked:enabled+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-on-primary);
+    border-color: transparent;
+}
+
+.md3.switch input:not(:disabled):hover+.switch-track {
+    background-color: var(--ad-ref-palette-neutral90);
+    border-color: var(--ad-sys-color-outline);
+}
+
+.md3.switch input:not(:disabled):checked:hover+.switch-track {
+    background-color: var(--ad-sys-color-primary);
+    border-color: transparent;
+}
+
+.md3.switch input:not(:disabled):hover+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+.md3.switch input:not(:disabled):hover+.switch-track span.state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-switch-unselected-hover-state-layer-opacity);
+}
+
+.md3.switch input:not(:disabled):checked:hover+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-on-primary);
+}
+
+.md3.switch input:not(:disabled):checked:hover+.switch-track span.state-layer::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-switch-selected-hover-state-layer-opacity);
+}
+
+.md3.switch input:not(:disabled):hover+.switch-track span.state-layer .icon {
+    color: var(--ad-ref-palette-neutral90);
+}
+
+.md3.switch input:not(:disabled):checked:hover+.switch-track span.state-layer .icon {
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+.md3.switch input:not(:disabled):focus+.switch-track {
+    background-color: var(--ad-ref-palette-neutral90);
+    border-color: var(--ad-sys-color-outline);
+}
+
+.md3.switch input:not(:disabled):checked:focus+.switch-track {
+    background-color: var(--ad-sys-color-primary);
+    border-color: transparent;
+}
+
+.md3.switch input:not(:disabled):focus+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+.md3.switch input:not(:disabled):focus+.switch-track span.state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-switch-unselected-focus-state-layer-opacity);
+}
+
+.md3.switch input:not(:disabled):checked:focus+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-on-primary);
+}
+
+.md3.switch input:not(:disabled):checked:focus+.switch-track span.state-layer::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-switch-selected-focus-state-layer-opacity);
+}
+
+.md3.switch input:not(:disabled):focus+.switch-track span.state-layer .icon {
+    color: var(--ad-ref-palette-neutral90);
+}
+
+.md3.switch input:not(:disabled):checked:focus+.switch-track span.state-layer .icon {
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+.md3.switch input:not(:disabled):active+.switch-track {
+    background-color: var(--ad-ref-palette-neutral90);
+    border-color: var(--ad-sys-color-outline);
+}
+
+.md3.switch input:not(:disabled):checked:active+.switch-track {
+    background-color: var(--ad-sys-color-primary);
+    border-color: transparent;
+}
+
+.md3.switch input:not(:disabled):active+.switch-track span.state-layer {
+    height: var(--ad-comp-switch-pressed-handle-height);
+    width: var(--ad-comp-switch-pressed-handle-width);
+    margin: 2px;
+    background-color: var(--ad-sys-color-on-surface-variant);
+}
+
+.md3.switch input:not(:disabled):active+.switch-track span.state-layer::before {
+    left: -6px;
+    top: -6px;
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-switch-unselected-pressed-state-layer-opacity);
+}
+
+.md3.switch input:not(:disabled):checked:active+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-primary-container);
+}
+
+.md3.switch input:not(:disabled):checked:active+.switch-track span.state-layer::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-switch-selected-pressed-state-layer-opacity);
+}
+
+.md3.switch input:not(:disabled):active+.switch-track span.state-layer .icon {
+    color: var(--ad-ref-palette-neutral90);
+}
+
+.md3.switch input:not(:disabled):checked:active+.switch-track span.state-layer .icon {
+    color: var(--ad-sys-color-on-primary-container);
+    top: 2px;
+    left: 7px;
+}
+
+.md3.switch input:checked+.switch-track span.state-layer span.icon {
+    left: 4px;
+    opacity: 1;
+    color: var(--ad-sys-color-on-primary-container);
+}
+
+.md3.switch input:disabled+.switch-track {
+    background-color: var(--ad-ref-palette-neutral90);
+    border-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-switch-disabled-track-opacity);
+}
+
+.md3.switch input:checked:disabled+.switch-track {
+    background-color: var(--ad-sys-color-primary);
+    border-color: transparent;
+}
+
+.md3.switch input:disabled+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-switch-disabled-unselected-handle-opacity);
+}
+
+.md3.switch input:checked:disabled+.switch-track span.state-layer {
+    background-color: var(--ad-sys-color-surface);
+    opacity: var(--ad-comp-switch-disabled-selected-handle-opacity);
+}

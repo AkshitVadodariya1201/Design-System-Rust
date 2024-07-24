@@ -1,0 +1,24 @@
+.filled {
+    background-color: var(--ad-ref-palette-neutral90);
+    border-radius: 12px;
+}
+
+.filled:hover .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-hover-state-layer-opacity);
+}
+
+.filled:focus .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-focus-state-layer-opacity);
+}
+
+.filled:active .state-layer::before {
+    background-color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}
+
+.filled:disabled {
+    background-color: var(--ad-sys-color-surface);
+    opacity: var(--ad-comp-filled-card-disabled-container-opacity);
+}

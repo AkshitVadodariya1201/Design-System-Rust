@@ -1,0 +1,31 @@
+:where(html),
+.tokens {
+  /* Secondary navigation tab with icon icon size */
+  --ad-comp-secondary-navigation-tab-with-icon-icon-size: 24px;
+  /* Secondary navigation tab focus state layer opacity */
+  --ad-comp-secondary-navigation-tab-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Secondary navigation tab hover state layer opacity */
+  --ad-comp-secondary-navigation-tab-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Secondary navigation tab divider height */
+  --ad-comp-secondary-navigation-tab-divider-height: 1px;
+  /* Secondary navigation tab active indicator height */
+  --ad-comp-secondary-navigation-tab-active-indicator-height: 2px;
+  /* Secondary navigation tab label text tracking */
+  --ad-comp-secondary-navigation-tab-label-text-tracking: var(--ad-sys-typescale-title-small-tracking);
+  /* Secondary navigation tab label text weight */
+  --ad-comp-secondary-navigation-tab-label-text-weight: var(--ad-sys-typescale-title-small-weight);
+  /* Secondary navigation tab label text size */
+  --ad-comp-secondary-navigation-tab-label-text-size: var(--ad-sys-typescale-title-small-size);
+  /* Secondary navigation tab label text line height */
+  --ad-comp-secondary-navigation-tab-label-text-line-height: var(--ad-sys-typescale-title-small-line-height);
+  /* Secondary navigation tab label text font */
+  --ad-comp-secondary-navigation-tab-label-text-font: var(--ad-sys-typescale-title-small-font);
+  /* Secondary navigation tab container elevation */
+  --ad-comp-secondary-navigation-tab-container-elevation: var(--ad-sys-elevation-level0);
+  /* Secondary navigation tab container height */
+  --ad-comp-secondary-navigation-tab-container-height: 48px;
+  /* Secondary navigation tab container shape */
+  --ad-comp-secondary-navigation-tab-container-shape: var(--ad-sys-shape-corner-none);
+  /* Secondary navigation tab pressed state layer opacity */
+  --ad-comp-secondary-navigation-tab-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+}

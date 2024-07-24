@@ -1,0 +1,15 @@
+:where(html),
+.tokens {
+  /* Plain tooltip supporting text tracking */
+  --ad-comp-plain-tooltip-supporting-text-tracking: var(--ad-sys-typescale-body-small-tracking);
+  /* Plain tooltip supporting text weight */
+  --ad-comp-plain-tooltip-supporting-text-weight: var(--ad-sys-typescale-body-small-weight);
+  /* Plain tooltip supporting text size */
+  --ad-comp-plain-tooltip-supporting-text-size: var(--ad-sys-typescale-body-small-size);
+  /* Plain tooltip supporting text line height */
+  --ad-comp-plain-tooltip-supporting-text-line-height: var(--ad-sys-typescale-body-small-line-height);
+  /* Plain tooltip supporting text font */
+  --ad-comp-plain-tooltip-supporting-text-font: var(--ad-sys-typescale-body-small-font);
+  /* Plain tooltip container shape */
+  --ad-comp-plain-tooltip-container-shape: var(--ad-sys-shape-corner-small);
+}

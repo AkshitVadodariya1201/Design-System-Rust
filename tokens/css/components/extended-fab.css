@@ -1,0 +1,41 @@
+:where(html),
+.tokens {
+  /* Branded extended FAB lowered focus container elevation */
+  --ad-comp-extended-fab-branded-lowered-focus-container-elevation: var(--ad-sys-elevation-level1);
+  /* Branded extended FAB focus container elevation */
+  --ad-comp-extended-fab-branded-focus-container-elevation: var(--ad-sys-elevation-level3);
+  /* Extended FAB (branded) focus state layer opacity */
+  --ad-comp-extended-fab-branded-focus-state-layer-opacity: var(--ad-sys-state-focus-state-layer-opacity);
+  /* Branded extended FAB lowered hover container elevation */
+  --ad-comp-extended-fab-branded-lowered-hover-container-elevation: var(--ad-sys-elevation-level2);
+  /* Extended FAB (branded) hover state layer opacity */
+  --ad-comp-extended-fab-branded-hover-state-layer-opacity: var(--ad-sys-state-hover-state-layer-opacity);
+  /* Extended FAB (branded) hover container elevation */
+  --ad-comp-extended-fab-branded-hover-container-elevation: var(--ad-sys-elevation-level4);
+  /* Extended FAB (branded) tracking */
+  --ad-comp-extended-fab-branded-label-text-tracking: var(--ad-sys-typescale-label-large-tracking);
+  /* Extended FAB (branded) weight */
+  --ad-comp-extended-fab-branded-label-text-weight: var(--ad-sys-typescale-label-large-weight);
+  /* Extended FAB (branded) size */
+  --ad-comp-extended-fab-branded-label-text-size: var(--ad-sys-typescale-label-large-size);
+  /* Extended FAB (branded) height */
+  --ad-comp-extended-fab-branded-label-text-line-height: var(--ad-sys-typescale-label-large-line-height);
+  /* Extended FAB (branded) font */
+  --ad-comp-extended-fab-branded-label-text-font: var(--ad-sys-typescale-label-large-font);
+  /* Extended FAB (branded) icon size */
+  --ad-comp-extended-fab-branded-icon-size: 36px;
+  /* Branded extended FAB lowered container elevation */
+  --ad-comp-extended-fab-branded-lowered-container-elevation: var(--ad-sys-elevation-level1);
+  /* Extended FAB (branded) container elevation */
+  --ad-comp-extended-fab-branded-container-elevation: var(--ad-sys-elevation-level3);
+  /* Extended FAB (branded) container height */
+  --ad-comp-extended-fab-branded-container-height: 56px;
+  /* Extended FAB (branded) container shape */
+  --ad-comp-extended-fab-branded-container-shape: var(--ad-sys-shape-corner-large);
+  /* Branded extended FAB lowered pressed container elevation */
+  --ad-comp-extended-fab-branded-lowered-pressed-container-elevation: var(--ad-sys-elevation-level1);
+  /* Extended FAB (branded) pressed state layer opacity */
+  --ad-comp-extended-fab-branded-pressed-state-layer-opacity: var(--ad-sys-state-pressed-state-layer-opacity);
+  /* Extended FAB (branded) pressed container elevation */
+  --ad-comp-extended-fab-branded-pressed-container-elevation: var(--ad-sys-elevation-level3);
+}

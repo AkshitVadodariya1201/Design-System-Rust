@@ -1,0 +1,194 @@
+/* write css for standard icon button */
+/* take value from ../../../packages/ad-icon-button-standard/readme.md */
+
+/* style button for standard icon button */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    height: var(--ad-comp-icon-button-state-layer-size);
+    width: var(--ad-comp-icon-button-state-layer-size);
+}
+
+/* style button before */
+button::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--ad-comp-icon-button-state-layer-shape);
+}
+
+/* style icon class */
+.icon {
+    height: var(--ad-comp-icon-button-icon-size);
+}
+
+/* style slot inside of icon class */
+.icon ::slotted(*) {
+    font-size: var(--ad-comp-icon-button-icon-size);
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when button unselected */
+button.unselected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when button selected */
+button.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button before when :enabled */
+button:enabled::before {
+    height: var(--ad-comp-icon-button-state-layer-size);
+    width: var(--ad-comp-icon-button-state-layer-size);
+    border-radius: var(--ad-comp-icon-button-state-layer-shape);
+}
+
+/* style slot inside of icon class when button:enabled */
+button:enabled .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when  button:enabled unselected */
+button:enabled.unselected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when  button:enabled selected */
+button:enabled.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button before when :hover */
+button:hover::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-icon-button-unselected-hover-state-layer-opacity);
+}
+
+/* style button before when :hover and unselected */
+button:hover.unselected::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-icon-button-unselected-hover-state-layer-opacity);
+}
+
+/* style button before when :hover and selected */
+button:hover.selected::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-icon-button-selected-hover-state-layer-opacity);
+}
+
+/* style slot inside of icon class when :hover */
+button:hover .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when :hover and unselected */
+button:hover.unselected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when :hover and selected */
+button:hover.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button before when :focus */
+button:focus::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-icon-button-unselected-focus-state-layer-opacity);
+}
+
+/* style button before when :focus and unselected */
+button:focus.unselected::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-icon-button-unselected-focus-state-layer-opacity);
+}
+
+/* style button before when :focus and selected */
+button:focus.selected::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-icon-button-selected-focus-state-layer-opacity);
+}
+
+/* style slot inside of icon class when :focus */
+button:focus .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when :focus and unselected */
+button:focus.unselected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when :focus and selected */
+button:focus.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button before when :active */
+button:active::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-icon-button-unselected-pressed-state-layer-opacity);
+}
+
+/* style button before when :active and unselected */
+button:active.unselected::before {
+    background-color: var(--ad-sys-color-on-surface-variant);
+    opacity: var(--ad-comp-icon-button-unselected-pressed-state-layer-opacity);
+}
+
+/* style button before when :active and selected */
+button:active.selected::before {
+    background-color: var(--ad-sys-color-primary);
+    opacity: var(--ad-comp-icon-button-selected-pressed-state-layer-opacity);
+}
+
+/* style slot inside of icon class when :active */
+button:active .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when :active and unselected */
+button:active.unselected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface-variant);
+}
+
+/* style slot inside of icon class when :active and selected */
+button:active.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-primary);
+}
+
+
+
+/* style button when :disabled */
+button:disabled {
+    cursor: default;
+}
+
+/* style slot inside of icon class when :disabled, unselected, selected */
+button:disabled .icon ::slotted(*),
+button:disabled.unselected .icon ::slotted(*),
+button:disabled.selected .icon ::slotted(*) {
+    color: var(--ad-sys-color-on-surface);
+    opacity: var(--ad-comp-icon-button-disabled-icon-opacity);
+}
+
+/* style button before when :disabled, unselected, selected */
+button:disabled::before, button:disabled.unselected::before, button:disabled.selected::before {
+    background-color: transparent;
+}
